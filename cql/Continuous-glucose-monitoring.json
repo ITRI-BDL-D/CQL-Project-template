@@ -1,0 +1,3673 @@
+{
+   "library" : {
+      "annotation" : [ {
+         "translatorVersion" : "3.10.0",
+         "translatorOptions" : "DisableListDemotion,DisableListPromotion",
+         "signatureLevel" : "Overloads",
+         "type" : "CqlToElmInfo"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 61,
+         "startChar" : 3,
+         "endLine" : 61,
+         "endChar" : 48,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 62,
+         "startChar" : 11,
+         "endLine" : 62,
+         "endChar" : 73,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 63,
+         "startChar" : 11,
+         "endLine" : 63,
+         "endChar" : 75,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 64,
+         "startChar" : 11,
+         "endLine" : 64,
+         "endChar" : 74,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 65,
+         "startChar" : 11,
+         "endLine" : 65,
+         "endChar" : 73,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 66,
+         "startChar" : 11,
+         "endLine" : 66,
+         "endChar" : 69,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 168,
+         "startChar" : 30,
+         "endLine" : 168,
+         "endChar" : 74,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 231,
+         "startChar" : 3,
+         "endLine" : 231,
+         "endChar" : 52,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 234,
+         "startChar" : 3,
+         "endLine" : 234,
+         "endChar" : 55,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      }, {
+         "libraryId" : "Continuous-glucose-monitoring",
+         "libraryVersion" : "0.0.2",
+         "startLine" : 237,
+         "startChar" : 3,
+         "endLine" : 237,
+         "endChar" : 50,
+         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
+         "errorType" : "semantic",
+         "errorSeverity" : "warning",
+         "type" : "CqlToElmError"
+      } ],
+      "identifier" : {
+         "id" : "Continuous-glucose-monitoring",
+         "version" : "0.0.2"
+      },
+      "schemaIdentifier" : {
+         "id" : "urn:hl7-org:elm",
+         "version" : "r1"
+      },
+      "usings" : {
+         "def" : [ {
+            "localIdentifier" : "System",
+            "uri" : "urn:hl7-org:elm-types:r1",
+            "annotation" : [ ]
+         }, {
+            "localIdentifier" : "FHIR",
+            "uri" : "http://hl7.org/fhir",
+            "version" : "4.0.1",
+            "annotation" : [ ]
+         } ]
+      },
+      "includes" : {
+         "def" : [ {
+            "localIdentifier" : "FHIRHelpers",
+            "path" : "FHIRHelpers",
+            "version" : "4.0.1",
+            "annotation" : [ ]
+         }, {
+            "localIdentifier" : "C3F",
+            "path" : "CDSConnectCommonsForFHIRv401",
+            "version" : "2.1.0",
+            "annotation" : [ ]
+         } ]
+      },
+      "codeSystems" : {
+         "def" : [ {
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "ICD-10-CM",
+            "id" : "http://hl7.org/fhir/sid/icd-10-cm",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "SNOMED",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "Other",
+            "id" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "CONDVERSTATUS",
+            "id" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         } ]
+      },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "Type 1 Diabetes Mellitus SCT VS",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1078.214",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "Gestational Diabetes VS",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1032.90",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "Type 2 Diabetes Diagnoses VS",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1160.27",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "Insulin VS",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1078.434",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
+            "name" : "Hemoglobin A1c/Hemoglobin.total in Blood code",
+            "id" : "4548-4",
+            "display" : "Hemoglobin A1c/Hemoglobin.total in Blood",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "LOINC",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Neonatal diabetes mellitus code",
+            "id" : "P70.2",
+            "display" : "Neonatal diabetes mellitus",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Postprocedural hypoinsulinemia code",
+            "id" : "E89.1",
+            "display" : "Postprocedural hypoinsulinemia",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Other specified diabetes mellitus code",
+            "id" : "E13",
+            "display" : "Other specified diabetes mellitus",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Acquired absence of pancreas code",
+            "id" : "Z90.41",
+            "display" : "Acquired absence of pancreas",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Hypoglycemia, unspecified code",
+            "id" : "E16.2",
+            "display" : "Hypoglycemia, unspecified",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Pregnant state, incidental code",
+            "id" : "Z33.1",
+            "display" : "Pregnant state, incidental",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Glycogen storage disease, type I (disorder) code",
+            "id" : "7265005",
+            "display" : "Glycogen storage disease, type I (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Glycogen storage disease, type III (disorder) code",
+            "id" : "66937008",
+            "display" : "Glycogen storage disease, type III (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Glycogen storage disease, type VI (disorder) code",
+            "id" : "29291001",
+            "display" : "Glycogen storage disease, type VI (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Glycogen storage disease type IX (disorder) code",
+            "id" : "235908005",
+            "display" : "Glycogen storage disease type IX (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Glycogen synthase deficiency (disorder) code",
+            "id" : "237964009",
+            "display" : "Glycogen synthase deficiency (disorder)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Cornflour (substance) code",
+            "id" : "229936000",
+            "display" : "Cornflour (substance)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SNOMED",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "emergency code",
+            "id" : "EMER",
+            "display" : "emergency",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "Other",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inpatient encounter code",
+            "id" : "IMP",
+            "display" : "inpatient encounter",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "Other",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "ambulatory code",
+            "id" : "AMB",
+            "display" : "ambulatory",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "Other",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Condition Confirmed code",
+            "id" : "confirmed",
+            "display" : "Confirmed",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "CONDVERSTATUS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Continuous glucose monitoring (procedure)",
+            "id" : "97510-2",
+            "display" : "Glucose measurements in range out of Total glucose measurements during reporting period",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "LOINC",
+               "annotation" : [ ]
+            }
+         } ]
+      },
+      "concepts" : {
+         "def" : [ {
+            "name" : "Condition Confirmed",
+            "display" : "Confirmed",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "code" : [ {
+               "name" : "Condition Confirmed code",
+               "annotation" : [ ]
+            } ]
+         } ]
+      },
+      "contexts" : {
+         "def" : [ {
+            "name" : "Patient",
+            "annotation" : [ ]
+         } ]
+      },
+      "statements" : {
+         "def" : [ {
+            "name" : "Patient",
+            "context" : "Patient",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "SingletonFrom",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Patient",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Patient",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
+            "name" : "generic_condition_valuesets",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "dataType" : "{http://hl7.org/fhir}Condition",
+               "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+               "codeProperty" : "code",
+               "codeComparator" : "in",
+               "type" : "Retrieve",
+               "annotation" : [ ],
+               "codes" : {
+                  "name" : "Type 1 Diabetes Mellitus SCT VS",
+                  "preserve" : true,
+                  "type" : "ValueSetRef",
+                  "annotation" : [ ]
+               },
+               "include" : [ ],
+               "codeFilter" : [ ],
+               "dateFilter" : [ ],
+               "otherFilter" : [ ]
+            }
+         }, {
+            "name" : "generic_encounter_valuesets",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "codeProperty" : "type",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "name" : "Type 1 Diabetes Mellitus SCT VS",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  }, {
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "codeProperty" : "type",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "name" : "Gestational Diabetes VS",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }, {
+                  "dataType" : "{http://hl7.org/fhir}Encounter",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                  "codeProperty" : "type",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "name" : "Type 2 Diabetes Diagnoses VS",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "generic_condition_concepts",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "dataType" : "{http://hl7.org/fhir}Condition",
+               "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+               "codeProperty" : "code",
+               "codeComparator" : "~",
+               "type" : "Retrieve",
+               "annotation" : [ ],
+               "codes" : {
+                  "type" : "ToList",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "Neonatal diabetes mellitus code",
+                     "type" : "CodeRef",
+                     "annotation" : [ ]
+                  }
+               },
+               "include" : [ ],
+               "codeFilter" : [ ],
+               "dateFilter" : [ ],
+               "otherFilter" : [ ]
+            }
+         }, {
+            "name" : "generic_condition_concepts_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : [ {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Condition",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Condition",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  } ],
+                  "operand" : [ {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Condition",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Condition",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type I (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type III (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  }, {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Condition",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Condition",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type VI (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease type IX (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  } ]
+               }, {
+                  "dataType" : "{http://hl7.org/fhir}Condition",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "Glycogen synthase deficiency (disorder) code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "generic_encounter_concepts",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : [ {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Encounter",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Encounter",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  } ],
+                  "operand" : [ {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Encounter",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Encounter",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                        "codeProperty" : "type",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Neonatal diabetes mellitus code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                        "codeProperty" : "type",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type I (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  }, {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Encounter",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Encounter",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                        "codeProperty" : "type",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type III (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "dataType" : "{http://hl7.org/fhir}Encounter",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                        "codeProperty" : "type",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Glycogen storage disease, type VI (disorder) code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  } ]
+               }, {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Encounter",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Encounter",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  } ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "codeProperty" : "type",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Glycogen storage disease type IX (disorder) code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  }, {
+                     "dataType" : "{http://hl7.org/fhir}Encounter",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                     "codeProperty" : "type",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Glycogen synthase deficiency (disorder) code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "generic_condition_union",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : [ {
+                  "name" : "generic_condition_valuesets",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "generic_condition_concepts",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "generic_encounter_union",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : [ {
+                  "name" : "generic_encounter_valuesets",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "generic_encounter_concepts",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "ObservationLookBack",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "O",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "name" : "ObsList",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "let" : [ {
+                  "identifier" : "LookBackInterval",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "lowClosed" : true,
+                     "highClosed" : true,
+                     "type" : "Interval",
+                     "annotation" : [ ],
+                     "low" : {
+                        "type" : "Subtract",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        } ],
+                        "operand" : [ {
+                           "type" : "Now",
+                           "annotation" : [ ],
+                           "signature" : [ ]
+                        }, {
+                           "name" : "LookBack",
+                           "type" : "OperandRef",
+                           "annotation" : [ ]
+                        } ]
+                     },
+                     "high" : {
+                        "type" : "Now",
+                        "annotation" : [ ],
+                        "signature" : [ ]
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Or",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "type" : "Or",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "type" : "Or",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : [ {
+                           "type" : "In",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : [ {
+                              "path" : "value",
+                              "type" : "Property",
+                              "annotation" : [ ],
+                              "source" : {
+                                 "strict" : false,
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "path" : "effective",
+                                    "scope" : "O",
+                                    "type" : "Property",
+                                    "annotation" : [ ]
+                                 },
+                                 "asTypeSpecifier" : {
+                                    "name" : "{http://hl7.org/fhir}dateTime",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }, {
+                              "name" : "LookBackInterval",
+                              "type" : "QueryLetRef",
+                              "annotation" : [ ]
+                           } ]
+                        }, {
+                           "type" : "In",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : [ {
+                              "path" : "value",
+                              "type" : "Property",
+                              "annotation" : [ ],
+                              "source" : {
+                                 "strict" : false,
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "path" : "effective",
+                                    "scope" : "O",
+                                    "type" : "Property",
+                                    "annotation" : [ ]
+                                 },
+                                 "asTypeSpecifier" : {
+                                    "name" : "{http://hl7.org/fhir}instant",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }, {
+                              "name" : "LookBackInterval",
+                              "type" : "QueryLetRef",
+                              "annotation" : [ ]
+                           } ]
+                        } ]
+                     }, {
+                        "type" : "Overlaps",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : [ {
+                           "name" : "PeriodToInterval",
+                           "type" : "FunctionRef",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : [ {
+                              "strict" : false,
+                              "type" : "As",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "path" : "effective",
+                                 "scope" : "O",
+                                 "type" : "Property",
+                                 "annotation" : [ ]
+                              },
+                              "asTypeSpecifier" : {
+                                 "name" : "{http://hl7.org/fhir}Period",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           } ]
+                        }, {
+                           "name" : "LookBackInterval",
+                           "type" : "QueryLetRef",
+                           "annotation" : [ ]
+                        } ]
+                     } ]
+                  }, {
+                     "type" : "In",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "path" : "value",
+                        "type" : "Property",
+                        "annotation" : [ ],
+                        "source" : {
+                           "path" : "issued",
+                           "scope" : "O",
+                           "type" : "Property",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "name" : "LookBackInterval",
+                        "type" : "QueryLetRef",
+                        "annotation" : [ ]
+                     } ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "ObsList",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }
+            }, {
+               "name" : "LookBack",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }
+            } ]
+         }, {
+            "name" : "PeriodToInterval",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "IsNull",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "period",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               },
+               "then" : {
+                  "type" : "As",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  },
+                  "asTypeSpecifier" : {
+                     "type" : "IntervalTypeSpecifier",
+                     "annotation" : [ ],
+                     "pointType" : {
+                        "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  }
+               },
+               "else" : {
+                  "lowClosed" : true,
+                  "highClosed" : true,
+                  "type" : "Interval",
+                  "annotation" : [ ],
+                  "low" : {
+                     "path" : "value",
+                     "type" : "Property",
+                     "annotation" : [ ],
+                     "source" : {
+                        "path" : "start",
+                        "type" : "Property",
+                        "annotation" : [ ],
+                        "source" : {
+                           "name" : "period",
+                           "type" : "OperandRef",
+                           "annotation" : [ ]
+                        }
+                     }
+                  },
+                  "high" : {
+                     "path" : "value",
+                     "type" : "Property",
+                     "annotation" : [ ],
+                     "source" : {
+                        "path" : "end",
+                        "type" : "Property",
+                        "annotation" : [ ],
+                        "source" : {
+                           "name" : "period",
+                           "type" : "OperandRef",
+                           "annotation" : [ ]
+                        }
+                     }
+                  }
+               }
+            },
+            "operand" : [ {
+               "name" : "period",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "name" : "{http://hl7.org/fhir}Period",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }
+            } ]
+         }, {
+            "name" : "Hemoglobin A1c/Hemoglobin.total in Blood eqgt 8 percent in past 6m eqgt 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "GreaterOrEqual",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               } ],
+               "operand" : [ {
+                  "type" : "Count",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "source" : {
+                     "name" : "ObservationLookBack",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "type" : "Query",
+                        "annotation" : [ ],
+                        "source" : [ {
+                           "alias" : "Ob",
+                           "annotation" : [ ],
+                           "expression" : {
+                              "dataType" : "{http://hl7.org/fhir}Observation",
+                              "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                              "codeProperty" : "code",
+                              "codeComparator" : "~",
+                              "type" : "Retrieve",
+                              "annotation" : [ ],
+                              "codes" : {
+                                 "type" : "ToList",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "name" : "Hemoglobin A1c/Hemoglobin.total in Blood code",
+                                    "type" : "CodeRef",
+                                    "annotation" : [ ]
+                                 }
+                              },
+                              "include" : [ ],
+                              "codeFilter" : [ ],
+                              "dateFilter" : [ ],
+                              "otherFilter" : [ ]
+                           }
+                        } ],
+                        "let" : [ ],
+                        "relationship" : [ ],
+                        "where" : {
+                           "type" : "GreaterOrEqual",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }, {
+                              "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           } ],
+                           "operand" : [ {
+                              "name" : "ToQuantity",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : [ {
+                                 "strict" : false,
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "path" : "value",
+                                    "scope" : "Ob",
+                                    "type" : "Property",
+                                    "annotation" : [ ]
+                                 },
+                                 "asTypeSpecifier" : {
+                                    "name" : "{http://hl7.org/fhir}Quantity",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              } ]
+                           }, {
+                              "value" : 8,
+                              "unit" : "%",
+                              "type" : "Quantity",
+                              "annotation" : [ ]
+                           } ]
+                        }
+                     }, {
+                        "value" : 6,
+                        "unit" : "months",
+                        "type" : "Quantity",
+                        "annotation" : [ ]
+                     } ]
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "Confirmed",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "C",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "name" : "CondList",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "let" : [ ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Equivalent",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}Concept",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}Concept",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "name" : "ToConcept",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "path" : "verificationStatus",
+                        "scope" : "C",
+                        "type" : "Property",
+                        "annotation" : [ ]
+                     } ]
+                  }, {
+                     "name" : "Condition Confirmed",
+                     "type" : "ConceptRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "CondList",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }
+            } ]
+         }, {
+            "name" : "Type 1 diabetes mellitus or Neonatal diabetes mellitus",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "generic_condition_union",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Postprocedural hypoinsulinemia",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Postprocedural hypoinsulinemia code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Other specified diabetes mellitus",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Other specified diabetes mellitus code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Acquired absence of pancreas",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Acquired absence of pancreas code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Postprocedural hypoinsulinemia_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Postprocedural hypoinsulinemia",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Other specified diabetes mellitus_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Other specified diabetes mellitus",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Acquired absence of pancreas_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Acquired absence of pancreas",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Hypoglycemia, unspecified",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Hypoglycemia, unspecified code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "EncounterLookBack",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "E",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "name" : "EncList",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "let" : [ {
+                  "identifier" : "LookBackInterval",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "lowClosed" : true,
+                     "highClosed" : true,
+                     "type" : "Interval",
+                     "annotation" : [ ],
+                     "low" : {
+                        "type" : "Subtract",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        } ],
+                        "operand" : [ {
+                           "type" : "Now",
+                           "annotation" : [ ],
+                           "signature" : [ ]
+                        }, {
+                           "name" : "LookBack",
+                           "type" : "OperandRef",
+                           "annotation" : [ ]
+                        } ]
+                     },
+                     "high" : {
+                        "type" : "Now",
+                        "annotation" : [ ],
+                        "signature" : [ ]
+                     }
+                  }
+               } ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Overlaps",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "PeriodToInterval",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "path" : "period",
+                        "scope" : "E",
+                        "type" : "Property",
+                        "annotation" : [ ]
+                     } ]
+                  }, {
+                     "name" : "LookBackInterval",
+                     "type" : "QueryLetRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "EncList",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }
+            }, {
+               "name" : "LookBack",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }
+            } ]
+         }, {
+            "name" : "In the past three months, you have been to the emergency department or been hospitalized due to hypoglycemia.",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "EncounterLookBack",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "type" : "Query",
+                     "annotation" : [ ],
+                     "source" : [ {
+                        "alias" : "En",
+                        "annotation" : [ ],
+                        "expression" : {
+                           "dataType" : "{http://hl7.org/fhir}Encounter",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+                           "codeProperty" : "type",
+                           "codeComparator" : "~",
+                           "type" : "Retrieve",
+                           "annotation" : [ ],
+                           "codes" : {
+                              "type" : "ToList",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "name" : "Hypoglycemia, unspecified code",
+                                 "type" : "CodeRef",
+                                 "annotation" : [ ]
+                              }
+                           },
+                           "include" : [ ],
+                           "codeFilter" : [ ],
+                           "dateFilter" : [ ],
+                           "otherFilter" : [ ]
+                        }
+                     } ],
+                     "let" : [ ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "type" : "Exists",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{urn:hl7-org:elm-types:r1}Code",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        } ],
+                        "operand" : {
+                           "type" : "Query",
+                           "annotation" : [ ],
+                           "source" : [ {
+                              "alias" : "CODE",
+                              "annotation" : [ ],
+                              "expression" : {
+                                 "type" : "List",
+                                 "annotation" : [ ],
+                                 "element" : [ {
+                                    "name" : "emergency code",
+                                    "type" : "CodeRef",
+                                    "annotation" : [ ]
+                                 }, {
+                                    "name" : "inpatient encounter code",
+                                    "type" : "CodeRef",
+                                    "annotation" : [ ]
+                                 } ]
+                              }
+                           } ],
+                           "let" : [ ],
+                           "relationship" : [ ],
+                           "where" : {
+                              "type" : "Equivalent",
+                              "annotation" : [ ],
+                              "signature" : [ {
+                                 "name" : "{urn:hl7-org:elm-types:r1}Code",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }, {
+                                 "name" : "{urn:hl7-org:elm-types:r1}Code",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              } ],
+                              "operand" : [ {
+                                 "name" : "ToCode",
+                                 "libraryName" : "FHIRHelpers",
+                                 "type" : "FunctionRef",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : [ {
+                                    "path" : "class",
+                                    "scope" : "En",
+                                    "type" : "Property",
+                                    "annotation" : [ ]
+                                 } ]
+                              }, {
+                                 "name" : "CODE",
+                                 "type" : "AliasRef",
+                                 "annotation" : [ ]
+                              } ]
+                           }
+                        }
+                     }
+                  }, {
+                     "value" : 3,
+                     "unit" : "months",
+                     "type" : "Quantity",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Pregnant state, incidental",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Pregnant state, incidental code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Gestational Diabetes",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "name" : "Gestational Diabetes VS",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Type 2 Diabetes Diagnoses",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "name" : "Type 2 Diabetes Diagnoses VS",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Insulin",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "name" : "Insulin VS",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
+            "name" : "Glycogen storage disease",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Condition",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "Confirmed",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "generic_condition_concepts_1",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Cornflour (substance)",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "Cornflour (substance) code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
+            "name" : "Diabetes due to near-total pancreatectomy",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "And",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "Postprocedural hypoinsulinemia_1",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "Other specified diabetes mellitus_1",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }, {
+                  "name" : "Acquired absence of pancreas_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 1a",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Type 1 diabetes mellitus or Neonatal diabetes mellitus",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "Diabetes due to near-total pancreatectomy",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 1a_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 1a",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inclusion 1b",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "Or",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "type" : "Or",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "name" : "Hemoglobin A1c/Hemoglobin.total in Blood eqgt 8 percent in past 6m eqgt 2",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }, {
+                        "name" : "Hypoglycemia, unspecified",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     } ]
+                  }, {
+                     "name" : "In the past three months, you have been to the emergency department or been hospitalized due to hypoglycemia.",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }, {
+                  "name" : "Pregnant state, incidental",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 1b_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 1b",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Type 2 Diabetes Diagnoses_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Type 2 Diabetes Diagnoses",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Gestational Diabetes_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Gestational Diabetes",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inclusion 2a1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Type 2 Diabetes Diagnoses_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "Pregnant state, incidental",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 2a1_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 2a1",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Insulin_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Insulin",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inclusion 2a",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Gestational Diabetes_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "inclusion 2a1_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 2a_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 2a",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Cornflour (substance)_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Cornflour (substance)",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Gestational Diabetes_2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Gestational Diabetes",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inclusion 3b",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Cornflour (substance)_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "Hypoglycemia, unspecified",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 3b_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 3b",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Most Resent Encounter 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "generic_encounter_union",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Postprocedural hypoinsulinemia Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "dataType" : "{http://hl7.org/fhir}Encounter",
+               "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+               "codeProperty" : "type",
+               "codeComparator" : "~",
+               "type" : "Retrieve",
+               "annotation" : [ ],
+               "codes" : {
+                  "type" : "ToList",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "Postprocedural hypoinsulinemia code",
+                     "type" : "CodeRef",
+                     "annotation" : [ ]
+                  }
+               },
+               "include" : [ ],
+               "codeFilter" : [ ],
+               "dateFilter" : [ ],
+               "otherFilter" : [ ]
+            }
+         }, {
+            "name" : "Other specified diabetes mellitus Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "dataType" : "{http://hl7.org/fhir}Encounter",
+               "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+               "codeProperty" : "type",
+               "codeComparator" : "~",
+               "type" : "Retrieve",
+               "annotation" : [ ],
+               "codes" : {
+                  "type" : "ToList",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "Other specified diabetes mellitus code",
+                     "type" : "CodeRef",
+                     "annotation" : [ ]
+                  }
+               },
+               "include" : [ ],
+               "codeFilter" : [ ],
+               "dateFilter" : [ ],
+               "otherFilter" : [ ]
+            }
+         }, {
+            "name" : "Acquired absence of pancreas Encounter",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "dataType" : "{http://hl7.org/fhir}Encounter",
+               "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
+               "codeProperty" : "type",
+               "codeComparator" : "~",
+               "type" : "Retrieve",
+               "annotation" : [ ],
+               "codes" : {
+                  "type" : "ToList",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "Acquired absence of pancreas code",
+                     "type" : "CodeRef",
+                     "annotation" : [ ]
+                  }
+               },
+               "include" : [ ],
+               "codeFilter" : [ ],
+               "dateFilter" : [ ],
+               "otherFilter" : [ ]
+            }
+         }, {
+            "name" : "Most Resent Encounter 1_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Most Resent Encounter 1",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Most Resent Encounter 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Intersect",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "Intersect",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "Postprocedural hypoinsulinemia Encounter",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "Other specified diabetes mellitus Encounter",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }, {
+                  "name" : "Acquired absence of pancreas Encounter",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "Most Resent Encounter 2_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "Most Resent Encounter 2",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Most Resent Encounters",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Union",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : [ {
+                  "name" : "Most Resent Encounter 1_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "Most Resent Encounter 2_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "InProgress",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "E",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "name" : "EncList",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "let" : [ ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Equal",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}String",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}String",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "path" : "value",
+                     "type" : "Property",
+                     "annotation" : [ ],
+                     "source" : {
+                        "path" : "status",
+                        "scope" : "E",
+                        "type" : "Property",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "in-progress",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "EncList",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }
+            } ]
+         }, {
+            "name" : "Most Resent Encounters 0",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "InProgress",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "type" : "Query",
+                     "annotation" : [ ],
+                     "source" : [ {
+                        "alias" : "En",
+                        "annotation" : [ ],
+                        "expression" : {
+                           "name" : "Most Resent Encounters",
+                           "type" : "ExpressionRef",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "let" : [ ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "type" : "Equivalent",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "name" : "{urn:hl7-org:elm-types:r1}Code",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}Code",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        } ],
+                        "operand" : [ {
+                           "name" : "ToCode",
+                           "libraryName" : "FHIRHelpers",
+                           "type" : "FunctionRef",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : [ {
+                              "path" : "class",
+                              "scope" : "En",
+                              "type" : "Property",
+                              "annotation" : [ ]
+                           } ]
+                        }, {
+                           "name" : "ambulatory code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        } ]
+                     }
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Most Resent Encounters 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Encounter",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "InProgress",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "type" : "Query",
+                     "annotation" : [ ],
+                     "source" : [ {
+                        "alias" : "En",
+                        "annotation" : [ ],
+                        "expression" : {
+                           "name" : "Most Resent Encounters",
+                           "type" : "ExpressionRef",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "let" : [ ],
+                     "relationship" : [ ],
+                     "where" : {
+                        "type" : "Not",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "type" : "Equivalent",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "name" : "{urn:hl7-org:elm-types:r1}Code",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }, {
+                              "name" : "{urn:hl7-org:elm-types:r1}Code",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           } ],
+                           "operand" : [ {
+                              "name" : "ToCode",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : [ {
+                                 "path" : "class",
+                                 "scope" : "En",
+                                 "type" : "Property",
+                                 "annotation" : [ ]
+                              } ]
+                           }, {
+                              "name" : "ambulatory code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           } ]
+                        }
+                     }
+                  } ]
+               }
+            }
+         }, {
+            "name" : "SortbyPerformedProcedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "type" : "FunctionDef",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "Procedure",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "name" : "Procedures",
+                     "type" : "OperandRef",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "let" : [ ],
+               "relationship" : [ ],
+               "sort" : {
+                  "annotation" : [ ],
+                  "by" : [ {
+                     "direction" : "asc",
+                     "type" : "ByExpression",
+                     "annotation" : [ ],
+                     "expression" : {
+                        "type" : "Coalesce",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : [ {
+                           "path" : "value",
+                           "type" : "Property",
+                           "annotation" : [ ],
+                           "source" : {
+                              "strict" : false,
+                              "type" : "As",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "name" : "performed",
+                                 "type" : "IdentifierRef",
+                                 "annotation" : [ ]
+                              },
+                              "asTypeSpecifier" : {
+                                 "name" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           }
+                        }, {
+                           "path" : "value",
+                           "type" : "Property",
+                           "annotation" : [ ],
+                           "source" : {
+                              "path" : "end",
+                              "type" : "Property",
+                              "annotation" : [ ],
+                              "source" : {
+                                 "strict" : false,
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "name" : "performed",
+                                    "type" : "IdentifierRef",
+                                    "annotation" : [ ]
+                                 },
+                                 "asTypeSpecifier" : {
+                                    "name" : "{http://hl7.org/fhir}Period",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }
+                        }, {
+                           "path" : "value",
+                           "type" : "Property",
+                           "annotation" : [ ],
+                           "source" : {
+                              "path" : "start",
+                              "type" : "Property",
+                              "annotation" : [ ],
+                              "source" : {
+                                 "strict" : false,
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "name" : "performed",
+                                    "type" : "IdentifierRef",
+                                    "annotation" : [ ]
+                                 },
+                                 "asTypeSpecifier" : {
+                                    "name" : "{http://hl7.org/fhir}Period",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }
+                        } ]
+                     }
+                  } ]
+               }
+            },
+            "operand" : [ {
+               "name" : "Procedures",
+               "annotation" : [ ],
+               "operandTypeSpecifier" : {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               }
+            } ]
+         }, {
+            "name" : "CGM Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "SortbyPerformedProcedure",
+               "type" : "FunctionRef",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "ProcedureLookBack",
+                  "libraryName" : "C3F",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Procedure",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Continuous glucose monitoring (procedure)",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  }, {
+                     "value" : 1,
+                     "unit" : "years",
+                     "type" : "Quantity",
+                     "annotation" : [ ]
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "CGM Procedure checked",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Greater",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "type" : "Count",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Procedure",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "source" : {
+                        "name" : "CGM Procedure",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "1",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  } ]
+               },
+               "then" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "false",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "type" : "Greater",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }, {
+                        "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     } ],
+                     "operand" : [ {
+                        "type" : "Count",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        } ],
+                        "source" : {
+                           "name" : "CGM Procedure",
+                           "type" : "ExpressionRef",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                        "value" : "0",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     } ]
+                  },
+                  "then" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "type" : "Greater",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }, {
+                           "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        } ],
+                        "operand" : [ {
+                           "precision" : "Month",
+                           "type" : "DurationBetween",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }, {
+                              "name" : "{urn:hl7-org:elm-types:r1}DateTime",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           } ],
+                           "operand" : [ {
+                              "name" : "ToDateTime",
+                              "libraryName" : "FHIRHelpers",
+                              "type" : "FunctionRef",
+                              "annotation" : [ ],
+                              "signature" : [ {
+                                 "name" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              } ],
+                              "operand" : [ {
+                                 "asType" : "{http://hl7.org/fhir}dateTime",
+                                 "type" : "As",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "path" : "performed",
+                                    "type" : "Property",
+                                    "annotation" : [ ],
+                                    "source" : {
+                                       "type" : "Last",
+                                       "annotation" : [ ],
+                                       "signature" : [ ],
+                                       "source" : {
+                                          "name" : "CGM Procedure",
+                                          "type" : "ExpressionRef",
+                                          "annotation" : [ ]
+                                       }
+                                    }
+                                 }
+                              } ]
+                           }, {
+                              "type" : "Now",
+                              "annotation" : [ ],
+                              "signature" : [ ]
+                           } ]
+                        }, {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                           "value" : "1",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        } ]
+                     },
+                     "then" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                        "value" : "true",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                        "value" : "false",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "else" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                     "value" : "true",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  }
+               }
+            }
+         }, {
+            "name" : "secondProcedureIndex",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Subtract",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               } ],
+               "operand" : [ {
+                  "type" : "Count",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Procedure",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  } ],
+                  "source" : {
+                     "name" : "CGM Procedure",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "2",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "inclusion 1a_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "inclusion 1b_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 1_1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "inclusion 1",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "inclusion 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Insulin_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "inclusion 2a_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "inclusion 3",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "Gestational Diabetes_2",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "inclusion 3b_1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "MeetsInclusionCriteria",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "Or",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "inclusion 1_1",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "inclusion 2",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }, {
+                  "name" : "inclusion 3",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "InPopulation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "MeetsInclusionCriteria",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Subpopulation 1",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Not",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "IsTrue",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }
+               },
+               "then" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  }
+               },
+               "else" : {
+                  "type" : "And",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "Most Resent Encounters 0",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "CGM Procedure checked",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Subpopulation 2",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Not",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "IsTrue",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }
+               },
+               "then" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  }
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "type" : "Not",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "type" : "IsTrue",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "CGM Procedure checked",
+                           "type" : "ExpressionRef",
+                           "annotation" : [ ]
+                        }
+                     }
+                  },
+                  "then" : {
+                     "name" : "Most Resent Encounters 0",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                     "type" : "As",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Subpopulation 3",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Not",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "IsTrue",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }
+               },
+               "then" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "type" : "As",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  }
+               },
+               "else" : {
+                  "name" : "Most Resent Encounters 1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }
+            }
+         }, {
+            "name" : "Recommendation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "name" : "Subpopulation 1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               },
+               "then" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                  "value" : "1. 門診使用，無須事前審查。\n2. 限糖尿病共同照護網醫療機構申報，執行檢查人員和判讀醫師、營養師、衛教師必須參加過有關連續血糖監測之訓練課程。",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "Subpopulation 2",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "1. 門診使用，因與上次間隔小於一個月或過去一年已執行兩次以上，應事前審查。\n2. 限糖尿病共同照護網醫療機構申報，執行檢查人員和判讀醫師、營養師、衛教師必須參加過有關連續血糖監測之訓練課程。",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "Subpopulation 3",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "1. 住院使用應事前審查。一年至多執行二次，且間隔一個月以上。\n2. 限糖尿病共同照護網醫療機構申報，執行檢查人員和判讀醫師、營養師、衛教師必須參加過有關連續血糖監測之訓練課程。",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "type" : "If",
+                        "annotation" : [ ],
+                        "condition" : {
+                           "name" : "InPopulation",
+                           "type" : "ExpressionRef",
+                           "annotation" : [ ]
+                        },
+                        "then" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "1. 門診使用，一年至多執行二次，且間隔一個月以上。如一年執行超過二次者，應事前審查。\n2. 住院使用應事前審查。一年至多執行二次，且間隔一個月以上。\n3. 限糖尿病共同照護網醫療機構申報，執行檢查人員和判讀醫師、營養師、衛教師必須參加過有關連續血糖監測之訓練課程。",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        },
+                        "else" : {
+                           "asType" : "{urn:hl7-org:elm-types:r1}String",
+                           "type" : "As",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "type" : "Null",
+                              "annotation" : [ ]
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Rationale",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "name" : "Subpopulation 1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               },
+               "then" : {
+                  "type" : "Null",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "Subpopulation 2",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Links",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "name" : "Subpopulation 1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               },
+               "then" : {
+                  "type" : "Null",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "Subpopulation 2",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Suggestions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "name" : "Subpopulation 1",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               },
+               "then" : {
+                  "type" : "Null",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "Subpopulation 2",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Errors",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         } ]
+      }
+   }
+}
+

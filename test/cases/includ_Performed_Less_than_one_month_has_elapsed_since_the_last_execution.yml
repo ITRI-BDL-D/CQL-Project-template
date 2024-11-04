@@ -1,0 +1,32 @@
+name: include_AMB_Less_than_one_month_has_elapsed_since_the_last_execution
+data:
+  - resourceType: Patient
+    name: Jane Smith include_AMB_Less_than_one_month_has_elapsed_since_the_last_execution
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Observation
+    code: LOINC#4548-4 Hemoglobin A1c/Hemoglobin.total in Blood
+    valueQuantity: 25 %
+    issued: 2024-07-05T00:00:00.000Z
+  - resourceType: Observation
+    code: LOINC#4548-4 Hemoglobin A1c/Hemoglobin.total in Blood
+    valueQuantity: 25 %
+    issued: 2024-08-05T00:00:00.000Z
+  - resourceType: Condition
+    code: SNOMED#102781000119107 Sensory neuropathy due to type 1 diabetes mellitus (disorder)
+    onsetDateTime: 2018-08-05T00:00:00.000Z
+  - resourceType: Procedure
+    code: LOINC#97510-2
+    performedDateTime: 2024-10-05T00:00:00.000Z
+  - resourceType: Encounter
+    status: in-progress
+    class: http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
+    type: SNOMED#102781000119107 Sensory neuropathy due to type 1 diabetes mellitus (disorder)
+    period: 
+      start: 2024-08-05T00:00:00.000Z
+      # end: 2024-05-05T01:00:00.000Z
+results:
+  Recommendation: >-
+   1. 門診使用，因與上次間隔小於一個月或過去一年已執行兩次以上，應事前審查。
+   
+   2. 限糖尿病共同照護網醫療機構申報，執行檢查人員和判讀醫師、營養師、衛教師必須參加過有關連續血糖監測之訓練課程。

@@ -1,0 +1,4 @@
+node_modules
+.gradle
+test/dump_files
+.vscache
