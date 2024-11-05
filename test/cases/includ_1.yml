@@ -1,0 +1,15 @@
+name: include_1
+data:
+  - resourceType: Patient
+    name: Jane Smith include_1
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#D68.9
+    onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#D68.00
+    onsetDateTime: 2018-07-05T00:00:00.000Z
+results:
+  Recommendation: >-    
+    健保給付800點

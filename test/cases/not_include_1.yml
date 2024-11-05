@@ -4,12 +4,8 @@ data:
     name: Jane Smith not-include
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
-  - resourceType: Observation
-    code: LOINC#4548-4 Hemoglobin A1c/Hemoglobin.total in Blood
-    valueQuantity: 25 %
-    issued: 2024-04-05T00:00:00.000Z
   - resourceType: Condition
-    code: SNOMED#102781000119107 Sensory neuropathy due to type 1 diabetes mellitus (disorder)
+    code: ICD10CM#D68.0
     onsetDateTime: 2018-04-05T00:00:00.000Z
 results:
   Recommendation: null
