@@ -5,11 +5,8 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#D68.9
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#I70.4
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付800點
+    健保給付23272點，限外科專科醫師執行，一般材料費得另加計百分之五十。
