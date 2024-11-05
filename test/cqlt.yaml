@@ -1,5 +1,5 @@
 library:
-  name: Continuous-glucose-monitoring
+  name: 08111B
   paths:
     - ../cql
 hook:
