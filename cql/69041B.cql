@@ -5,10 +5,9 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "TWVitalSigns": 'https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw' 
-
-
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
+codesystem "ICD-10-PCS": 'http://www.cms.gov/Medicare/Coding/ICD10'
+codesystem "SCT": 'http://snomed.info/sct'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
 code "Atherosclerosis of native arteries of the extremities code": 'I70.2' from "ICD-10-CM" display 'Atherosclerosis of native arteries of the extremities'
@@ -299,6 +298,17 @@ code "Other atherosclerosis of other type of bypass graft(s) of the extremities,
 code "Other atherosclerosis of other type of bypass graft(s) of the extremities, bilateral legs code": 'I70.793' from "ICD-10-CM" display 'Other atherosclerosis of other type of bypass graft(s) of the extremities, bilateral legs'
 code "Other atherosclerosis of other type of bypass graft(s) of the extremities, other extremity code": 'I70.798' from "ICD-10-CM" display 'Other atherosclerosis of other type of bypass graft(s) of the extremities, other extremity'
 code "Other atherosclerosis of other type of bypass graft(s) of the extremities, unspecified extremity code": 'I70.799' from "ICD-10-CM" display 'Other atherosclerosis of other type of bypass graft(s) of the extremities, unspecified extremity'
+code "Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach code": '03150Z6' from "ICD-10-PCS" display 'Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach'
+code "Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach code": '03150Z7' from "ICD-10-PCS" display 'Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach'
+code "Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach code": '03150Z8' from "ICD-10-PCS" display 'Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach'
+code "Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach code": '03160Z6' from "ICD-10-PCS" display 'Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach'
+code "Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach code": '03160Z7' from "ICD-10-PCS" display 'Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach'
+code "Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach code": '03160Z8' from "ICD-10-PCS" display 'Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach'
+code "Bypass Right Femoral Artery to Right Femoral Artery, Open Approach code": '041K0ZH' from "ICD-10-PCS" display 'Bypass Right Femoral Artery to Right Femoral Artery, Open Approach'
+code "Bypass Right Femoral Artery to Left Femoral Artery, Open Approach code": '041K0ZJ' from "ICD-10-PCS" display 'Bypass Right Femoral Artery to Left Femoral Artery, Open Approach'
+code "Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach code": '041K0ZK' from "ICD-10-PCS" display 'Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach'
+code "Bypass Right Femoral Artery to Popliteal Artery, Open Approach code": '041K0ZL' from "ICD-10-PCS" display 'Bypass Right Femoral Artery to Popliteal Artery, Open Approach'
+code "Specialised surgeon code": '1421009' from "SCT" display 'Specialised surgeon'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -597,8 +607,36 @@ define "Atherosclerosis of native arteries of the extremities":
     )
   )
 
+define "Sugery":
+  C3F.MostRecentProcedure ( [Procedure: "Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach code"]
+    union [Procedure: "Bypass Right Femoral Artery to Right Femoral Artery, Open Approach code"]
+    union [Procedure: "Bypass Right Femoral Artery to Left Femoral Artery, Open Approach code"]
+    union [Procedure: "Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach code"]
+    union [Procedure: "Bypass Right Femoral Artery to Popliteal Artery, Open Approach code"] )
+
+define "surgeon_id":
+  Last(Split(First("Sugery".performer).actor.reference, '/'))
+
+define "Surgeon_ref":
+  [Practitioner] P
+    where P.id = "surgeon_id"
+    
+  // where P.id = Last(Split(First("Sugery".performer).actor.reference, '/'))
+  // First("Sugery".performer).actor.reference.value
+
+
+
+define "Surgeon_tmp":
+  "Surgeon_ref".qualification q
+    where q.code ~ "Specialised surgeon code"
+
 define "Surgeon":
-  true
+  exists ( "Surgeon_tmp" )
 
 define "MeetsInclusionCriteria":
   "Atherosclerosis of native arteries of the extremities"
@@ -608,7 +646,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付23272點，限外科專科醫師執行，一般材料費得另加計百分之五十。' 
+  if "InPopulation" then '健保給付23272點，一般材料費得另加計百分之五十。' 
     else null
 
 define "Rationale":

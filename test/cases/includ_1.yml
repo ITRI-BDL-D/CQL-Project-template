@@ -7,6 +7,18 @@ data:
   - resourceType: Condition
     code: ICD10CM#I70.4
     onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Procedure
+    code: http://www.cms.gov/Medicare/Coding/ICD10#03150Z6
+    performedDateTime: 2018-07-05T00:00:00.000Z
+    performer:
+      actor:
+        reference: "Practitioner/surgeon"
+  - resourceType: Practitioner
+    id: surgeon
+    name: Dr. John Doe
+    qualification:
+      code: SCT#1421009
+    
 results:
   Recommendation: >-    
-    健保給付23272點，限外科專科醫師執行，一般材料費得另加計百分之五十。
+    健保給付23272點，一般材料費得另加計百分之五十。

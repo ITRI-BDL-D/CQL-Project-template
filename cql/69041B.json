@@ -46,6 +46,16 @@
             "accessLevel" : "Public",
             "annotation" : [ ]
          }, {
+            "name" : "ICD-10-PCS",
+            "id" : "http://www.cms.gov/Medicare/Coding/ICD10",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "SCT",
+            "id" : "http://snomed.info/sct",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
             "name" : "CONDVERSTATUS",
             "id" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
             "accessLevel" : "Public",
@@ -2931,6 +2941,116 @@
             "annotation" : [ ],
             "codeSystem" : {
                "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach code",
+            "id" : "03150Z6",
+            "display" : "Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach code",
+            "id" : "03150Z7",
+            "display" : "Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach code",
+            "id" : "03150Z8",
+            "display" : "Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach code",
+            "id" : "03160Z6",
+            "display" : "Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach code",
+            "id" : "03160Z7",
+            "display" : "Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach code",
+            "id" : "03160Z8",
+            "display" : "Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Femoral Artery to Right Femoral Artery, Open Approach code",
+            "id" : "041K0ZH",
+            "display" : "Bypass Right Femoral Artery to Right Femoral Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Femoral Artery to Left Femoral Artery, Open Approach code",
+            "id" : "041K0ZJ",
+            "display" : "Bypass Right Femoral Artery to Left Femoral Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach code",
+            "id" : "041K0ZK",
+            "display" : "Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Right Femoral Artery to Popliteal Artery, Open Approach code",
+            "id" : "041K0ZL",
+            "display" : "Bypass Right Femoral Artery to Popliteal Artery, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Specialised surgeon code",
+            "id" : "1421009",
+            "display" : "Specialised surgeon",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "SCT",
                "annotation" : [ ]
             }
          }, {
@@ -10548,15 +10668,663 @@
                }
             }
          }, {
+            "name" : "Sugery",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "MostRecentProcedure",
+               "libraryName" : "C3F",
+               "type" : "FunctionRef",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Procedure",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "type" : "ListTypeSpecifier",
+                     "annotation" : [ ],
+                     "elementType" : {
+                        "name" : "{http://hl7.org/fhir}Procedure",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     }
+                  } ],
+                  "operand" : [ {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Procedure",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Procedure",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "type" : "Union",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        }, {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        } ],
+                        "operand" : [ {
+                           "type" : "Union",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "type" : "ListTypeSpecifier",
+                              "annotation" : [ ],
+                              "elementType" : {
+                                 "name" : "{http://hl7.org/fhir}Procedure",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           }, {
+                              "type" : "ListTypeSpecifier",
+                              "annotation" : [ ],
+                              "elementType" : {
+                                 "name" : "{http://hl7.org/fhir}Procedure",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           } ],
+                           "operand" : [ {
+                              "type" : "Union",
+                              "annotation" : [ ],
+                              "signature" : [ {
+                                 "type" : "ListTypeSpecifier",
+                                 "annotation" : [ ],
+                                 "elementType" : {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }, {
+                                 "type" : "ListTypeSpecifier",
+                                 "annotation" : [ ],
+                                 "elementType" : {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              } ],
+                              "operand" : [ {
+                                 "dataType" : "{http://hl7.org/fhir}Procedure",
+                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                                 "codeProperty" : "code",
+                                 "codeComparator" : "~",
+                                 "type" : "Retrieve",
+                                 "annotation" : [ ],
+                                 "codes" : {
+                                    "type" : "ToList",
+                                    "annotation" : [ ],
+                                    "signature" : [ ],
+                                    "operand" : {
+                                       "name" : "Bypass Right Axillary Artery to Right Upper Leg Artery, Open Approach code",
+                                       "type" : "CodeRef",
+                                       "annotation" : [ ]
+                                    }
+                                 },
+                                 "include" : [ ],
+                                 "codeFilter" : [ ],
+                                 "dateFilter" : [ ],
+                                 "otherFilter" : [ ]
+                              }, {
+                                 "dataType" : "{http://hl7.org/fhir}Procedure",
+                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                                 "codeProperty" : "code",
+                                 "codeComparator" : "~",
+                                 "type" : "Retrieve",
+                                 "annotation" : [ ],
+                                 "codes" : {
+                                    "type" : "ToList",
+                                    "annotation" : [ ],
+                                    "signature" : [ ],
+                                    "operand" : {
+                                       "name" : "Bypass Right Axillary Artery to Left Upper Leg Artery, Open Approach code",
+                                       "type" : "CodeRef",
+                                       "annotation" : [ ]
+                                    }
+                                 },
+                                 "include" : [ ],
+                                 "codeFilter" : [ ],
+                                 "dateFilter" : [ ],
+                                 "otherFilter" : [ ]
+                              } ]
+                           }, {
+                              "type" : "Union",
+                              "annotation" : [ ],
+                              "signature" : [ {
+                                 "type" : "ListTypeSpecifier",
+                                 "annotation" : [ ],
+                                 "elementType" : {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              }, {
+                                 "type" : "ListTypeSpecifier",
+                                 "annotation" : [ ],
+                                 "elementType" : {
+                                    "name" : "{http://hl7.org/fhir}Procedure",
+                                    "type" : "NamedTypeSpecifier",
+                                    "annotation" : [ ]
+                                 }
+                              } ],
+                              "operand" : [ {
+                                 "dataType" : "{http://hl7.org/fhir}Procedure",
+                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                                 "codeProperty" : "code",
+                                 "codeComparator" : "~",
+                                 "type" : "Retrieve",
+                                 "annotation" : [ ],
+                                 "codes" : {
+                                    "type" : "ToList",
+                                    "annotation" : [ ],
+                                    "signature" : [ ],
+                                    "operand" : {
+                                       "name" : "Bypass Right Axillary Artery to Bilateral Upper Leg Artery, Open Approach code",
+                                       "type" : "CodeRef",
+                                       "annotation" : [ ]
+                                    }
+                                 },
+                                 "include" : [ ],
+                                 "codeFilter" : [ ],
+                                 "dateFilter" : [ ],
+                                 "otherFilter" : [ ]
+                              }, {
+                                 "dataType" : "{http://hl7.org/fhir}Procedure",
+                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                                 "codeProperty" : "code",
+                                 "codeComparator" : "~",
+                                 "type" : "Retrieve",
+                                 "annotation" : [ ],
+                                 "codes" : {
+                                    "type" : "ToList",
+                                    "annotation" : [ ],
+                                    "signature" : [ ],
+                                    "operand" : {
+                                       "name" : "Bypass Left Axillary Artery to Right Upper Leg Artery, Open Approach code",
+                                       "type" : "CodeRef",
+                                       "annotation" : [ ]
+                                    }
+                                 },
+                                 "include" : [ ],
+                                 "codeFilter" : [ ],
+                                 "dateFilter" : [ ],
+                                 "otherFilter" : [ ]
+                              } ]
+                           } ]
+                        }, {
+                           "type" : "Union",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "type" : "ListTypeSpecifier",
+                              "annotation" : [ ],
+                              "elementType" : {
+                                 "name" : "{http://hl7.org/fhir}Procedure",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           }, {
+                              "type" : "ListTypeSpecifier",
+                              "annotation" : [ ],
+                              "elementType" : {
+                                 "name" : "{http://hl7.org/fhir}Procedure",
+                                 "type" : "NamedTypeSpecifier",
+                                 "annotation" : [ ]
+                              }
+                           } ],
+                           "operand" : [ {
+                              "dataType" : "{http://hl7.org/fhir}Procedure",
+                              "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                              "codeProperty" : "code",
+                              "codeComparator" : "~",
+                              "type" : "Retrieve",
+                              "annotation" : [ ],
+                              "codes" : {
+                                 "type" : "ToList",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "name" : "Bypass Left Axillary Artery to Left Upper Leg Artery, Open Approach code",
+                                    "type" : "CodeRef",
+                                    "annotation" : [ ]
+                                 }
+                              },
+                              "include" : [ ],
+                              "codeFilter" : [ ],
+                              "dateFilter" : [ ],
+                              "otherFilter" : [ ]
+                           }, {
+                              "dataType" : "{http://hl7.org/fhir}Procedure",
+                              "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                              "codeProperty" : "code",
+                              "codeComparator" : "~",
+                              "type" : "Retrieve",
+                              "annotation" : [ ],
+                              "codes" : {
+                                 "type" : "ToList",
+                                 "annotation" : [ ],
+                                 "signature" : [ ],
+                                 "operand" : {
+                                    "name" : "Bypass Left Axillary Artery to Bilateral Upper Leg Artery, Open Approach code",
+                                    "type" : "CodeRef",
+                                    "annotation" : [ ]
+                                 }
+                              },
+                              "include" : [ ],
+                              "codeFilter" : [ ],
+                              "dateFilter" : [ ],
+                              "otherFilter" : [ ]
+                           } ]
+                        } ]
+                     }, {
+                        "type" : "Union",
+                        "annotation" : [ ],
+                        "signature" : [ {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        }, {
+                           "type" : "ListTypeSpecifier",
+                           "annotation" : [ ],
+                           "elementType" : {
+                              "name" : "{http://hl7.org/fhir}Procedure",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }
+                        } ],
+                        "operand" : [ {
+                           "dataType" : "{http://hl7.org/fhir}Procedure",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                           "codeProperty" : "code",
+                           "codeComparator" : "~",
+                           "type" : "Retrieve",
+                           "annotation" : [ ],
+                           "codes" : {
+                              "type" : "ToList",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "name" : "Bypass Right Femoral Artery to Right Femoral Artery, Open Approach code",
+                                 "type" : "CodeRef",
+                                 "annotation" : [ ]
+                              }
+                           },
+                           "include" : [ ],
+                           "codeFilter" : [ ],
+                           "dateFilter" : [ ],
+                           "otherFilter" : [ ]
+                        }, {
+                           "dataType" : "{http://hl7.org/fhir}Procedure",
+                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                           "codeProperty" : "code",
+                           "codeComparator" : "~",
+                           "type" : "Retrieve",
+                           "annotation" : [ ],
+                           "codes" : {
+                              "type" : "ToList",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "name" : "Bypass Right Femoral Artery to Left Femoral Artery, Open Approach code",
+                                 "type" : "CodeRef",
+                                 "annotation" : [ ]
+                              }
+                           },
+                           "include" : [ ],
+                           "codeFilter" : [ ],
+                           "dateFilter" : [ ],
+                           "otherFilter" : [ ]
+                        } ]
+                     } ]
+                  }, {
+                     "type" : "Union",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Procedure",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     }, {
+                        "type" : "ListTypeSpecifier",
+                        "annotation" : [ ],
+                        "elementType" : {
+                           "name" : "{http://hl7.org/fhir}Procedure",
+                           "type" : "NamedTypeSpecifier",
+                           "annotation" : [ ]
+                        }
+                     } ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Procedure",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Bypass Right Femoral Artery to Bilateral Femoral Arteries, Open Approach code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "dataType" : "{http://hl7.org/fhir}Procedure",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Bypass Right Femoral Artery to Popliteal Artery, Open Approach code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  } ]
+               } ]
+            }
+         }, {
+            "name" : "surgeon_id",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Last",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "source" : {
+                  "type" : "Split",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "stringToSplit" : {
+                     "name" : "ToString",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "name" : "{http://hl7.org/fhir}string",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     } ],
+                     "operand" : [ {
+                        "path" : "reference",
+                        "type" : "Property",
+                        "annotation" : [ ],
+                        "source" : {
+                           "path" : "actor",
+                           "type" : "Property",
+                           "annotation" : [ ],
+                           "source" : {
+                              "type" : "First",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "source" : {
+                                 "path" : "performer",
+                                 "type" : "Property",
+                                 "annotation" : [ ],
+                                 "source" : {
+                                    "name" : "Sugery",
+                                    "type" : "ExpressionRef",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }
+                        }
+                     } ]
+                  },
+                  "separator" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "/",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  }
+               }
+            }
+         }, {
+            "name" : "Surgeon_ref",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "P",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "dataType" : "{http://hl7.org/fhir}Practitioner",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Practitioner",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  }
+               } ],
+               "let" : [ ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Equal",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}String",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}String",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "name" : "ToString",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "name" : "{http://hl7.org/fhir}string",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     } ],
+                     "operand" : [ {
+                        "path" : "id",
+                        "scope" : "P",
+                        "type" : "Property",
+                        "annotation" : [ ]
+                     } ]
+                  }, {
+                     "name" : "surgeon_id",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "Surgeon_tmp",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Query",
+               "annotation" : [ ],
+               "source" : [ {
+                  "alias" : "q",
+                  "annotation" : [ ],
+                  "expression" : {
+                     "type" : "Flatten",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "type" : "Query",
+                        "annotation" : [ ],
+                        "source" : [ {
+                           "alias" : "$this",
+                           "annotation" : [ ],
+                           "expression" : {
+                              "name" : "Surgeon_ref",
+                              "type" : "ExpressionRef",
+                              "annotation" : [ ]
+                           }
+                        } ],
+                        "let" : [ ],
+                        "relationship" : [ ],
+                        "where" : {
+                           "type" : "Not",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "type" : "IsNull",
+                              "annotation" : [ ],
+                              "signature" : [ ],
+                              "operand" : {
+                                 "path" : "qualification",
+                                 "type" : "Property",
+                                 "annotation" : [ ],
+                                 "source" : {
+                                    "name" : "$this",
+                                    "type" : "AliasRef",
+                                    "annotation" : [ ]
+                                 }
+                              }
+                           }
+                        },
+                        "return" : {
+                           "distinct" : false,
+                           "annotation" : [ ],
+                           "expression" : {
+                              "path" : "qualification",
+                              "type" : "Property",
+                              "annotation" : [ ],
+                              "source" : {
+                                 "name" : "$this",
+                                 "type" : "AliasRef",
+                                 "annotation" : [ ]
+                              }
+                           }
+                        }
+                     }
+                  }
+               } ],
+               "let" : [ ],
+               "relationship" : [ ],
+               "where" : {
+                  "type" : "Equivalent",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}Concept",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}Concept",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "name" : "ToConcept",
+                     "libraryName" : "FHIRHelpers",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "path" : "code",
+                        "scope" : "q",
+                        "type" : "Property",
+                        "annotation" : [ ]
+                     } ]
+                  }, {
+                     "type" : "ToConcept",
+                     "annotation" : [ ],
+                     "signature" : [ {
+                        "name" : "{urn:hl7-org:elm-types:r1}Code",
+                        "type" : "NamedTypeSpecifier",
+                        "annotation" : [ ]
+                     } ],
+                     "operand" : {
+                        "name" : "Specialised surgeon code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  } ]
+               }
+            }
+         }, {
             "name" : "Surgeon",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
-               "value" : "true",
-               "type" : "Literal",
-               "annotation" : [ ]
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Practitioner.Qualification",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "name" : "Surgeon_tmp",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }
             }
          }, {
             "name" : "MeetsInclusionCriteria",
@@ -10602,7 +11370,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付23272點，限外科專科醫師執行，一般材料費得另加計百分之五十。",
+                  "value" : "健保給付23272點，一般材料費得另加計百分之五十。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
