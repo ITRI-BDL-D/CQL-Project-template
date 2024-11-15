@@ -9,8 +9,8 @@ data:
     valueBoolean: true
     effectiveDateTime: 2018-07-05T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#B20
+    code: ICD10CM#Z99.2
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付900點，每一年限申報一次。
+    健保給付900點，每四年限申報一次。
