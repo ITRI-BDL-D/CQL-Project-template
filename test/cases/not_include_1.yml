@@ -5,7 +5,7 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#D68.0
+    code: ICD10CM#G36
     onsetDateTime: 2018-04-05T00:00:00.000Z
 results:
   Recommendation: null
