@@ -5,7 +5,7 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "20036B Magnetic stimulation (lower extremity) VS": 'http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.3' 
+valueset "20036B Magnetic stimulation (lower extremity) VS": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.3' 
 
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
