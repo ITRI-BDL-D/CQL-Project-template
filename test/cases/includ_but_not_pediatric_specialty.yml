@@ -1,0 +1,16 @@
+name: includ_but_not_pediatric_specialty
+data:
+  - resourceType: Patient
+    name: Jane Smith includ_but_not_pediatric_specialty
+    gender: female
+    birthDate: 2015-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#J45.2
+    onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Encounter
+    type: ICD10CM#J45.2
+    serviceType: SNOMED#419772000
+    
+results:
+  Recommendation: >-    
+    非兒科申報，不予給付

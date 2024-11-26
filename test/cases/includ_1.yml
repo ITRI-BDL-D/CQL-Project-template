@@ -3,13 +3,20 @@ data:
   - resourceType: Patient
     name: Jane Smith include_1
     gender: female
-    birthDate: 1990-02-16T00:00:00.000Z
+    birthDate: 2015-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#D68.9
+    code: ICD10CM#J45.2
     onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
-    onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Encounter
+    type: ICD10CM#J45.2
+    serviceType: SNOMED#24251000087109
+    
 results:
   Recommendation: >-    
-    健保給付800點
+    健保給付748點:
+
+    (1)申報次數：一年最多申報三次。
+
+    (2)執行限制：限受過操作訓練之醫療人員。
+    
+    (3)費用申報時必要之附件：檢測報告。
