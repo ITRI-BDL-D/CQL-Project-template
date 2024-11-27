@@ -52,138 +52,17 @@
             "annotation" : [ ]
          } ]
       },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "29014B Bone marrow puncture valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.8",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
       "codes" : {
          "def" : [ {
-            "name" : "Coagulation defect, unspecified code",
-            "id" : "D68.9",
-            "display" : "Coagulation defect, unspecified",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease code",
-            "id" : "D68.0",
-            "display" : "Von Willebrand disease",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, unspecified code",
-            "id" : "D68.00",
-            "display" : "Von Willebrand disease, unspecified",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 1 code",
-            "id" : "D68.01",
-            "display" : "Von Willebrand disease, type 1",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2 code",
-            "id" : "D68.02",
-            "display" : "Von Willebrand disease, type 2",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2A code",
-            "id" : "D68.020",
-            "display" : "Von Willebrand disease, type 2A",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2B code",
-            "id" : "D68.021",
-            "display" : "Von Willebrand disease, type 2B",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2M code",
-            "id" : "D68.022",
-            "display" : "Von Willebrand disease, type 2M",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2N code",
-            "id" : "D68.023",
-            "display" : "Von Willebrand disease, type 2N",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 2, unspecified code",
-            "id" : "D68.029",
-            "display" : "Von Willebrand disease, type 2, unspecified",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Von Willebrand disease, type 3 code",
-            "id" : "D68.03",
-            "display" : "Von Willebrand disease, type 3",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Acquired von Willebrand disease code",
-            "id" : "D68.04",
-            "display" : "Acquired von Willebrand disease",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Other von Willebrand disease code",
-            "id" : "D68.09",
-            "display" : "Other von Willebrand disease",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -298,7 +177,7 @@
                }
             } ]
          }, {
-            "name" : "Coagulation defect, unspecified",
+            "name" : "Bone marrow puncture",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -315,18 +194,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Coagulation defect, unspecified code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "29014B Bone marrow puncture valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -336,347 +211,14 @@
                }
             }
          }, {
-            "name" : "Von Willebrand disease",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Exists",
-               "annotation" : [ ],
-               "signature" : [ ],
-               "operand" : {
-                  "name" : "Confirmed",
-                  "type" : "FunctionRef",
-                  "annotation" : [ ],
-                  "signature" : [ ],
-                  "operand" : [ {
-                     "type" : "Union",
-                     "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : [ {
-                        "type" : "Union",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : [ {
-                           "type" : "Union",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : [ {
-                              "type" : "Union",
-                              "annotation" : [ ],
-                              "signature" : [ ],
-                              "operand" : [ {
-                                 "type" : "Union",
-                                 "annotation" : [ ],
-                                 "signature" : [ ],
-                                 "operand" : [ {
-                                    "type" : "Union",
-                                    "annotation" : [ ],
-                                    "signature" : [ ],
-                                    "operand" : [ {
-                                       "dataType" : "{http://hl7.org/fhir}Condition",
-                                       "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                       "codeProperty" : "code",
-                                       "codeComparator" : "~",
-                                       "type" : "Retrieve",
-                                       "annotation" : [ ],
-                                       "codes" : {
-                                          "type" : "ToList",
-                                          "annotation" : [ ],
-                                          "signature" : [ ],
-                                          "operand" : {
-                                             "name" : "Von Willebrand disease code",
-                                             "type" : "CodeRef",
-                                             "annotation" : [ ]
-                                          }
-                                       },
-                                       "include" : [ ],
-                                       "codeFilter" : [ ],
-                                       "dateFilter" : [ ],
-                                       "otherFilter" : [ ]
-                                    }, {
-                                       "dataType" : "{http://hl7.org/fhir}Condition",
-                                       "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                       "codeProperty" : "code",
-                                       "codeComparator" : "~",
-                                       "type" : "Retrieve",
-                                       "annotation" : [ ],
-                                       "codes" : {
-                                          "type" : "ToList",
-                                          "annotation" : [ ],
-                                          "signature" : [ ],
-                                          "operand" : {
-                                             "name" : "Von Willebrand disease, unspecified code",
-                                             "type" : "CodeRef",
-                                             "annotation" : [ ]
-                                          }
-                                       },
-                                       "include" : [ ],
-                                       "codeFilter" : [ ],
-                                       "dateFilter" : [ ],
-                                       "otherFilter" : [ ]
-                                    } ]
-                                 }, {
-                                    "type" : "Union",
-                                    "annotation" : [ ],
-                                    "signature" : [ ],
-                                    "operand" : [ {
-                                       "dataType" : "{http://hl7.org/fhir}Condition",
-                                       "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                       "codeProperty" : "code",
-                                       "codeComparator" : "~",
-                                       "type" : "Retrieve",
-                                       "annotation" : [ ],
-                                       "codes" : {
-                                          "type" : "ToList",
-                                          "annotation" : [ ],
-                                          "signature" : [ ],
-                                          "operand" : {
-                                             "name" : "Von Willebrand disease, type 1 code",
-                                             "type" : "CodeRef",
-                                             "annotation" : [ ]
-                                          }
-                                       },
-                                       "include" : [ ],
-                                       "codeFilter" : [ ],
-                                       "dateFilter" : [ ],
-                                       "otherFilter" : [ ]
-                                    }, {
-                                       "dataType" : "{http://hl7.org/fhir}Condition",
-                                       "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                       "codeProperty" : "code",
-                                       "codeComparator" : "~",
-                                       "type" : "Retrieve",
-                                       "annotation" : [ ],
-                                       "codes" : {
-                                          "type" : "ToList",
-                                          "annotation" : [ ],
-                                          "signature" : [ ],
-                                          "operand" : {
-                                             "name" : "Von Willebrand disease, type 2 code",
-                                             "type" : "CodeRef",
-                                             "annotation" : [ ]
-                                          }
-                                       },
-                                       "include" : [ ],
-                                       "codeFilter" : [ ],
-                                       "dateFilter" : [ ],
-                                       "otherFilter" : [ ]
-                                    } ]
-                                 } ]
-                              }, {
-                                 "type" : "Union",
-                                 "annotation" : [ ],
-                                 "signature" : [ ],
-                                 "operand" : [ {
-                                    "dataType" : "{http://hl7.org/fhir}Condition",
-                                    "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                    "codeProperty" : "code",
-                                    "codeComparator" : "~",
-                                    "type" : "Retrieve",
-                                    "annotation" : [ ],
-                                    "codes" : {
-                                       "type" : "ToList",
-                                       "annotation" : [ ],
-                                       "signature" : [ ],
-                                       "operand" : {
-                                          "name" : "Von Willebrand disease, type 2A code",
-                                          "type" : "CodeRef",
-                                          "annotation" : [ ]
-                                       }
-                                    },
-                                    "include" : [ ],
-                                    "codeFilter" : [ ],
-                                    "dateFilter" : [ ],
-                                    "otherFilter" : [ ]
-                                 }, {
-                                    "dataType" : "{http://hl7.org/fhir}Condition",
-                                    "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                    "codeProperty" : "code",
-                                    "codeComparator" : "~",
-                                    "type" : "Retrieve",
-                                    "annotation" : [ ],
-                                    "codes" : {
-                                       "type" : "ToList",
-                                       "annotation" : [ ],
-                                       "signature" : [ ],
-                                       "operand" : {
-                                          "name" : "Von Willebrand disease, type 2B code",
-                                          "type" : "CodeRef",
-                                          "annotation" : [ ]
-                                       }
-                                    },
-                                    "include" : [ ],
-                                    "codeFilter" : [ ],
-                                    "dateFilter" : [ ],
-                                    "otherFilter" : [ ]
-                                 } ]
-                              } ]
-                           }, {
-                              "type" : "Union",
-                              "annotation" : [ ],
-                              "signature" : [ ],
-                              "operand" : [ {
-                                 "dataType" : "{http://hl7.org/fhir}Condition",
-                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                 "codeProperty" : "code",
-                                 "codeComparator" : "~",
-                                 "type" : "Retrieve",
-                                 "annotation" : [ ],
-                                 "codes" : {
-                                    "type" : "ToList",
-                                    "annotation" : [ ],
-                                    "signature" : [ ],
-                                    "operand" : {
-                                       "name" : "Von Willebrand disease, type 2M code",
-                                       "type" : "CodeRef",
-                                       "annotation" : [ ]
-                                    }
-                                 },
-                                 "include" : [ ],
-                                 "codeFilter" : [ ],
-                                 "dateFilter" : [ ],
-                                 "otherFilter" : [ ]
-                              }, {
-                                 "dataType" : "{http://hl7.org/fhir}Condition",
-                                 "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                                 "codeProperty" : "code",
-                                 "codeComparator" : "~",
-                                 "type" : "Retrieve",
-                                 "annotation" : [ ],
-                                 "codes" : {
-                                    "type" : "ToList",
-                                    "annotation" : [ ],
-                                    "signature" : [ ],
-                                    "operand" : {
-                                       "name" : "Von Willebrand disease, type 2N code",
-                                       "type" : "CodeRef",
-                                       "annotation" : [ ]
-                                    }
-                                 },
-                                 "include" : [ ],
-                                 "codeFilter" : [ ],
-                                 "dateFilter" : [ ],
-                                 "otherFilter" : [ ]
-                              } ]
-                           } ]
-                        }, {
-                           "type" : "Union",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : [ {
-                              "dataType" : "{http://hl7.org/fhir}Condition",
-                              "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                              "codeProperty" : "code",
-                              "codeComparator" : "~",
-                              "type" : "Retrieve",
-                              "annotation" : [ ],
-                              "codes" : {
-                                 "type" : "ToList",
-                                 "annotation" : [ ],
-                                 "signature" : [ ],
-                                 "operand" : {
-                                    "name" : "Von Willebrand disease, type 2, unspecified code",
-                                    "type" : "CodeRef",
-                                    "annotation" : [ ]
-                                 }
-                              },
-                              "include" : [ ],
-                              "codeFilter" : [ ],
-                              "dateFilter" : [ ],
-                              "otherFilter" : [ ]
-                           }, {
-                              "dataType" : "{http://hl7.org/fhir}Condition",
-                              "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                              "codeProperty" : "code",
-                              "codeComparator" : "~",
-                              "type" : "Retrieve",
-                              "annotation" : [ ],
-                              "codes" : {
-                                 "type" : "ToList",
-                                 "annotation" : [ ],
-                                 "signature" : [ ],
-                                 "operand" : {
-                                    "name" : "Von Willebrand disease, type 3 code",
-                                    "type" : "CodeRef",
-                                    "annotation" : [ ]
-                                 }
-                              },
-                              "include" : [ ],
-                              "codeFilter" : [ ],
-                              "dateFilter" : [ ],
-                              "otherFilter" : [ ]
-                           } ]
-                        } ]
-                     }, {
-                        "type" : "Union",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : [ {
-                           "dataType" : "{http://hl7.org/fhir}Condition",
-                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                           "codeProperty" : "code",
-                           "codeComparator" : "~",
-                           "type" : "Retrieve",
-                           "annotation" : [ ],
-                           "codes" : {
-                              "type" : "ToList",
-                              "annotation" : [ ],
-                              "signature" : [ ],
-                              "operand" : {
-                                 "name" : "Acquired von Willebrand disease code",
-                                 "type" : "CodeRef",
-                                 "annotation" : [ ]
-                              }
-                           },
-                           "include" : [ ],
-                           "codeFilter" : [ ],
-                           "dateFilter" : [ ],
-                           "otherFilter" : [ ]
-                        }, {
-                           "dataType" : "{http://hl7.org/fhir}Condition",
-                           "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                           "codeProperty" : "code",
-                           "codeComparator" : "~",
-                           "type" : "Retrieve",
-                           "annotation" : [ ],
-                           "codes" : {
-                              "type" : "ToList",
-                              "annotation" : [ ],
-                              "signature" : [ ],
-                              "operand" : {
-                                 "name" : "Other von Willebrand disease code",
-                                 "type" : "CodeRef",
-                                 "annotation" : [ ]
-                              }
-                           },
-                           "include" : [ ],
-                           "codeFilter" : [ ],
-                           "dateFilter" : [ ],
-                           "otherFilter" : [ ]
-                        } ]
-                     } ]
-                  } ]
-               }
-            }
-         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "type" : "And",
-               "annotation" : [ ],
-               "signature" : [ ],
-               "operand" : [ {
-                  "name" : "Coagulation defect, unspecified",
-                  "type" : "ExpressionRef",
-                  "annotation" : [ ]
-               }, {
-                  "name" : "Von Willebrand disease",
-                  "type" : "ExpressionRef",
-                  "annotation" : [ ]
-               } ]
+               "name" : "Bone marrow puncture",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
             }
          }, {
             "name" : "InPopulation",
@@ -703,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付800點",
+                  "value" : "健保給付1213點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },

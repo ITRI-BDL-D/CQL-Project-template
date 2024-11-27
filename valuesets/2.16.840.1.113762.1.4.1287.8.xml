@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.8" displayName="29014B Bone marrow puncture" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="C81.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.03" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.04" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.05" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.06" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.07" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.08" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.09" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.0A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular lymphocyte predominant Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.14" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.15" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.16" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.17" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.18" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.1A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Nodular sclerosis Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.23" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.24" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.25" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.26" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.27" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.28" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.2A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed cellularity Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.33" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.34" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.35" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.36" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.38" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.3A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte depleted Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.43" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.44" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.45" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.46" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.47" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.49" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.4A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphocyte-rich Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma"/>
+            <ns0:Concept code="C81.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C81.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.73" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.74" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.75" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.76" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.77" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C81.78" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.79" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.7A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C81.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified"/>
+            <ns0:Concept code="C81.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, unspecified site"/>
+            <ns0:Concept code="C81.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C81.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C81.93" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C81.94" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C81.95" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C81.96" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C81.97" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, spleen"/>
+            <ns0:Concept code="C81.98" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C81.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C81.9A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hodgkin lymphoma, unspecified, in remission"/>
+            <ns0:Concept code="C82.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I"/>
+            <ns0:Concept code="C82.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, unspecified site"/>
+            <ns0:Concept code="C82.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.03" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.04" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.05" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.06" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.07" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, spleen"/>
+            <ns0:Concept code="C82.08" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.09" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.0A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade I, in remission"/>
+            <ns0:Concept code="C82.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II"/>
+            <ns0:Concept code="C82.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, unspecified site"/>
+            <ns0:Concept code="C82.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.14" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.15" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.16" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.17" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, spleen"/>
+            <ns0:Concept code="C82.18" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.1A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade II, in remission"/>
+            <ns0:Concept code="C82.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified"/>
+            <ns0:Concept code="C82.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, unspecified site"/>
+            <ns0:Concept code="C82.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.23" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.24" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.25" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.26" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.27" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, spleen"/>
+            <ns0:Concept code="C82.28" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.2A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade III, unspecified, in remission"/>
+            <ns0:Concept code="C82.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa"/>
+            <ns0:Concept code="C82.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, unspecified site"/>
+            <ns0:Concept code="C82.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.33" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.34" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.35" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.36" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, spleen"/>
+            <ns0:Concept code="C82.38" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.3A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIa, in remission"/>
+            <ns0:Concept code="C82.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb"/>
+            <ns0:Concept code="C82.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, unspecified site"/>
+            <ns0:Concept code="C82.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.43" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.44" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.45" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.46" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.47" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, spleen"/>
+            <ns0:Concept code="C82.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.49" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.4A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma grade IIIb, in remission"/>
+            <ns0:Concept code="C82.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma"/>
+            <ns0:Concept code="C82.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, unspecified site"/>
+            <ns0:Concept code="C82.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.53" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.54" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.55" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.56" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.57" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, spleen"/>
+            <ns0:Concept code="C82.58" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.59" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.5A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse follicle center lymphoma, in remission"/>
+            <ns0:Concept code="C82.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma"/>
+            <ns0:Concept code="C82.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, unspecified site"/>
+            <ns0:Concept code="C82.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.63" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.64" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.65" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.66" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.67" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, spleen"/>
+            <ns0:Concept code="C82.68" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.69" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.6A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous follicle center lymphoma, in remission"/>
+            <ns0:Concept code="C82.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma"/>
+            <ns0:Concept code="C82.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, unspecified site"/>
+            <ns0:Concept code="C82.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.83" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.84" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.85" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.86" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.87" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, spleen"/>
+            <ns0:Concept code="C82.88" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.89" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.8A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other types of follicular lymphoma, in remission"/>
+            <ns0:Concept code="C82.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified"/>
+            <ns0:Concept code="C82.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, unspecified site"/>
+            <ns0:Concept code="C82.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C82.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C82.93" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C82.94" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C82.95" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C82.96" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C82.97" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, spleen"/>
+            <ns0:Concept code="C82.98" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C82.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C82.9A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular lymphoma, unspecified, in remission"/>
+            <ns0:Concept code="C83.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma"/>
+            <ns0:Concept code="C83.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.03" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.04" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.05" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.06" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.07" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, spleen"/>
+            <ns0:Concept code="C83.08" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.09" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.0A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Small cell B-cell lymphoma, in remission"/>
+            <ns0:Concept code="C83.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma"/>
+            <ns0:Concept code="C83.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.14" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.15" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.16" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.17" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, spleen"/>
+            <ns0:Concept code="C83.18" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.1A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mantle cell lymphoma, in remission"/>
+            <ns0:Concept code="C83.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma"/>
+            <ns0:Concept code="C83.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.33" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.34" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.35" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.36" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.37" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, spleen"/>
+            <ns0:Concept code="C83.38" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.390" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Primary central nervous system lymphoma"/>
+            <ns0:Concept code="C83.398" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma of other extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.3A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diffuse large B-cell lymphoma, in remission"/>
+            <ns0:Concept code="C83.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma"/>
+            <ns0:Concept code="C83.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.53" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.54" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.55" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.56" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.57" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, spleen"/>
+            <ns0:Concept code="C83.58" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.59" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.5A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoblastic (diffuse) lymphoma, in remission"/>
+            <ns0:Concept code="C83.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma"/>
+            <ns0:Concept code="C83.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.73" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.74" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.75" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.76" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.77" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, spleen"/>
+            <ns0:Concept code="C83.78" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.79" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.7A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Burkitt lymphoma, in remission"/>
+            <ns0:Concept code="C83.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma"/>
+            <ns0:Concept code="C83.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, unspecified site"/>
+            <ns0:Concept code="C83.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.83" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.84" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.85" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.86" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.87" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, spleen"/>
+            <ns0:Concept code="C83.88" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.89" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.8A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other non-follicular lymphoma, in remission"/>
+            <ns0:Concept code="C83.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified"/>
+            <ns0:Concept code="C83.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, unspecified site"/>
+            <ns0:Concept code="C83.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C83.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C83.93" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C83.94" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C83.95" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C83.96" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C83.97" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, spleen"/>
+            <ns0:Concept code="C83.98" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C83.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C83.9A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-follicular (diffuse) lymphoma, unspecified, in remission"/>
+            <ns0:Concept code="C84.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides"/>
+            <ns0:Concept code="C84.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, unspecified site"/>
+            <ns0:Concept code="C84.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.03" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.04" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.05" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.06" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.07" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, spleen"/>
+            <ns0:Concept code="C84.08" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.09" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.0A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mycosis fungoides, in remission"/>
+            <ns0:Concept code="C84.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease"/>
+            <ns0:Concept code="C84.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, unspecified site"/>
+            <ns0:Concept code="C84.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.14" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.15" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.16" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.17" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, spleen"/>
+            <ns0:Concept code="C84.18" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.1A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sézary disease, in remission"/>
+            <ns0:Concept code="C84.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified"/>
+            <ns0:Concept code="C84.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, unspecified site"/>
+            <ns0:Concept code="C84.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.43" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.44" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.45" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.46" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.47" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, spleen"/>
+            <ns0:Concept code="C84.48" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.49" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.4A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Peripheral T-cell lymphoma, not elsewhere classified, in remission"/>
+            <ns0:Concept code="C84.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive"/>
+            <ns0:Concept code="C84.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, unspecified site"/>
+            <ns0:Concept code="C84.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.63" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.64" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.65" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.66" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.67" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, spleen"/>
+            <ns0:Concept code="C84.68" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.69" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.6A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-positive, in remission"/>
+            <ns0:Concept code="C84.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative"/>
+            <ns0:Concept code="C84.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, unspecified site"/>
+            <ns0:Concept code="C84.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.73" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.74" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.75" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.76" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.77" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, spleen"/>
+            <ns0:Concept code="C84.78" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.79" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.7A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, breast"/>
+            <ns0:Concept code="C84.7B" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anaplastic large cell lymphoma, ALK-negative, in remission"/>
+            <ns0:Concept code="C84.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified"/>
+            <ns0:Concept code="C84.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, unspecified site"/>
+            <ns0:Concept code="C84.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.93" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.94" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.95" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.96" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.97" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, spleen"/>
+            <ns0:Concept code="C84.98" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.9A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature T/NK-cell lymphomas, unspecified, in remission"/>
+            <ns0:Concept code="C84.A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified"/>
+            <ns0:Concept code="C84.A0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, unspecified site"/>
+            <ns0:Concept code="C84.A1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.A2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.A3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.A4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.A5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.A6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.A7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, spleen"/>
+            <ns0:Concept code="C84.A8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.A9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.AA" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cutaneous T-cell lymphoma, unspecified, in remission"/>
+            <ns0:Concept code="C84.Z" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas"/>
+            <ns0:Concept code="C84.Z0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, unspecified site"/>
+            <ns0:Concept code="C84.Z1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C84.Z2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C84.Z3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C84.Z4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C84.Z5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C84.Z6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C84.Z7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, spleen"/>
+            <ns0:Concept code="C84.Z8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C84.Z9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, extranodal and solid organ sites"/>
+            <ns0:Concept code="C84.ZA" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other mature T/NK-cell lymphomas, in remission"/>
+            <ns0:Concept code="C85.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma"/>
+            <ns0:Concept code="C85.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, unspecified site"/>
+            <ns0:Concept code="C85.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C85.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C85.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C85.14" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C85.15" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C85.16" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C85.17" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, spleen"/>
+            <ns0:Concept code="C85.18" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C85.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C85.1A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified B-cell lymphoma, in remission"/>
+            <ns0:Concept code="C85.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma"/>
+            <ns0:Concept code="C85.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, unspecified site"/>
+            <ns0:Concept code="C85.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C85.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C85.23" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C85.24" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C85.25" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C85.26" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C85.27" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, spleen"/>
+            <ns0:Concept code="C85.28" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C85.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C85.2A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mediastinal (thymic) large B-cell lymphoma, in remission"/>
+            <ns0:Concept code="C85.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma"/>
+            <ns0:Concept code="C85.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, unspecified site"/>
+            <ns0:Concept code="C85.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C85.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C85.83" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C85.84" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C85.85" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C85.86" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C85.87" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, spleen"/>
+            <ns0:Concept code="C85.88" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C85.89" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, extranodal and solid organ sites"/>
+            <ns0:Concept code="C85.8A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified types of non-Hodgkin lymphoma, in remission"/>
+            <ns0:Concept code="C85.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified"/>
+            <ns0:Concept code="C85.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, unspecified site"/>
+            <ns0:Concept code="C85.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, lymph nodes of head, face, and neck"/>
+            <ns0:Concept code="C85.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, intrathoracic lymph nodes"/>
+            <ns0:Concept code="C85.93" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, intra-abdominal lymph nodes"/>
+            <ns0:Concept code="C85.94" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, lymph nodes of axilla and upper limb"/>
+            <ns0:Concept code="C85.95" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, lymph nodes of inguinal region and lower limb"/>
+            <ns0:Concept code="C85.96" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, intrapelvic lymph nodes"/>
+            <ns0:Concept code="C85.97" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, spleen"/>
+            <ns0:Concept code="C85.98" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, lymph nodes of multiple sites"/>
+            <ns0:Concept code="C85.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, extranodal and solid organ sites"/>
+            <ns0:Concept code="C85.9A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Non-Hodgkin lymphoma, unspecified, in remission"/>
+            <ns0:Concept code="C86.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal NK/T-cell lymphoma, nasal type"/>
+            <ns0:Concept code="C86.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal NK/T-cell lymphoma, nasal type not having achieved remission"/>
+            <ns0:Concept code="C86.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal NK/T-cell lymphoma, nasal type, in remission"/>
+            <ns0:Concept code="C86.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hepatosplenic T-cell lymphoma"/>
+            <ns0:Concept code="C86.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hepatosplenic T-cell lymphoma not having achieved remission"/>
+            <ns0:Concept code="C86.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hepatosplenic T-cell lymphoma, in remission"/>
+            <ns0:Concept code="C86.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Enteropathy-type (intestinal) T-cell lymphoma"/>
+            <ns0:Concept code="C86.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Enteropathy-type (intestinal) T-cell lymphoma not having achieved remission"/>
+            <ns0:Concept code="C86.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Enteropathy-type (intestinal) T-cell lymphoma, in remission"/>
+            <ns0:Concept code="C86.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Subcutaneous panniculitis-like T-cell lymphoma"/>
+            <ns0:Concept code="C86.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Subcutaneous panniculitis-like T-cell lymphoma not having achieved remission"/>
+            <ns0:Concept code="C86.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Subcutaneous panniculitis-like T-cell lymphoma, in remission"/>
+            <ns0:Concept code="C86.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Blastic NK-cell lymphoma"/>
+            <ns0:Concept code="C86.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Blastic NK-cell lymphoma not having achieved remission"/>
+            <ns0:Concept code="C86.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Blastic NK-cell lymphoma, in remission"/>
+            <ns0:Concept code="C86.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Angioimmunoblastic T-cell lymphoma"/>
+            <ns0:Concept code="C86.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Angioimmunoblastic T-cell lymphoma not having achieved remission"/>
+            <ns0:Concept code="C86.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Angioimmunoblastic T-cell lymphoma, in remission"/>
+            <ns0:Concept code="C86.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Primary cutaneous CD30-positive T-cell proliferations"/>
+            <ns0:Concept code="C86.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Primary cutaneous CD30-positive T-cell proliferations not having achieved remission"/>
+            <ns0:Concept code="C86.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Primary cutaneous CD30-positive T-cell proliferations, in remission"/>
+            <ns0:Concept code="C88.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Waldenström macroglobulinemia"/>
+            <ns0:Concept code="C88.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Waldenström macroglobulinemia not having achieved remission"/>
+            <ns0:Concept code="C88.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Waldenström macroglobulinemia, in remission"/>
+            <ns0:Concept code="C88.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Heavy chain disease"/>
+            <ns0:Concept code="C88.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Heavy chain disease not having achieved remission"/>
+            <ns0:Concept code="C88.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Heavy chain disease, in remission"/>
+            <ns0:Concept code="C88.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Immunoproliferative small intestinal disease"/>
+            <ns0:Concept code="C88.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Immunoproliferative small intestinal disease not having achieved remission"/>
+            <ns0:Concept code="C88.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Immunoproliferative small intestinal disease, in remission"/>
+            <ns0:Concept code="C88.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma]"/>
+            <ns0:Concept code="C88.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma] not having achieved remission"/>
+            <ns0:Concept code="C88.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extranodal marginal zone B-cell lymphoma of mucosa-associated lymphoid tissue [MALT-lymphoma], in remission"/>
+            <ns0:Concept code="C88.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other malignant immunoproliferative diseases"/>
+            <ns0:Concept code="C88.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other malignant immunoproliferative diseases not having achieved remission"/>
+            <ns0:Concept code="C88.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other malignant immunoproliferative diseases, in remission"/>
+            <ns0:Concept code="C88.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant immunoproliferative disease, unspecified"/>
+            <ns0:Concept code="C88.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant immunoproliferative disease, unspecified not having achieved remission"/>
+            <ns0:Concept code="C88.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant immunoproliferative disease, unspecified, in remission"/>
+            <ns0:Concept code="C90.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multiple myeloma"/>
+            <ns0:Concept code="C90.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multiple myeloma not having achieved remission"/>
+            <ns0:Concept code="C90.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multiple myeloma in remission"/>
+            <ns0:Concept code="C90.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multiple myeloma in relapse"/>
+            <ns0:Concept code="C90.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Plasma cell leukemia"/>
+            <ns0:Concept code="C90.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Plasma cell leukemia not having achieved remission"/>
+            <ns0:Concept code="C90.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Plasma cell leukemia in remission"/>
+            <ns0:Concept code="C90.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Plasma cell leukemia in relapse"/>
+            <ns0:Concept code="C90.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extramedullary plasmacytoma"/>
+            <ns0:Concept code="C90.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extramedullary plasmacytoma not having achieved remission"/>
+            <ns0:Concept code="C90.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extramedullary plasmacytoma in remission"/>
+            <ns0:Concept code="C90.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Extramedullary plasmacytoma in relapse"/>
+            <ns0:Concept code="C90.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Solitary plasmacytoma"/>
+            <ns0:Concept code="C90.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Solitary plasmacytoma not having achieved remission"/>
+            <ns0:Concept code="C90.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Solitary plasmacytoma in remission"/>
+            <ns0:Concept code="C90.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Solitary plasmacytoma in relapse"/>
+            <ns0:Concept code="C91.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute lymphoblastic leukemia [ALL]"/>
+            <ns0:Concept code="C91.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute lymphoblastic leukemia not having achieved remission"/>
+            <ns0:Concept code="C91.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute lymphoblastic leukemia, in remission"/>
+            <ns0:Concept code="C91.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute lymphoblastic leukemia, in relapse"/>
+            <ns0:Concept code="C91.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic lymphocytic leukemia of B-cell type"/>
+            <ns0:Concept code="C91.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic lymphocytic leukemia of B-cell type not having achieved remission"/>
+            <ns0:Concept code="C91.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic lymphocytic leukemia of B-cell type in remission"/>
+            <ns0:Concept code="C91.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic lymphocytic leukemia of B-cell type in relapse"/>
+            <ns0:Concept code="C91.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of B-cell type"/>
+            <ns0:Concept code="C91.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of B-cell type not having achieved remission"/>
+            <ns0:Concept code="C91.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of B-cell type, in remission"/>
+            <ns0:Concept code="C91.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of B-cell type, in relapse"/>
+            <ns0:Concept code="C91.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hairy cell leukemia"/>
+            <ns0:Concept code="C91.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hairy cell leukemia not having achieved remission"/>
+            <ns0:Concept code="C91.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hairy cell leukemia, in remission"/>
+            <ns0:Concept code="C91.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hairy cell leukemia, in relapse"/>
+            <ns0:Concept code="C91.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Adult T-cell lymphoma/leukemia (HTLV-1-associated)"/>
+            <ns0:Concept code="C91.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Adult T-cell lymphoma/leukemia (HTLV-1-associated) not having achieved remission"/>
+            <ns0:Concept code="C91.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Adult T-cell lymphoma/leukemia (HTLV-1-associated), in remission"/>
+            <ns0:Concept code="C91.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Adult T-cell lymphoma/leukemia (HTLV-1-associated), in relapse"/>
+            <ns0:Concept code="C91.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of T-cell type"/>
+            <ns0:Concept code="C91.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of T-cell type not having achieved remission"/>
+            <ns0:Concept code="C91.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of T-cell type, in remission"/>
+            <ns0:Concept code="C91.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolymphocytic leukemia of T-cell type, in relapse"/>
+            <ns0:Concept code="C91.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoid leukemia, unspecified"/>
+            <ns0:Concept code="C91.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoid leukemia, unspecified not having achieved remission"/>
+            <ns0:Concept code="C91.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoid leukemia, unspecified, in remission"/>
+            <ns0:Concept code="C91.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphoid leukemia, unspecified, in relapse"/>
+            <ns0:Concept code="C91.A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature B-cell leukemia Burkitt-type"/>
+            <ns0:Concept code="C91.A0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature B-cell leukemia Burkitt-type not having achieved remission"/>
+            <ns0:Concept code="C91.A1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature B-cell leukemia Burkitt-type, in remission"/>
+            <ns0:Concept code="C91.A2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mature B-cell leukemia Burkitt-type, in relapse"/>
+            <ns0:Concept code="C91.Z" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other lymphoid leukemia"/>
+            <ns0:Concept code="C91.Z0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other lymphoid leukemia not having achieved remission"/>
+            <ns0:Concept code="C91.Z1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other lymphoid leukemia, in remission"/>
+            <ns0:Concept code="C91.Z2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other lymphoid leukemia, in relapse"/>
+            <ns0:Concept code="C92.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloblastic leukemia"/>
+            <ns0:Concept code="C92.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloblastic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C92.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloblastic leukemia, in remission"/>
+            <ns0:Concept code="C92.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloblastic leukemia, in relapse"/>
+            <ns0:Concept code="C92.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myeloid leukemia, BCR/ABL-positive"/>
+            <ns0:Concept code="C92.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myeloid leukemia, BCR/ABL-positive, not having achieved remission"/>
+            <ns0:Concept code="C92.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myeloid leukemia, BCR/ABL-positive, in remission"/>
+            <ns0:Concept code="C92.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myeloid leukemia, BCR/ABL-positive, in relapse"/>
+            <ns0:Concept code="C92.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Atypical chronic myeloid leukemia, BCR/ABL-negative"/>
+            <ns0:Concept code="C92.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Atypical chronic myeloid leukemia, BCR/ABL-negative, not having achieved remission"/>
+            <ns0:Concept code="C92.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Atypical chronic myeloid leukemia, BCR/ABL-negative, in remission"/>
+            <ns0:Concept code="C92.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Atypical chronic myeloid leukemia, BCR/ABL-negative, in relapse"/>
+            <ns0:Concept code="C92.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid sarcoma"/>
+            <ns0:Concept code="C92.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid sarcoma, not having achieved remission"/>
+            <ns0:Concept code="C92.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid sarcoma, in remission"/>
+            <ns0:Concept code="C92.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid sarcoma, in relapse"/>
+            <ns0:Concept code="C92.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute promyelocytic leukemia"/>
+            <ns0:Concept code="C92.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute promyelocytic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C92.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute promyelocytic leukemia, in remission"/>
+            <ns0:Concept code="C92.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute promyelocytic leukemia, in relapse"/>
+            <ns0:Concept code="C92.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myelomonocytic leukemia"/>
+            <ns0:Concept code="C92.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myelomonocytic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C92.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myelomonocytic leukemia, in remission"/>
+            <ns0:Concept code="C92.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myelomonocytic leukemia, in relapse"/>
+            <ns0:Concept code="C92.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with 11q23-abnormality"/>
+            <ns0:Concept code="C92.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with 11q23-abnormality not having achieved remission"/>
+            <ns0:Concept code="C92.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with 11q23-abnormality in remission"/>
+            <ns0:Concept code="C92.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with 11q23-abnormality in relapse"/>
+            <ns0:Concept code="C92.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid leukemia, unspecified"/>
+            <ns0:Concept code="C92.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid leukemia, unspecified, not having achieved remission"/>
+            <ns0:Concept code="C92.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid leukemia, unspecified in remission"/>
+            <ns0:Concept code="C92.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myeloid leukemia, unspecified in relapse"/>
+            <ns0:Concept code="C92.A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with multilineage dysplasia"/>
+            <ns0:Concept code="C92.A0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with multilineage dysplasia, not having achieved remission"/>
+            <ns0:Concept code="C92.A1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with multilineage dysplasia, in remission"/>
+            <ns0:Concept code="C92.A2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute myeloid leukemia with multilineage dysplasia, in relapse"/>
+            <ns0:Concept code="C92.Z" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other myeloid leukemia"/>
+            <ns0:Concept code="C92.Z0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other myeloid leukemia not having achieved remission"/>
+            <ns0:Concept code="C92.Z1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other myeloid leukemia, in remission"/>
+            <ns0:Concept code="C92.Z2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other myeloid leukemia, in relapse"/>
+            <ns0:Concept code="C93.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute monoblastic/monocytic leukemia"/>
+            <ns0:Concept code="C93.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute monoblastic/monocytic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C93.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute monoblastic/monocytic leukemia, in remission"/>
+            <ns0:Concept code="C93.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute monoblastic/monocytic leukemia, in relapse"/>
+            <ns0:Concept code="C93.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myelomonocytic leukemia"/>
+            <ns0:Concept code="C93.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myelomonocytic leukemia not having achieved remission"/>
+            <ns0:Concept code="C93.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myelomonocytic leukemia, in remission"/>
+            <ns0:Concept code="C93.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myelomonocytic leukemia, in relapse"/>
+            <ns0:Concept code="C93.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Juvenile myelomonocytic leukemia"/>
+            <ns0:Concept code="C93.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Juvenile myelomonocytic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C93.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Juvenile myelomonocytic leukemia, in remission"/>
+            <ns0:Concept code="C93.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Juvenile myelomonocytic leukemia, in relapse"/>
+            <ns0:Concept code="C93.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Monocytic leukemia, unspecified"/>
+            <ns0:Concept code="C93.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Monocytic leukemia, unspecified, not having achieved remission"/>
+            <ns0:Concept code="C93.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Monocytic leukemia, unspecified in remission"/>
+            <ns0:Concept code="C93.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Monocytic leukemia, unspecified in relapse"/>
+            <ns0:Concept code="C93.Z" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other monocytic leukemia"/>
+            <ns0:Concept code="C93.Z0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other monocytic leukemia, not having achieved remission"/>
+            <ns0:Concept code="C93.Z1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other monocytic leukemia, in remission"/>
+            <ns0:Concept code="C93.Z2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other monocytic leukemia, in relapse"/>
+            <ns0:Concept code="C94.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute erythroid leukemia"/>
+            <ns0:Concept code="C94.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute erythroid leukemia, not having achieved remission"/>
+            <ns0:Concept code="C94.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute erythroid leukemia, in remission"/>
+            <ns0:Concept code="C94.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute erythroid leukemia, in relapse"/>
+            <ns0:Concept code="C94.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute megakaryoblastic leukemia"/>
+            <ns0:Concept code="C94.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute megakaryoblastic leukemia not having achieved remission"/>
+            <ns0:Concept code="C94.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute megakaryoblastic leukemia, in remission"/>
+            <ns0:Concept code="C94.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute megakaryoblastic leukemia, in relapse"/>
+            <ns0:Concept code="C94.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mast cell leukemia"/>
+            <ns0:Concept code="C94.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mast cell leukemia not having achieved remission"/>
+            <ns0:Concept code="C94.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mast cell leukemia, in remission"/>
+            <ns0:Concept code="C94.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mast cell leukemia, in relapse"/>
+            <ns0:Concept code="C94.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute panmyelosis with myelofibrosis"/>
+            <ns0:Concept code="C94.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute panmyelosis with myelofibrosis not having achieved remission"/>
+            <ns0:Concept code="C94.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute panmyelosis with myelofibrosis, in remission"/>
+            <ns0:Concept code="C94.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute panmyelosis with myelofibrosis, in relapse"/>
+            <ns0:Concept code="C94.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Myelodysplastic disease, not elsewhere classified"/>
+            <ns0:Concept code="C94.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified leukemias"/>
+            <ns0:Concept code="C94.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified leukemias not having achieved remission"/>
+            <ns0:Concept code="C94.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified leukemias, in remission"/>
+            <ns0:Concept code="C94.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified leukemias, in relapse"/>
+            <ns0:Concept code="C95.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute leukemia of unspecified cell type"/>
+            <ns0:Concept code="C95.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute leukemia of unspecified cell type not having achieved remission"/>
+            <ns0:Concept code="C95.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute leukemia of unspecified cell type, in remission"/>
+            <ns0:Concept code="C95.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acute leukemia of unspecified cell type, in relapse"/>
+            <ns0:Concept code="C95.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic leukemia of unspecified cell type"/>
+            <ns0:Concept code="C95.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic leukemia of unspecified cell type not having achieved remission"/>
+            <ns0:Concept code="C95.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic leukemia of unspecified cell type, in remission"/>
+            <ns0:Concept code="C95.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic leukemia of unspecified cell type, in relapse"/>
+            <ns0:Concept code="C95.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Leukemia, unspecified"/>
+            <ns0:Concept code="C95.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Leukemia, unspecified not having achieved remission"/>
+            <ns0:Concept code="C95.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Leukemia, unspecified, in remission"/>
+            <ns0:Concept code="C95.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Leukemia, unspecified, in relapse"/>
+            <ns0:Concept code="C96.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multifocal and multisystemic (disseminated) Langerhans-cell histiocytosis"/>
+            <ns0:Concept code="C96.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant mast cell neoplasm"/>
+            <ns0:Concept code="C96.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant mast cell neoplasm, unspecified"/>
+            <ns0:Concept code="C96.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Aggressive systemic mastocytosis"/>
+            <ns0:Concept code="C96.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mast cell sarcoma"/>
+            <ns0:Concept code="C96.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other malignant mast cell neoplasm"/>
+            <ns0:Concept code="C96.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sarcoma of dendritic cells (accessory cells)"/>
+            <ns0:Concept code="C96.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Multifocal and unisystemic Langerhans-cell histiocytosis"/>
+            <ns0:Concept code="C96.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unifocal Langerhans-cell histiocytosis"/>
+            <ns0:Concept code="C96.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant neoplasm of lymphoid, hematopoietic and related tissue, unspecified"/>
+            <ns0:Concept code="C96.A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Histiocytic sarcoma"/>
+            <ns0:Concept code="C96.Z" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasms of lymphoid, hematopoietic and related tissue"/>
+            <ns0:Concept code="D47.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Chronic myeloproliferative disease"/>
+            <ns0:Concept code="D70.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Congenital agranulocytosis"/>
+            <ns0:Concept code="D70.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Agranulocytosis secondary to cancer chemotherapy"/>
+            <ns0:Concept code="D70.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other drug-induced agranulocytosis"/>
+            <ns0:Concept code="D70.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Neutropenia due to infection"/>
+            <ns0:Concept code="D70.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cyclic neutropenia"/>
+            <ns0:Concept code="D70.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other neutropenia"/>
+            <ns0:Concept code="D70.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Neutropenia, unspecified"/>
+            <ns0:Concept code="D75.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Disease of blood and blood-forming organs, unspecified"/>
+            <ns0:Concept code="R16.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Splenomegaly, not elsewhere classified"/>
+            <ns0:Concept code="R59.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Generalized enlarged lymph nodes"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
