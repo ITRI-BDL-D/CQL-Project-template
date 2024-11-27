@@ -31,7 +31,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點' 
+  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
     else null
 
 define "Rationale":

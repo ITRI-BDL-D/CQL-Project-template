@@ -286,7 +286,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點",
+                  "value" : "健保給付19475點，本項須個案申請事前審查。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
