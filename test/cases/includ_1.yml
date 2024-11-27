@@ -5,11 +5,11 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#D68.9
+    code: ICD10CM#C73
     onsetDateTime: 2018-07-05T00:00:00.000Z
   - resourceType: Condition
     code: ICD10CM#D68.00
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付800點
+    健保給付19475點，本項須個案申請事前審查。
