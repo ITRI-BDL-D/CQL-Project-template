@@ -52,28 +52,17 @@
             "annotation" : [ ]
          } ]
       },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
       "codes" : {
          "def" : [ {
-            "name" : "Malignant neoplasm of thyroid gland code",
-            "id" : "C73",
-            "display" : "Malignant neoplasm of thyroid gland",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Secondary malignant neoplasm of other specified sites code",
-            "id" : "C79.89",
-            "display" : "Secondary malignant neoplasm of other specified sites",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -202,52 +191,22 @@
                   "annotation" : [ ],
                   "signature" : [ ],
                   "operand" : [ {
-                     "type" : "Union",
+                     "dataType" : "{http://hl7.org/fhir}Condition",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                     "codeProperty" : "code",
+                     "codeComparator" : "in",
+                     "type" : "Retrieve",
                      "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : [ {
-                        "dataType" : "{http://hl7.org/fhir}Condition",
-                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                        "codeProperty" : "code",
-                        "codeComparator" : "~",
-                        "type" : "Retrieve",
-                        "annotation" : [ ],
-                        "codes" : {
-                           "type" : "ToList",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : {
-                              "name" : "Malignant neoplasm of thyroid gland code",
-                              "type" : "CodeRef",
-                              "annotation" : [ ]
-                           }
-                        },
-                        "include" : [ ],
-                        "codeFilter" : [ ],
-                        "dateFilter" : [ ],
-                        "otherFilter" : [ ]
-                     }, {
-                        "dataType" : "{http://hl7.org/fhir}Condition",
-                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
-                        "codeProperty" : "code",
-                        "codeComparator" : "~",
-                        "type" : "Retrieve",
-                        "annotation" : [ ],
-                        "codes" : {
-                           "type" : "ToList",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : {
-                              "name" : "Secondary malignant neoplasm of other specified sites code",
-                              "type" : "CodeRef",
-                              "annotation" : [ ]
-                           }
-                        },
-                        "include" : [ ],
-                        "codeFilter" : [ ],
-                        "dateFilter" : [ ],
-                        "otherFilter" : [ ]
-                     } ]
+                     "codes" : {
+                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
                   } ]
                }
             }

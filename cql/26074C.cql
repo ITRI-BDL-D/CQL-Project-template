@@ -5,14 +5,16 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "TWVitalSigns": 'https://twcore.mohw.gov.tw/ig/twcore/ValueSet/vital-signs-tw' 
-
+valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
-code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
+// code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
+// code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
+
+
+
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -20,9 +22,7 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "Malignant neoplasm of thyroid gland code"]
-    union [Condition: "Secondary malignant neoplasm of other specified sites code"] ) )
-
+  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
 
 define "MeetsInclusionCriteria":
   "甲狀腺癌復發 or 轉移之患者"
