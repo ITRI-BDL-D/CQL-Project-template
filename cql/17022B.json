@@ -406,126 +406,6 @@
                }
             }
          }, {
-            "name" : "MeetsInclusionCriteria",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "And",
-               "annotation" : [ ],
-               "signature" : [ ],
-               "operand" : [ {
-                  "name" : "氣喘",
-                  "type" : "ExpressionRef",
-                  "annotation" : [ ]
-               }, {
-                  "name" : "age check",
-                  "type" : "ExpressionRef",
-                  "annotation" : [ ]
-               } ]
-            }
-         }, {
-            "name" : "InPopulation",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "name" : "MeetsInclusionCriteria",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Recommendation",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "If",
-               "annotation" : [ ],
-               "condition" : {
-                  "type" : "Not",
-                  "annotation" : [ ],
-                  "signature" : [ ],
-                  "operand" : {
-                     "type" : "IsTrue",
-                     "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : {
-                        "name" : "InPopulation",
-                        "type" : "ExpressionRef",
-                        "annotation" : [ ]
-                     }
-                  }
-               },
-               "then" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}String",
-                  "type" : "As",
-                  "annotation" : [ ],
-                  "signature" : [ ],
-                  "operand" : {
-                     "type" : "Null",
-                     "annotation" : [ ]
-                  }
-               },
-               "else" : {
-                  "type" : "If",
-                  "annotation" : [ ],
-                  "condition" : {
-                     "name" : "encounter check",
-                     "type" : "ExpressionRef",
-                     "annotation" : [ ]
-                  },
-                  "then" : {
-                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                     "value" : "健保給付748點:\n(1)申報次數：一年最多申報三次。\n(2)執行限制：限受過操作訓練之醫療人員。\n(3)費用申報時必要之附件：檢測報告。",
-                     "type" : "Literal",
-                     "annotation" : [ ]
-                  },
-                  "else" : {
-                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                     "value" : "非兒科申報，不予給付",
-                     "type" : "Literal",
-                     "annotation" : [ ]
-                  }
-               }
-            }
-         }, {
-            "name" : "Rationale",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Links",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Suggestions",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Errors",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
             "name" : "ObservationLookBack",
             "context" : "Patient",
             "accessLevel" : "Public",
@@ -812,6 +692,207 @@
                   "annotation" : [ ]
                }
             } ]
+         }, {
+            "name" : "Observation 17022B",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Less",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "type" : "NamedTypeSpecifier",
+                  "annotation" : [ ]
+               } ],
+               "operand" : [ {
+                  "type" : "Count",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "source" : {
+                     "name" : "ObservationLookBack",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Observation",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                        "codeProperty" : "code",
+                        "codeComparator" : "in",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "name" : "17022B 呼氣一氧化氮監測(FeNO) valueset",
+                           "preserve" : true,
+                           "type" : "ValueSetRef",
+                           "annotation" : [ ]
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     }, {
+                        "value" : 1,
+                        "unit" : "year",
+                        "type" : "Quantity",
+                        "annotation" : [ ]
+                     } ]
+                  }
+               }, {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                  "value" : "3",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "MeetsInclusionCriteria",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "氣喘",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "age check",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "InPopulation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "MeetsInclusionCriteria",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Recommendation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Not",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "IsTrue",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "InPopulation",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }
+               },
+               "then" : {
+                  "asType" : "{urn:hl7-org:elm-types:r1}String",
+                  "type" : "As",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "type" : "Null",
+                     "annotation" : [ ]
+                  }
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "type" : "And",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "name" : "encounter check",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }, {
+                        "name" : "Observation 17022B",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     } ]
+                  },
+                  "then" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "健保給付748點:\n(1)執行限制：限受過操作訓練之醫療人員。\n(2)費用申報時必要之附件：檢測報告。",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "encounter check",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "一年內已至少申報三次，不予給付",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     },
+                     "else" : {
+                        "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                        "value" : "非兒科申報，不予給付",
+                        "type" : "Literal",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Rationale",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Links",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Suggestions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Errors",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
          }, {
             "name" : "InProgress",
             "context" : "Patient",

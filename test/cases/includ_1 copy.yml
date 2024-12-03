@@ -1,0 +1,25 @@
+name: include_over_3_times
+data:
+  - resourceType: Patient
+    name: Jane Smith include_over_3_times
+    gender: female
+    birthDate: 2015-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#J45.2
+    onsetDateTime: 2024-08-05T00:00:00.000Z
+  - resourceType: Observation
+    code: ICD10CM#J45.2
+    issued: 2024-08-05T00:00:00.000Z
+  - resourceType: Observation
+    code: ICD10CM#J45.2
+    issued: 2024-09-05T00:00:00.000Z
+  - resourceType: Observation
+    code: ICD10CM#J45.2
+    issued: 2024-10-05T00:00:00.000Z
+  - resourceType: Encounter
+    type: ICD10CM#J45.2
+    serviceType: SNOMED#24251000087109
+    
+results:
+  Recommendation: >-    
+    一年內已至少申報三次，不予給付

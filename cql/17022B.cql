@@ -34,6 +34,9 @@ define "encounter":
 define "encounter check":
   exists("encounter")
 
+define "Observation 17022B":
+    Count(ObservationLookBack([Observation: "17022B 呼氣一氧化氮監測(FeNO) valueset"], 1 year)) < 3
+
 define "MeetsInclusionCriteria":
   "氣喘"
     and "age check"
@@ -43,7 +46,8 @@ define "InPopulation":
 
 define "Recommendation":
   if "InPopulation" is not true then null 
-    else if "encounter check" then '健保給付748點:\n(1)申報次數：一年最多申報三次。\n(2)執行限制：限受過操作訓練之醫療人員。\n(3)費用申報時必要之附件：檢測報告。'
+    else if "encounter check" and "Observation 17022B" then '健保給付748點:\n(1)執行限制：限受過操作訓練之醫療人員。\n(2)費用申報時必要之附件：檢測報告。'
+    else if "encounter check" then '一年內已至少申報三次，不予給付'
     else '非兒科申報，不予給付'
 
 define "Rationale":
