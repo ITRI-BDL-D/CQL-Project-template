@@ -5,12 +5,12 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "食道或賁門之惡性腫瘤 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.10'
+valueset "食道或賁門之惡性腫瘤 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.10'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Malignant neoplasm of upper third of esophagus code": 'C15.3' from "ICD-10-CM" display 'Malignant neoplasm of upper third of esophagus'
+// code "Malignant neoplasm of upper third of esophagus code": 'C15.3' from "ICD-10-CM" display 'Malignant neoplasm of upper third of esophagus'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -18,7 +18,7 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "食道或賁門之惡性腫瘤":
-  exists ( Confirmed([Condition: "Malignant neoplasm of upper third of esophagus code"]) )
+  exists ( Confirmed([Condition: "食道或賁門之惡性腫瘤 valueset"]) )
 
 define "MeetsInclusionCriteria":
   "食道或賁門之惡性腫瘤"
