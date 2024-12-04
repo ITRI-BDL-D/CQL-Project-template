@@ -5,14 +5,14 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "49011C 痔冷凍治療 inclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.11'
-// valueset "49011C 痔冷凍治療 exclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.12'
+valueset "49011C 痔冷凍治療 inclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.11'
+valueset "49011C 痔冷凍治療 exclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.12'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "First degree hemorrhoids code": 'K64.0' from "ICD-10-CM" display 'First degree hemorrhoids'
-code "Third degree hemorrhoids code": 'K64.2' from "ICD-10-CM" display 'Third degree hemorrhoids'
+// code "First degree hemorrhoids code": 'K64.0' from "ICD-10-CM" display 'First degree hemorrhoids'
+// code "Third degree hemorrhoids code": 'K64.2' from "ICD-10-CM" display 'Third degree hemorrhoids'
 
 
 
@@ -23,10 +23,10 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "49011C 痔冷凍治療 inclusion":
-  exists ( Confirmed([Condition: "First degree hemorrhoids code"]) )
+  exists ( Confirmed([Condition: "49011C 痔冷凍治療 inclusion valueset"]) )
 
 define "49011C 痔冷凍治療 exclusion":
-  exists ( Confirmed([Condition: "Third degree hemorrhoids code"]) )
+  exists ( Confirmed([Condition: "49011C 痔冷凍治療 exclusion valueset"]) )
 
 define "MeetsInclusionCriteria":
   "49011C 痔冷凍治療 inclusion"
