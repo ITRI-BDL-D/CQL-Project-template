@@ -1,37 +1,33 @@
-library "26074C" version '0.0.1'
+library "47043C" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+// valueset "上消化道有流血或潰瘍之徵兆者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.9'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-// code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
-// code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
-
-
-
+code "Ulcer of esophagus with bleeding code": 'K22.11' from "ICD-10-CM" display 'Ulcer of esophagus with bleeding'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "上消化道有流血或潰瘍之徵兆者":
+  exists ( Confirmed([Condition: "Ulcer of esophagus with bleeding code"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "上消化道有流血或潰瘍之徵兆者"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付7818點\n1.含內視鏡費及藥費。\n2.非屬硬化劑注射及結紮之止血法皆以本項申報。\n3.提升兒童加成項目。\n4.屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。' 
     else null
 
 define "Rationale":

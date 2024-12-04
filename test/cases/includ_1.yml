@@ -5,11 +5,16 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#K22.11
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付7818點
+  
+    1.含內視鏡費及藥費。
+
+    2.非屬硬化劑注射及結紮之止血法皆以本項申報。
+
+    3.提升兒童加成項目。
+
+    4.屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。

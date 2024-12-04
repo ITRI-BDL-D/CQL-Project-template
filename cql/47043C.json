@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "47043C",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -52,17 +52,18 @@
             "annotation" : [ ]
          } ]
       },
-      "valueSets" : {
-         "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : [ ]
-         } ]
-      },
       "codes" : {
          "def" : [ {
+            "name" : "Ulcer of esophagus with bleeding code",
+            "id" : "K22.11",
+            "display" : "Ulcer of esophagus with bleeding",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -177,7 +178,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "上消化道有流血或潰瘍之徵兆者",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -194,14 +195,18 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "in",
+                     "codeComparator" : "~",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-                        "preserve" : true,
-                        "type" : "ValueSetRef",
-                        "annotation" : [ ]
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Ulcer of esophagus with bleeding code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -216,7 +221,7 @@
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "上消化道有流血或潰瘍之徵兆者",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -245,7 +250,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付7818點\n1.含內視鏡費及藥費。\n2.非屬硬化劑注射及結紮之止血法皆以本項申報。\n3.提升兒童加成項目。\n4.屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
