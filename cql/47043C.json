@@ -52,18 +52,17 @@
             "annotation" : [ ]
          } ]
       },
-      "codes" : {
+      "valueSets" : {
          "def" : [ {
-            "name" : "Ulcer of esophagus with bleeding code",
-            "id" : "K22.11",
-            "display" : "Ulcer of esophagus with bleeding",
+            "name" : "上消化道有流血或潰瘍之徵兆者 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.9",
             "accessLevel" : "Public",
             "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
+            "codeSystem" : [ ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -195,18 +194,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Ulcer of esophagus with bleeding code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "上消化道有流血或潰瘍之徵兆者 valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
