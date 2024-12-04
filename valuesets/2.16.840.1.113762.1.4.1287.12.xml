@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.12" displayName="49011C 痔冷凍治療 exclusion" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="K64.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Third degree hemorrhoids"/>
+            <ns0:Concept code="K64.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Fourth degree hemorrhoids"/>
+            <ns0:Concept code="K64.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Perianal venous thrombosis"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
