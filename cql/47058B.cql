@@ -1,37 +1,33 @@
-library "26074C" version '0.0.1'
+library "47058B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+// valueset "食道或賁門之惡性腫瘤 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.10'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-// code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
-// code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
-
-
-
+code "Malignant neoplasm of upper third of esophagus code": 'C15.3' from "ICD-10-CM" display 'Malignant neoplasm of upper third of esophagus'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "食道或賁門之惡性腫瘤":
+  exists ( Confirmed([Condition: "Malignant neoplasm of upper third of esophagus code"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "食道或賁門之惡性腫瘤"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付10153點，內含單次使用消化道導引線、導線/導線蓋和鎖比率為百分之五十六。提升兒童加成項目。' 
     else null
 
 define "Rationale":
