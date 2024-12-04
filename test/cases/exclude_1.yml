@@ -1,0 +1,12 @@
+name: exclude_1
+data:
+  - resourceType: Patient
+    name: Jane Smith exclude_1
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#K64.2
+    onsetDateTime: 2018-07-05T00:00:00.000Z
+results:
+  Recommendation: >-    
+    第三級和第四級及栓塞痔不適用

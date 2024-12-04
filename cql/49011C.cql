@@ -1,17 +1,18 @@
-library "26074C" version '0.0.1'
+library "49011C" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+// valueset "49011C 痔冷凍治療 inclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.11'
+// valueset "49011C 痔冷凍治療 exclusion valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.12'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-// code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
-// code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
+code "First degree hemorrhoids code": 'K64.0' from "ICD-10-CM" display 'First degree hemorrhoids'
+code "Third degree hemorrhoids code": 'K64.2' from "ICD-10-CM" display 'Third degree hemorrhoids'
 
 
 
@@ -21,18 +22,27 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "49011C 痔冷凍治療 inclusion":
+  exists ( Confirmed([Condition: "First degree hemorrhoids code"]) )
+
+define "49011C 痔冷凍治療 exclusion":
+  exists ( Confirmed([Condition: "Third degree hemorrhoids code"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "49011C 痔冷凍治療 inclusion"
+
+define "MeetsExclusionCriteria":
+  "49011C 痔冷凍治療 exclusion"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
+    and not "MeetsExclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+if "InPopulation" then '健保給付810點' 
+    else if "MeetsExclusionCriteria" then '第三級和第四級及栓塞痔不適用' 
     else null
+
 
 define "Rationale":
   null
