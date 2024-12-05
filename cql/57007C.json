@@ -57,28 +57,23 @@
             "annotation" : [ ]
          } ]
       },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "人工氣道患者申報 ICD10PCS valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.14",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "人工氣道患者申報 ICD10CM valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.15",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
       "codes" : {
          "def" : [ {
-            "name" : "Tracheostomy complications code",
-            "id" : "J95.0",
-            "display" : "Tracheostomy complications",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code",
-            "id" : "0B110F4",
-            "display" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-PCS",
-               "annotation" : [ ]
-            }
-         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -210,18 +205,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Tracheostomy complications code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "人工氣道患者申報 ICD10CM valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -251,18 +242,14 @@
                   "dataType" : "{http://hl7.org/fhir}Procedure",
                   "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
                   "codeProperty" : "code",
-                  "codeComparator" : "~",
+                  "codeComparator" : "in",
                   "type" : "Retrieve",
                   "annotation" : [ ],
                   "codes" : {
-                     "type" : "ToList",
-                     "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : {
-                        "name" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code",
-                        "type" : "CodeRef",
-                        "annotation" : [ ]
-                     }
+                     "name" : "人工氣道患者申報 ICD10PCS valueset",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
                   },
                   "include" : [ ],
                   "codeFilter" : [ ],

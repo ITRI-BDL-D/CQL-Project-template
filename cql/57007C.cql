@@ -5,16 +5,16 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "人工氣道患者申報 ICD10PCS valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.14'
-// valueset "人工氣道患者申報 ICD10CM valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.15'
+valueset "人工氣道患者申報 ICD10PCS valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.14'
+valueset "人工氣道患者申報 ICD10CM valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.15'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "ICD-10-PCS": 'http://www.cms.gov/Medicare/Coding/ICD10'
 
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Tracheostomy complications code": 'J95.0' from "ICD-10-CM" display 'Tracheostomy complications'
-code "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code": '0B110F4' from "ICD-10-PCS" display 'Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach'
+// code "Tracheostomy complications code": 'J95.0' from "ICD-10-CM" display 'Tracheostomy complications'
+// code "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code": '0B110F4' from "ICD-10-PCS" display 'Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach'
 
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
@@ -23,10 +23,10 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "人工氣道患者 Condition":
-  exists ( Confirmed([Condition: "Tracheostomy complications code"]) )
+  exists ( Confirmed([Condition: "人工氣道患者申報 ICD10CM valueset"]) )
   
 define "人工氣道患者 Procedure":
-  exists ( [Procedure: "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code"]) 
+  exists ( [Procedure: "人工氣道患者申報 ICD10PCS valueset"]) 
 
 define "MeetsInclusionCriteria":
   "人工氣道患者 Condition" or "人工氣道患者 Procedure"
