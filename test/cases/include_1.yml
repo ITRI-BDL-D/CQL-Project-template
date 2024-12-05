@@ -5,11 +5,11 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
+    code: ICD10CM#T70.3XXA
     onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
-    onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Encounter
+    type: ICD10CM#T70.3XXA
+    class: http://terminology.hl7.org/CodeSystem/v3-ActCode#IMP
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付30836點
