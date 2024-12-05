@@ -11,10 +11,6 @@ codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
 // code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
-// code "Secondary malignant neoplasm of other specified sites code": 'C79.89' from "ICD-10-CM" display 'Secondary malignant neoplasm of other specified sites'
-
-
-
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
