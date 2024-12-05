@@ -62,18 +62,17 @@
             "annotation" : [ ]
          } ]
       },
-      "codes" : {
+      "valueSets" : {
          "def" : [ {
-            "name" : "Benign paroxysmal vertigo, unspecified ear code",
-            "id" : "H18.10",
-            "display" : "Benign paroxysmal vertigo, unspecified ear",
+            "name" : "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.13",
             "accessLevel" : "Public",
             "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
+            "codeSystem" : [ ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
             "name" : "耳石復位術 code",
             "id" : "54044C",
             "display" : "耳石復位術",
@@ -235,18 +234,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Benign paroxysmal vertigo, unspecified ear code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],

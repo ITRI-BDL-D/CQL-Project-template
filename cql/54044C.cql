@@ -5,14 +5,14 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.13'
+valueset "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.13'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "TWMedicalServicePayment": 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw'
 codesystem "SCT": 'http://snomed.info/sct'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Benign paroxysmal vertigo, unspecified ear code": 'H18.10' from "ICD-10-CM" display 'Benign paroxysmal vertigo, unspecified ear'
+// code "Benign paroxysmal vertigo, unspecified ear code": 'H18.10' from "ICD-10-CM" display 'Benign paroxysmal vertigo, unspecified ear'
 
 code "耳石復位術 code": '54044C' from "TWMedicalServicePayment" display '耳石復位術'
 
@@ -26,7 +26,7 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "良性陣發性姿勢性眩暈":
-  exists ( Confirmed([Condition: "Benign paroxysmal vertigo, unspecified ear code"]) )
+  exists ( Confirmed([Condition: "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset"]) )
 
 
 define "Sugery":

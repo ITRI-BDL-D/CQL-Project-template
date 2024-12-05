@@ -5,7 +5,7 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#H18.10
+    code: ICD10CM#H81.10
     onsetDateTime: 2018-07-05T00:00:00.000Z
   - resourceType: Procedure
     code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#54044C
