@@ -1,7 +1,7 @@
-name: include_1
+name: include_but_not_Otorhinolaryngologist_or_Neurologist
 data:
   - resourceType: Patient
-    name: Jane Smith include_1
+    name: Jane Smith include_but_not_Otorhinolaryngologist_or_Neurologist
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
@@ -17,9 +17,7 @@ data:
     id: surgeon
     name: Dr. John Doe
     qualification:
-      code: SCT#61345009
+      code: SCT#1421009
 results:
   Recommendation: >-    
-    健保給付432點，費用申報須附治療紀錄。
-    
-    屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。
+    非由耳鼻喉科或神經內科醫師執行，不給付

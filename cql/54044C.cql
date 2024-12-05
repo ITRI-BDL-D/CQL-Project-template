@@ -1,33 +1,61 @@
-library "26074C" version '0.0.1'
+library "54044C" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+// valueset "良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo) valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.13'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
+codesystem "TWMedicalServicePayment": 'https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw'
+codesystem "SCT": 'http://snomed.info/sct'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-// code "Malignant neoplasm of thyroid gland code": 'C73' from "ICD-10-CM" display 'Malignant neoplasm of thyroid gland'
+code "Benign paroxysmal vertigo, unspecified ear code": 'H18.10' from "ICD-10-CM" display 'Benign paroxysmal vertigo, unspecified ear'
+
+code "耳石復位術 code": '54044C' from "TWMedicalServicePayment" display '耳石復位術'
+
+code "Otorhinolaryngologist code": '61345009' from "SCT" display 'Otorhinolaryngologist'
+code "Neurologist code": '56397003' from "SCT" display 'Neurologist'
+
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "良性陣發性姿勢性眩暈":
+  exists ( Confirmed([Condition: "Benign paroxysmal vertigo, unspecified ear code"]) )
+
+
+define "Sugery":
+  C3F.MostRecentProcedure ( [Procedure: "耳石復位術 code"] )
+
+define "surgeon_id":
+  Last(Split(First("Sugery".performer).actor.reference, '/'))
+
+define "Surgeon_ref":
+  [Practitioner] P
+    where P.id = "surgeon_id"
+
+define "Surgeon_tmp":
+  "Surgeon_ref".qualification q
+    where q.code ~ "Otorhinolaryngologist code" or q.code ~ "Neurologist code"
+
+define "Surgeon":
+  exists ( "Surgeon_tmp" )
+
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "良性陣發性姿勢性眩暈"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" and "Surgeon" then '健保給付432點，費用申報須附治療紀錄。\n屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。'
+    else if "InPopulation" then '非由耳鼻喉科或神經內科醫師執行，不給付'
     else null
 
 define "Rationale":
