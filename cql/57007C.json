@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "57007C",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -46,23 +46,39 @@
             "accessLevel" : "Public",
             "annotation" : [ ]
          }, {
+            "name" : "ICD-10-PCS",
+            "id" : "http://www.cms.gov/Medicare/Coding/ICD10",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
             "name" : "CONDVERSTATUS",
             "id" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
             "accessLevel" : "Public",
             "annotation" : [ ]
          } ]
       },
-      "valueSets" : {
-         "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : [ ]
-         } ]
-      },
       "codes" : {
          "def" : [ {
+            "name" : "Tracheostomy complications code",
+            "id" : "J95.0",
+            "display" : "Tracheostomy complications",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code",
+            "id" : "0B110F4",
+            "display" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-PCS",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -177,7 +193,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "人工氣道患者 Condition",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -194,14 +210,18 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "in",
+                     "codeComparator" : "~",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-                        "preserve" : true,
-                        "type" : "ValueSetRef",
-                        "annotation" : [ ]
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Tracheostomy complications code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -211,14 +231,63 @@
                }
             }
          }, {
+            "name" : "人工氣道患者 Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "Bypass Trachea to Cutaneous with Tracheostomy Device, Open Approach code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "人工氣道患者 Condition",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "人工氣道患者 Procedure",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
             }
          }, {
             "name" : "InPopulation",
@@ -245,7 +314,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付115點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },

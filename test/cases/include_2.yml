@@ -1,0 +1,12 @@
+name: include_1
+data:
+  - resourceType: Patient
+    name: Jane Smith include_1
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Procedure
+    code: http://www.cms.gov/Medicare/Coding/ICD10#0B110F4
+    performedDateTime: 2018-07-05T00:00:00.000Z
+results:
+  Recommendation: >-    
+    健保給付115點
