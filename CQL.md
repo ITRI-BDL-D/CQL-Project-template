@@ -10,6 +10,8 @@
 1. [47043C 上消化道內視鏡止血法（任何方法）](#47043C)
 1. [47058B 食道內金屬支架置放術](#47058B)
 1. [49011C 痔冷凍治療](#49011C)
+1. [54044C 耳石復位術](#54044C)
+1. [57007C 濕氣吸入治療](#57007C)
 
 
 
@@ -144,3 +146,19 @@ Esophageal metal stent placement
 Hemorrhoid cryotherapy  
 註：適用於初期(第一級和第二級)內痔出血的情況，第三級和第四級及栓塞痔不適用。
 
+### 54044C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-574-54044C)  
+432點  
+耳石復位術  
+Canalith repositioning procedure  
+註：  
+1. 適應症：良性陣發性姿勢性眩暈(Benign paroxysmal positional vertigo)。
+2. 費用申報須附治療紀錄。
+3. 限由耳鼻喉科或神經內科醫師執行。
+4. 屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方及執行始可申報。
+
+### 57007C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-576-57007C)  
+115點  
+濕氣吸入治療 Humidity inhalation  
+註：限人工氣道患者申報，使用呼吸器者不得申報。
