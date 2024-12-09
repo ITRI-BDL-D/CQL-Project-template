@@ -12,6 +12,7 @@
 1. [49011C 痔冷凍治療](#49011C)
 1. [54044C 耳石復位術](#54044C)
 1. [57007C 濕氣吸入治療](#57007C)
+1. [59014B 潛水病（減壓病）或急性氣栓塞症 Decompression sickness and acute gas embolism (including post operative)之高壓氧治療](#59014B )
 
 
 
@@ -162,3 +163,12 @@ Canalith repositioning procedure
 115點  
 濕氣吸入治療 Humidity inhalation  
 註：限人工氣道患者申報，使用呼吸器者不得申報。
+
+### 57007C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-577-59014B)  
+30836點  
+潛水病（減壓病）或急性氣栓塞症 Decompression sickness and acute gas embolism (including post operative)之高壓氧治療  
+註：  
+1. 限治療第二型潛水減壓病（Decompression Sickness, DCSII）及空氣栓塞症（Arterial Gas Embolism, AGE）病患申報。
+2. 限住院病人申報。
+
