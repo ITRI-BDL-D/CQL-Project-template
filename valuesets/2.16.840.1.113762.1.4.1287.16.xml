@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.16" displayName="第二型潛水減壓病及空氣栓塞症病患" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="T70.3XXA" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Caisson disease [decompression sickness], initial encounter"/>
+            <ns0:Concept code="T70.3XXD" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Caisson disease [decompression sickness], subsequent encounter"/>
+            <ns0:Concept code="T70.3XXS" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Caisson disease [decompression sickness], sequela"/>
+            <ns0:Concept code="T79.0XXA" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Air embolism (traumatic), initial encounter"/>
+            <ns0:Concept code="T79.0XXD" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Air embolism (traumatic), subsequent encounter"/>
+            <ns0:Concept code="T79.0XXS" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Air embolism (traumatic), sequela"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>

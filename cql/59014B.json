@@ -5,17 +5,6 @@
          "translatorOptions" : "DisableListDemotion,DisableListPromotion",
          "signatureLevel" : "Overloads",
          "type" : "CqlToElmInfo"
-      }, {
-         "libraryId" : "59014B",
-         "libraryVersion" : "0.0.1",
-         "startLine" : 26,
-         "startChar" : 10,
-         "endLine" : 26,
-         "endChar" : 88,
-         "message" : "Could not resolve membership operator for terminology target of the retrieve.",
-         "errorType" : "semantic",
-         "errorSeverity" : "warning",
-         "type" : "CqlToElmError"
       } ],
       "identifier" : {
          "id" : "59014B",
@@ -68,18 +57,17 @@
             "annotation" : [ ]
          } ]
       },
-      "codes" : {
+      "valueSets" : {
          "def" : [ {
-            "name" : "Caisson disease [decompression sickness], initial encounter code",
-            "id" : "T70.3XXA",
-            "display" : "Caisson disease [decompression sickness], initial encounter",
+            "name" : "第二型潛水減壓病及空氣栓塞症病患 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.16",
             "accessLevel" : "Public",
             "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
-         }, {
+            "codeSystem" : [ ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
             "name" : "inpatient encounter code",
             "id" : "IMP",
             "display" : "inpatient encounter",
@@ -221,18 +209,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Caisson disease [decompression sickness], initial encounter code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "第二型潛水減壓病及空氣栓塞症病患 valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -268,18 +252,14 @@
                         "dataType" : "{http://hl7.org/fhir}Encounter",
                         "templateId" : "http://hl7.org/fhir/StructureDefinition/Encounter",
                         "codeProperty" : "type",
-                        "codeComparator" : "~",
+                        "codeComparator" : "in",
                         "type" : "Retrieve",
                         "annotation" : [ ],
                         "codes" : {
-                           "type" : "ToList",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : {
-                              "name" : "Caisson disease [decompression sickness], initial encounter code",
-                              "type" : "CodeRef",
-                              "annotation" : [ ]
-                           }
+                           "name" : "第二型潛水減壓病及空氣栓塞症病患 valueset",
+                           "preserve" : true,
+                           "type" : "ValueSetRef",
+                           "annotation" : [ ]
                         },
                         "include" : [ ],
                         "codeFilter" : [ ],
