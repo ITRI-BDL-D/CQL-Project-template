@@ -5,12 +5,12 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "再發型椎間盤突出導致脊髓或神經根病變 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.20'
+valueset "再發型椎間盤突出導致脊髓或神經根病變 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.20'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Cervical disc disorder with myelopathy, unspecified cervical region code": 'M50.00' from "ICD-10-CM" display 'Cervical disc disorder with myelopathy, unspecified cervical region'
+// code "Cervical disc disorder with myelopathy, unspecified cervical region code": 'M50.00' from "ICD-10-CM" display 'Cervical disc disorder with myelopathy, unspecified cervical region'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -18,7 +18,7 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "再發型椎間盤突出導致脊髓或神經根病變":
-  exists ( Confirmed([Condition: "Cervical disc disorder with myelopathy, unspecified cervical region code"]) )
+  exists ( Confirmed([Condition: "再發型椎間盤突出導致脊髓或神經根病變 valueset"]) )
 
 define "MeetsInclusionCriteria":
   "再發型椎間盤突出導致脊髓或神經根病變"
