@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "62072B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -54,8 +54,14 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 PCS valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.17",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 CM valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.18",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -177,7 +183,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 Condition",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +204,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 CM valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -211,14 +217,59 @@
                }
             }
          }, {
+            "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 PCS valueset",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 Condition",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "二度燙傷以上及總燙傷面積百分之二十以上 or 接受自體皮膚移植手術當次得申報水刀清創 Procedure",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
             }
          }, {
             "name" : "InPopulation",
@@ -245,7 +296,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付10861點，本項須事前審查。\n一般材料費及單一使用拋棄式之微創噴射灌洗器，得另加計百分之三百零九。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
