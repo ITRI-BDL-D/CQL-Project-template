@@ -1,4 +1,4 @@
-library "63007B" version '0.0.1'
+library "63017B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -27,7 +27,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付25595點\n1.術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。\n2.一般材料費，得另加計百分之二十六。' 
+  if "InPopulation" then '健保給付12656點\n1.術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。\n2.一般材料費，得另加計百分之五十六。' 
     else null
 
 define "Rationale":
