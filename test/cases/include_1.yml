@@ -5,11 +5,12 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#G40.824
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付18242點，本項須個案申請事前審查。
+    
+    (1)不得同時申報56037B「深部腦核電生理定位」、83056B「癲癇症腦葉切除術」、83084B「立體定位術-功能性失調」及72029B「迷走神經切斷術」。
+    
+    (2)一般材料費，得另加計百分之十一。
