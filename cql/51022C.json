@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "51022C",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -52,17 +52,18 @@
             "annotation" : [ ]
          } ]
       },
-      "valueSets" : {
-         "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : [ ]
-         } ]
-      },
       "codes" : {
          "def" : [ {
+            "name" : "Tuberculosis of skin and subcutaneous tissue code",
+            "id" : "A18.4",
+            "display" : "Tuberculosis of skin and subcutaneous tissue",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -177,7 +178,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "51022C 冷凍治療 － 複雜",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -194,14 +195,18 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "in",
+                     "codeComparator" : "~",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-                        "preserve" : true,
-                        "type" : "ValueSetRef",
-                        "annotation" : [ ]
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Tuberculosis of skin and subcutaneous tissue code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -216,7 +221,7 @@
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "51022C 冷凍治療 － 複雜",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -245,7 +250,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付250點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
