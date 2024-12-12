@@ -12,7 +12,11 @@
 1. [49011C 痔冷凍治療](#49011C)
 1. [54044C 耳石復位術](#54044C)
 1. [57007C 濕氣吸入治療](#57007C)
-1. [59014B 潛水病（減壓病）或急性氣栓塞症 Decompression sickness and acute gas embolism (including post operative)之高壓氧治療](#59014B )
+1. [59014B 潛水病（減壓病）或急性氣栓塞症 Decompression sickness and acute gas embolism (including post operative)之高壓氧治療](#59014B)
+1. [62072B 水刀清創 Hydrosurgery debridement](#62072B)
+1. [63007B 改良式乳房根除手術 Modified radical mastectomy－ 單側 unilateral](#63007B)
+1. [63008B 改良式乳房根除手術 Modified radical mastectomy－ 雙側 bilateral](#63008B)
+1. [64279B 重行椎間盤切除術：頸椎、胸椎、腰椎](#64279B)
 
 
 
@@ -172,3 +176,39 @@ Canalith repositioning procedure
 1. 限治療第二型潛水減壓病（Decompression Sickness, DCSII）及空氣栓塞症（Arterial Gas Embolism, AGE）病患申報。
 2. 限住院病人申報。
 
+### 63007B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-586-63007B)  
+25595點  
+改良式乳房根除手術 Modified radical mastectomy － 單側 unilateral  
+註：  
+1. 適應症：惡性乳癌或乳房原位癌經診斷疑有高度惡性或侵犯性乳癌者。
+2. 術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。
+3. 一般材料費，得另加計百分之二十六。
+
+### 63008B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-587-63008B)  
+38393點  
+改良式乳房根除手術 Modified radical mastectomy － 雙側 bilateral  
+註：  
+1. 適應症：惡性乳癌或乳房原位癌經診斷疑有高度惡性或侵犯性乳癌者。
+2. 術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。
+3. 一般材料費，得另加計百分之二十六。
+
+### 63017B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-588-63017B)  
+12656點  
+前哨淋巴結摘除手術－單側  
+註：  
+1. 適應症：惡性乳癌、黑色素瘤及鱗狀上皮細胞癌。
+2. 支付規範：  
+(1) 術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。  
+(2) 一般材料費，得另加計百分之五十六。
+
+### 64279B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-589-64279B)  
+14379點  
+重行椎間盤切除術：頸椎、胸椎、腰椎  
+Revisional diskectomy：cervical、 thoracic、lumbar  
+註：  
+1. 適應症：再發型椎間盤突出導致脊髓或神經根病變。
+2. 不得同時申報：83022C、83023C、83024C。
