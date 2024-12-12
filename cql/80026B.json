@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "80026B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -52,17 +52,18 @@
             "annotation" : [ ]
          } ]
       },
-      "valueSets" : {
-         "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : [ ]
-         } ]
-      },
       "codes" : {
          "def" : [ {
+            "name" : "Submucous leiomyoma of uterus code",
+            "id" : "D25.0",
+            "display" : "Submucous leiomyoma of uterus",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -177,7 +178,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Condition",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -194,14 +195,18 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "in",
+                     "codeComparator" : "~",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-                        "preserve" : true,
-                        "type" : "ValueSetRef",
-                        "annotation" : [ ]
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Submucous leiomyoma of uterus code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -211,14 +216,63 @@
                }
             }
          }, {
+            "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "Submucous leiomyoma of uterus code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Condition",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Procedure",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
             }
          }, {
             "name" : "InPopulation",
@@ -245,7 +299,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付27333點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
