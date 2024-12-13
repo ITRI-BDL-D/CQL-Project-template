@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.22" displayName="80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="0JQC0ZZ" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" codeSystemVersion="2025" displayName="Repair Pelvic Region Subcutaneous Tissue and Fascia, Open Approach"/>
+            <ns0:Concept code="0JUC0JZ" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" codeSystemVersion="2025" displayName="Supplement of Pelvic Region Subcutaneous Tissue and Fascia with Synthetic Substitute, Open Approach"/>
+            <ns0:Concept code="0USG0ZZ" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" codeSystemVersion="2025" displayName="Reposition Vagina, Open Approach"/>
+            <ns0:Concept code="0UT90ZZ" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" codeSystemVersion="2025" displayName="Resection of Uterus, Open Approach"/>
+            <ns0:Concept code="0UTC0ZZ" codeSystem="2.16.840.1.113883.6.4" codeSystemName="ICD10PCS" codeSystemVersion="2025" displayName="Resection of Cervix, Open Approach"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>

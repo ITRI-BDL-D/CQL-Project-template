@@ -52,18 +52,23 @@
             "annotation" : [ ]
          } ]
       },
-      "codes" : {
+      "valueSets" : {
          "def" : [ {
-            "name" : "Submucous leiomyoma of uterus code",
-            "id" : "D25.0",
-            "display" : "Submucous leiomyoma of uterus",
+            "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) CM valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.21",
             "accessLevel" : "Public",
             "annotation" : [ ],
-            "codeSystem" : {
-               "name" : "ICD-10-CM",
-               "annotation" : [ ]
-            }
+            "codeSystem" : [ ]
          }, {
+            "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.22",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
+      "codes" : {
+         "def" : [ {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -195,18 +200,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Submucous leiomyoma of uterus code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) CM valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -236,18 +237,14 @@
                   "dataType" : "{http://hl7.org/fhir}Procedure",
                   "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
                   "codeProperty" : "code",
-                  "codeComparator" : "~",
+                  "codeComparator" : "in",
                   "type" : "Retrieve",
                   "annotation" : [ ],
                   "codes" : {
-                     "type" : "ToList",
-                     "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : {
-                        "name" : "Submucous leiomyoma of uterus code",
-                        "type" : "CodeRef",
-                        "annotation" : [ ]
-                     }
+                     "name" : "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS valueset",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
                   },
                   "include" : [ ],
                   "codeFilter" : [ ],

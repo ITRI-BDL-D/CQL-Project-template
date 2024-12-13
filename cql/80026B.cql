@@ -5,13 +5,13 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) CM valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.21'
-// valueset "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.22'
+valueset "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) CM valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.21'
+valueset "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.22'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Submucous leiomyoma of uterus code": 'D25.0' from "ICD-10-CM" display 'Submucous leiomyoma of uterus'
+// code "Submucous leiomyoma of uterus code": 'D25.0' from "ICD-10-CM" display 'Submucous leiomyoma of uterus'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -19,10 +19,10 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Condition":
-  exists ( Confirmed([Condition: "Submucous leiomyoma of uterus code"]) )
+  exists ( Confirmed([Condition: "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) CM valueset"]) )
   
 define "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Procedure":
-  exists ( [Procedure: "Submucous leiomyoma of uterus code"]) 
+  exists ( [Procedure: "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) PCS valueset"]) 
 
 define "MeetsInclusionCriteria":
   "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Condition" or "80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術) Procedure"
