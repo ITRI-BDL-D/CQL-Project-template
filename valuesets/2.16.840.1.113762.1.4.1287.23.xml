@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.23" displayName="子宮頸之癌前病變或早期子宮頸癌" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="C53.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant neoplasm of endocervix"/>
+            <ns0:Concept code="C53.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant neoplasm of exocervix"/>
+            <ns0:Concept code="C53.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant neoplasm of overlapping sites of cervix uteri"/>
+            <ns0:Concept code="C53.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant neoplasm of cervix uteri, unspecified"/>
+            <ns0:Concept code="D06.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of endocervix"/>
+            <ns0:Concept code="D06.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of exocervix"/>
+            <ns0:Concept code="D06.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of other parts of cervix"/>
+            <ns0:Concept code="D06.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of cervix, unspecified"/>
+            <ns0:Concept code="N87.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mild cervical dysplasia"/>
+            <ns0:Concept code="N87.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Moderate cervical dysplasia"/>
+            <ns0:Concept code="N87.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Dysplasia of cervix uteri, unspecified"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
