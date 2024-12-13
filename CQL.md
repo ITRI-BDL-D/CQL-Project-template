@@ -16,6 +16,7 @@
 1. [62072B 水刀清創 Hydrosurgery debridement](#62072B)
 1. [63007B 改良式乳房根除手術 Modified radical mastectomy－ 單側 unilateral](#63007B)
 1. [63008B 改良式乳房根除手術 Modified radical mastectomy－ 雙側 bilateral](#63008B)
+1. [63017B 前哨淋巴結摘除手術－單側](#63017B)
 1. [64279B 重行椎間盤切除術：頸椎、胸椎、腰椎](#64279B)
 1. [80210C 腹式子宮頸切除術 Abdominal trachelectomy](#80210C)
 1. [80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術)](#80026B)
