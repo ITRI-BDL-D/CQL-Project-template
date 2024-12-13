@@ -5,12 +5,12 @@ using FHIR version '4.0.1'
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-// valueset "83102K 迷走神經刺激術（VNS）─植入 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.24'
+valueset "83102K 迷走神經刺激術（VNS）─植入 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.24'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
 
-code "Epileptic spasms, intractable, without status epilepticus code": 'G40.824' from "ICD-10-CM" display 'Epileptic spasms, intractable, without status epilepticus'
+// code "Epileptic spasms, intractable, without status epilepticus code": 'G40.824' from "ICD-10-CM" display 'Epileptic spasms, intractable, without status epilepticus'
 code "Condition Confirmed code": 'confirmed' from "CONDVERSTATUS" display 'Confirmed'
 
 concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed'
@@ -18,7 +18,7 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 context Patient
 
 define "83102K 迷走神經刺激術（VNS）─植入":
-  exists ( Confirmed([Condition: "Epileptic spasms, intractable, without status epilepticus code"]) )
+  exists ( Confirmed([Condition: "83102K 迷走神經刺激術（VNS）─植入 valueset"]) )
 
 define "MeetsInclusionCriteria":
   "83102K 迷走神經刺激術（VNS）─植入"
