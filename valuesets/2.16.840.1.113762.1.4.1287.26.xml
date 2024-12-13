@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.26" displayName="51022C 冷凍治療 － 複雜" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="A18.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Tuberculosis of skin and subcutaneous tissue"/>
+            <ns0:Concept code="A63.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Anogenital (venereal) warts"/>
+            <ns0:Concept code="B07.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Plantar wart"/>
+            <ns0:Concept code="B07.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other viral warts"/>
+            <ns0:Concept code="B07.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Viral wart, unspecified"/>
+            <ns0:Concept code="B08.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Molluscum contagiosum"/>
+            <ns0:Concept code="C43.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of lip"/>
+            <ns0:Concept code="C43.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of eyelid, including canthus"/>
+            <ns0:Concept code="C43.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C43.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right eyelid, including canthus"/>
+            <ns0:Concept code="C43.111" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C43.112" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C43.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left eyelid, including canthus"/>
+            <ns0:Concept code="C43.121" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C43.122" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C43.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of ear and external auricular canal"/>
+            <ns0:Concept code="C43.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="C43.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right ear and external auricular canal"/>
+            <ns0:Concept code="C43.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left ear and external auricular canal"/>
+            <ns0:Concept code="C43.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of other and unspecified parts of face"/>
+            <ns0:Concept code="C43.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of unspecified part of face"/>
+            <ns0:Concept code="C43.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of nose"/>
+            <ns0:Concept code="C43.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of other parts of face"/>
+            <ns0:Concept code="C43.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of scalp and neck"/>
+            <ns0:Concept code="C43.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of trunk"/>
+            <ns0:Concept code="C43.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of anal skin"/>
+            <ns0:Concept code="C43.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of skin of breast"/>
+            <ns0:Concept code="C43.59" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of other part of trunk"/>
+            <ns0:Concept code="C43.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of upper limb, including shoulder"/>
+            <ns0:Concept code="C43.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="C43.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right upper limb, including shoulder"/>
+            <ns0:Concept code="C43.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left upper limb, including shoulder"/>
+            <ns0:Concept code="C43.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of lower limb, including hip"/>
+            <ns0:Concept code="C43.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of unspecified lower limb, including hip"/>
+            <ns0:Concept code="C43.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of right lower limb, including hip"/>
+            <ns0:Concept code="C43.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of left lower limb, including hip"/>
+            <ns0:Concept code="C43.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of overlapping sites of skin"/>
+            <ns0:Concept code="C43.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Malignant melanoma of skin, unspecified"/>
+            <ns0:Concept code="C44.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of lip"/>
+            <ns0:Concept code="C44.00" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of lip"/>
+            <ns0:Concept code="C44.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of lip"/>
+            <ns0:Concept code="C44.02" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of lip"/>
+            <ns0:Concept code="C44.09" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of lip"/>
+            <ns0:Concept code="C44.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.101" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C44.102" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="C44.1021" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1022" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.109" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="C44.1091" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1092" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.111" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C44.112" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="C44.1121" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1122" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.119" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="C44.1191" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1192" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.121" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C44.122" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="C44.1221" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1222" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.129" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="C44.1291" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1292" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.131" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C44.132" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="C44.1321" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1322" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.139" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="C44.1391" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1392" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cell carcinoma of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of eyelid, including canthus"/>
+            <ns0:Concept code="C44.191" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="C44.192" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="C44.1921" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1922" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.199" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="C44.1991" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="C44.1992" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="C44.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of ear and external auricular canal"/>
+            <ns0:Concept code="C44.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of ear and external auricular canal"/>
+            <ns0:Concept code="C44.201" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="C44.202" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right ear and external auricular canal"/>
+            <ns0:Concept code="C44.209" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left ear and external auricular canal"/>
+            <ns0:Concept code="C44.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of ear and external auricular canal"/>
+            <ns0:Concept code="C44.211" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="C44.212" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right ear and external auricular canal"/>
+            <ns0:Concept code="C44.219" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left ear and external auricular canal"/>
+            <ns0:Concept code="C44.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of ear and external auricular canal"/>
+            <ns0:Concept code="C44.221" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="C44.222" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right ear and external auricular canal"/>
+            <ns0:Concept code="C44.229" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left ear and external auricular canal"/>
+            <ns0:Concept code="C44.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of ear and external auricular canal"/>
+            <ns0:Concept code="C44.291" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="C44.292" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right ear and external auricular canal"/>
+            <ns0:Concept code="C44.299" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left ear and external auricular canal"/>
+            <ns0:Concept code="C44.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="C44.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="C44.300" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of unspecified part of face"/>
+            <ns0:Concept code="C44.301" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of nose"/>
+            <ns0:Concept code="C44.309" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of other parts of face"/>
+            <ns0:Concept code="C44.31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="C44.310" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of unspecified parts of face"/>
+            <ns0:Concept code="C44.311" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of nose"/>
+            <ns0:Concept code="C44.319" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of other parts of face"/>
+            <ns0:Concept code="C44.32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="C44.320" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of unspecified parts of face"/>
+            <ns0:Concept code="C44.321" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of nose"/>
+            <ns0:Concept code="C44.329" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of other parts of face"/>
+            <ns0:Concept code="C44.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="C44.390" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of unspecified parts of face"/>
+            <ns0:Concept code="C44.391" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of nose"/>
+            <ns0:Concept code="C44.399" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of other parts of face"/>
+            <ns0:Concept code="C44.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of scalp and neck"/>
+            <ns0:Concept code="C44.40" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of scalp and neck"/>
+            <ns0:Concept code="C44.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of scalp and neck"/>
+            <ns0:Concept code="C44.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of scalp and neck"/>
+            <ns0:Concept code="C44.49" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of scalp and neck"/>
+            <ns0:Concept code="C44.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of trunk"/>
+            <ns0:Concept code="C44.50" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of trunk"/>
+            <ns0:Concept code="C44.500" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of anal skin"/>
+            <ns0:Concept code="C44.501" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of breast"/>
+            <ns0:Concept code="C44.509" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of other part of trunk"/>
+            <ns0:Concept code="C44.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of trunk"/>
+            <ns0:Concept code="C44.510" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of anal skin"/>
+            <ns0:Concept code="C44.511" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of breast"/>
+            <ns0:Concept code="C44.519" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of other part of trunk"/>
+            <ns0:Concept code="C44.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of trunk"/>
+            <ns0:Concept code="C44.520" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of anal skin"/>
+            <ns0:Concept code="C44.521" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of breast"/>
+            <ns0:Concept code="C44.529" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of other part of trunk"/>
+            <ns0:Concept code="C44.59" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of trunk"/>
+            <ns0:Concept code="C44.590" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of anal skin"/>
+            <ns0:Concept code="C44.591" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of breast"/>
+            <ns0:Concept code="C44.599" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of other part of trunk"/>
+            <ns0:Concept code="C44.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="C44.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="C44.601" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="C44.602" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right upper limb, including shoulder"/>
+            <ns0:Concept code="C44.609" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left upper limb, including shoulder"/>
+            <ns0:Concept code="C44.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="C44.611" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="C44.612" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right upper limb, including shoulder"/>
+            <ns0:Concept code="C44.619" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left upper limb, including shoulder"/>
+            <ns0:Concept code="C44.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="C44.621" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="C44.622" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right upper limb, including shoulder"/>
+            <ns0:Concept code="C44.629" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left upper limb, including shoulder"/>
+            <ns0:Concept code="C44.69" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="C44.691" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="C44.692" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right upper limb, including shoulder"/>
+            <ns0:Concept code="C44.699" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left upper limb, including shoulder"/>
+            <ns0:Concept code="C44.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin of lower limb, including hip"/>
+            <ns0:Concept code="C44.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of lower limb, including hip"/>
+            <ns0:Concept code="C44.701" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of unspecified lower limb, including hip"/>
+            <ns0:Concept code="C44.702" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of right lower limb, including hip"/>
+            <ns0:Concept code="C44.709" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin of left lower limb, including hip"/>
+            <ns0:Concept code="C44.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of lower limb, including hip"/>
+            <ns0:Concept code="C44.711" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of unspecified lower limb, including hip"/>
+            <ns0:Concept code="C44.712" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of right lower limb, including hip"/>
+            <ns0:Concept code="C44.719" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin of left lower limb, including hip"/>
+            <ns0:Concept code="C44.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of lower limb, including hip"/>
+            <ns0:Concept code="C44.721" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of unspecified lower limb, including hip"/>
+            <ns0:Concept code="C44.722" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of right lower limb, including hip"/>
+            <ns0:Concept code="C44.729" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin of left lower limb, including hip"/>
+            <ns0:Concept code="C44.79" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of lower limb, including hip"/>
+            <ns0:Concept code="C44.791" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of unspecified lower limb, including hip"/>
+            <ns0:Concept code="C44.792" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of right lower limb, including hip"/>
+            <ns0:Concept code="C44.799" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin of left lower limb, including hip"/>
+            <ns0:Concept code="C44.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of overlapping sites of skin"/>
+            <ns0:Concept code="C44.80" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of overlapping sites of skin"/>
+            <ns0:Concept code="C44.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of overlapping sites of skin"/>
+            <ns0:Concept code="C44.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of overlapping sites of skin"/>
+            <ns0:Concept code="C44.89" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of overlapping sites of skin"/>
+            <ns0:Concept code="C44.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other and unspecified malignant neoplasm of skin, unspecified"/>
+            <ns0:Concept code="C44.90" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified malignant neoplasm of skin, unspecified"/>
+            <ns0:Concept code="C44.91" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Basal cell carcinoma of skin, unspecified"/>
+            <ns0:Concept code="C44.92" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Squamous cell carcinoma of skin, unspecified"/>
+            <ns0:Concept code="C44.99" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified malignant neoplasm of skin, unspecified"/>
+            <ns0:Concept code="C46.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Kaposi's sarcoma of skin"/>
+            <ns0:Concept code="D03.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of lip"/>
+            <ns0:Concept code="D03.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of eyelid, including canthus"/>
+            <ns0:Concept code="D03.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="D03.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right eyelid, including canthus"/>
+            <ns0:Concept code="D03.111" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right upper eyelid, including canthus"/>
+            <ns0:Concept code="D03.112" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right lower eyelid, including canthus"/>
+            <ns0:Concept code="D03.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left eyelid, including canthus"/>
+            <ns0:Concept code="D03.121" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left upper eyelid, including canthus"/>
+            <ns0:Concept code="D03.122" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left lower eyelid, including canthus"/>
+            <ns0:Concept code="D03.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of ear and external auricular canal"/>
+            <ns0:Concept code="D03.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="D03.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right ear and external auricular canal"/>
+            <ns0:Concept code="D03.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left ear and external auricular canal"/>
+            <ns0:Concept code="D03.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of other and unspecified parts of face"/>
+            <ns0:Concept code="D03.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of unspecified part of face"/>
+            <ns0:Concept code="D03.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of other parts of face"/>
+            <ns0:Concept code="D03.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of scalp and neck"/>
+            <ns0:Concept code="D03.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of trunk"/>
+            <ns0:Concept code="D03.51" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of anal skin"/>
+            <ns0:Concept code="D03.52" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of breast (skin) (soft tissue)"/>
+            <ns0:Concept code="D03.59" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of other part of trunk"/>
+            <ns0:Concept code="D03.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of upper limb, including shoulder"/>
+            <ns0:Concept code="D03.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="D03.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right upper limb, including shoulder"/>
+            <ns0:Concept code="D03.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left upper limb, including shoulder"/>
+            <ns0:Concept code="D03.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of lower limb, including hip"/>
+            <ns0:Concept code="D03.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of unspecified lower limb, including hip"/>
+            <ns0:Concept code="D03.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of right lower limb, including hip"/>
+            <ns0:Concept code="D03.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of left lower limb, including hip"/>
+            <ns0:Concept code="D03.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ of other sites"/>
+            <ns0:Concept code="D03.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Melanoma in situ, unspecified"/>
+            <ns0:Concept code="D04.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of lip"/>
+            <ns0:Concept code="D04.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of eyelid, including canthus"/>
+            <ns0:Concept code="D04.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of unspecified eyelid, including canthus"/>
+            <ns0:Concept code="D04.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right eyelid, including canthus"/>
+            <ns0:Concept code="D04.111" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right upper eyelid, including canthus"/>
+            <ns0:Concept code="D04.112" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right lower eyelid, including canthus"/>
+            <ns0:Concept code="D04.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left eyelid, including canthus"/>
+            <ns0:Concept code="D04.121" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left upper eyelid, including canthus"/>
+            <ns0:Concept code="D04.122" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left lower eyelid, including canthus"/>
+            <ns0:Concept code="D04.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of ear and external auricular canal"/>
+            <ns0:Concept code="D04.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of unspecified ear and external auricular canal"/>
+            <ns0:Concept code="D04.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right ear and external auricular canal"/>
+            <ns0:Concept code="D04.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left ear and external auricular canal"/>
+            <ns0:Concept code="D04.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of other and unspecified parts of face"/>
+            <ns0:Concept code="D04.30" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of unspecified part of face"/>
+            <ns0:Concept code="D04.39" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of other parts of face"/>
+            <ns0:Concept code="D04.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of scalp and neck"/>
+            <ns0:Concept code="D04.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of trunk"/>
+            <ns0:Concept code="D04.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of upper limb, including shoulder"/>
+            <ns0:Concept code="D04.60" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of unspecified upper limb, including shoulder"/>
+            <ns0:Concept code="D04.61" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right upper limb, including shoulder"/>
+            <ns0:Concept code="D04.62" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left upper limb, including shoulder"/>
+            <ns0:Concept code="D04.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of lower limb, including hip"/>
+            <ns0:Concept code="D04.70" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of unspecified lower limb, including hip"/>
+            <ns0:Concept code="D04.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of right lower limb, including hip"/>
+            <ns0:Concept code="D04.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of left lower limb, including hip"/>
+            <ns0:Concept code="D04.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin of other sites"/>
+            <ns0:Concept code="D04.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Carcinoma in situ of skin, unspecified"/>
+            <ns0:Concept code="D18.01" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hemangioma of skin and subcutaneous tissue"/>
+            <ns0:Concept code="D18.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lymphangioma, any site"/>
+            <ns0:Concept code="L28.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Lichen simplex chronicus"/>
+            <ns0:Concept code="L28.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prurigo nodularis"/>
+            <ns0:Concept code="L28.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other prurigo"/>
+            <ns0:Concept code="L57.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Actinic keratosis"/>
+            <ns0:Concept code="L71.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Rhinophyma"/>
+            <ns0:Concept code="L72.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Epidermal cyst"/>
+            <ns0:Concept code="L72.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Pilar and trichodermal cyst"/>
+            <ns0:Concept code="L72.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Pilar cyst"/>
+            <ns0:Concept code="L72.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Trichodermal cyst"/>
+            <ns0:Concept code="L72.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Steatocystoma multiplex"/>
+            <ns0:Concept code="L72.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sebaceous cyst"/>
+            <ns0:Concept code="L72.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other follicular cysts of the skin and subcutaneous tissue"/>
+            <ns0:Concept code="L72.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Follicular cyst of the skin and subcutaneous tissue, unspecified"/>
+            <ns0:Concept code="L73.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Acne keloid"/>
+            <ns0:Concept code="L74.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other eccrine sweat disorders"/>
+            <ns0:Concept code="L82.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Inflamed seborrheic keratosis"/>
+            <ns0:Concept code="L82.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other seborrheic keratosis"/>
+            <ns0:Concept code="L85.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified epidermal thickening"/>
+            <ns0:Concept code="L90.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Scar conditions and fibrosis of skin"/>
+            <ns0:Concept code="L91.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hypertrophic scar"/>
+            <ns0:Concept code="L92.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Granuloma annulare"/>
+            <ns0:Concept code="L92.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Necrobiosis lipoidica, not elsewhere classified"/>
+            <ns0:Concept code="L92.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Granuloma faciale [eosinophilic granuloma of skin]"/>
+            <ns0:Concept code="L92.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Foreign body granuloma of the skin and subcutaneous tissue"/>
+            <ns0:Concept code="L92.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other granulomatous disorders of the skin and subcutaneous tissue"/>
+            <ns0:Concept code="L92.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Granulomatous disorder of the skin and subcutaneous tissue, unspecified"/>
+            <ns0:Concept code="L94.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Localized scleroderma [morphea]"/>
+            <ns0:Concept code="L98.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Pyogenic granuloma"/>
+            <ns0:Concept code="Q82.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other specified congenital malformations of skin"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
