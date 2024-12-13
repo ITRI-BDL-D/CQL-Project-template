@@ -17,7 +17,10 @@
 1. [63007B 改良式乳房根除手術 Modified radical mastectomy－ 單側 unilateral](#63007B)
 1. [63008B 改良式乳房根除手術 Modified radical mastectomy－ 雙側 bilateral](#63008B)
 1. [64279B 重行椎間盤切除術：頸椎、胸椎、腰椎](#64279B)
-
+1. [80210C 腹式子宮頸切除術 Abdominal trachelectomy](#80210C)
+1. [80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術)](#80026B)
+1. [83102K 迷走神經刺激術（VNS）─植入](#83102K)
+1. [51022C 冷凍治療 － 複雜 Cryotherapy -complicated or including CO2 freezing and liquid nitrogen.](#51022C)
 
 
 ### 08111B
@@ -212,3 +215,56 @@ Revisional diskectomy：cervical、 thoracic、lumbar
 註：  
 1. 適應症：再發型椎間盤突出導致脊髓或神經根病變。
 2. 不得同時申報：83022C、83023C、83024C。
+
+### 80210C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-591-80210C)  
+13871點  
+腹式子宮頸切除術  
+Abdominal trachelectomy  
+註：  
+1. 適應症：子宮頸之癌前病變或早期子宮頸癌。
+2. 手術：經由開腹進行子宮頸切除術。
+3. 不得同時申報80201C。
+
+### 80026B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-590-80026B)  
+27333點  
+經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術)  
+Combined abdominal and vaginal pelvic floor reconstrction (abdominal hysterectomy, sacrocolpopexy, colporrhaphy combined anterior-posterior)  
+註：  
+1. 適應症：  
+因子宮病變需切除子宮，同時又有陰道前壁(膀胱)膨出、陰道後壁(直腸)膨出、腸膨出等，子宮陰道脫垂的病人。
+2. 手術：  
+一次執行經腹部子宮全切除及骨盆底的重建手術－即陰道前後壁修補，或併同施行穹窿懸吊術。
+
+### 83102K
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-592-83102K)  
+18242點  
+迷走神經刺激術（VNS）─植入  
+註：  
+1. 適應症：  
+(1)無法以抗癲癇藥控制病情的頑固型癲癇病人，且亦無法以切除手術改善或曾以癲癇切除手術治療失敗。  
+(2)頑固型癲癇病人定義：已服用或曾服用二種以上具適應症並已達有效劑量之抗癲癇藥物至少一年以上，仍無法控制發作。
+
+2. 支付規範：  
+(1)特殊專科別限制：曾參加過迷走神經刺激器訓練課程並領有證書之神經外科專科醫師。  
+(2)執行頻率：須事前審查，每人僅需執行一次。  
+(3)不得同時申報56037B「深部腦核電生理定位」、83056B「癲癇症腦葉切除術」、83084B「立體定位術-功能性失調」及72029B「迷走神經切斷術」。  
+(4)一般材料費，得另加計百分之十一。
+
+### 51022C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-593-51022C)  
+250點  
+冷凍治療 － 複雜  
+Cryotherapy - complicated or including CO2 freezing and liquid nitrogen  
+註：  
+1. 計次不計數，每次就診不論病灶個數均申報一次，且每次治療（相同及不同處置）應間隔至少一週。
+2. 適應症：  
+(1)血管病變：化膿性肉芽腫、假性膿性肉芽腫、卡波西氏肉瘤、血管瘤、淋巴管瘤。  
+(2)角化及癌前期病變：病毒疣、日光性角化症、皮角(cutaneous horn)、波文氏症、角化棘皮瘤、傳染性軟疣。  
+(3)癌：基底細胞癌、鱗狀細胞癌、惡性黑色素瘤。  
+(4)囊腫：粘液性囊腫。  
+(5)瘢痕或蟹足腫。  
+(6)鼻頭腫疣（酒糟鼻）。  
+(7)結節性癢疹。  
+(8)汗孔角化症（porokerotosis）。
