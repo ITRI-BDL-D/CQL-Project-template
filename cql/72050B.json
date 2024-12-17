@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "72050B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -54,8 +54,8 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "72050B 內視鏡黏膜切除術 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.29",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -177,7 +177,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "72050B 內視鏡黏膜切除術",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +198,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "72050B 內視鏡黏膜切除術 valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -216,7 +216,7 @@
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "72050B 內視鏡黏膜切除術",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -245,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付19475點\n1.不得同時申報之診療項目及編號：28016C、28017C、28030C、28031C、47074C、49014C、47043C、49026C、49023C、73008B、74207C。\n2.內含一般材料費及拋棄式息肉切除環與先端部固定環費用，得另加計百分之六十三。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },

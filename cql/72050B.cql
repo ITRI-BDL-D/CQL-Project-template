@@ -1,11 +1,11 @@
-library "26074C" version '0.0.1'
+library "72050B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+valueset "72050B 內視鏡黏膜切除術 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.29'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
@@ -17,17 +17,17 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "72050B 內視鏡黏膜切除術":
+  exists ( Confirmed([Condition: "72050B 內視鏡黏膜切除術 valueset"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "72050B 內視鏡黏膜切除術"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付19475點\n1.不得同時申報之診療項目及編號：28016C、28017C、28030C、28031C、47074C、49014C、47043C、49026C、49023C、73008B、74207C。\n2.內含一般材料費及拋棄式息肉切除環與先端部固定環費用，得另加計百分之六十三。' 
     else null
 
 define "Rationale":
