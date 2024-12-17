@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "80033B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -54,8 +54,14 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "80033B 經腹腔之骨盆底重建術 CM valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.36",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "80033B 經腹腔之骨盆底重建術 PCS valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.37",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -177,7 +183,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "80033B 經腹腔之骨盆底重建術 Condition",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +204,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "80033B 經腹腔之骨盆底重建術 CM valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -211,14 +217,59 @@
                }
             }
          }, {
+            "name" : "80033B 經腹腔之骨盆底重建術 Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Procedure",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "in",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "name" : "80033B 經腹腔之骨盆底重建術 PCS valueset",
+                     "preserve" : true,
+                     "type" : "ValueSetRef",
+                     "annotation" : [ ]
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
+               "type" : "Or",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "80033B 經腹腔之骨盆底重建術 Condition",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "name" : "80033B 經腹腔之骨盆底重建術 Procedure",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               } ]
             }
          }, {
             "name" : "InPopulation",
@@ -245,7 +296,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付20164點\n1.同時執行經腹腔做子宮懸吊術(或陰道懸吊)、陰道旁缺損修補與道格拉凹整型術。\n2.不得同時申報80026B、80027B、80011B、80007B、80406B、80403B、80407B、80028B、80010B。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
