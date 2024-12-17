@@ -1,11 +1,11 @@
-library "26074C" version '0.0.1'
+library "47091B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+valueset "47091B 淋巴水腫照護 徒手淋巴引流(須達四十分鐘) Care of lymphoedema manual lymphatic drainage valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.34'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
@@ -17,17 +17,17 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "47091B 淋巴水腫照護 徒手淋巴引流(須達四十分鐘) Care of lymphoedema manual lymphatic drainage":
+  exists ( Confirmed([Condition: "47091B 淋巴水腫照護 徒手淋巴引流(須達四十分鐘) Care of lymphoedema manual lymphatic drainage valueset"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "47091B 淋巴水腫照護 徒手淋巴引流(須達四十分鐘) Care of lymphoedema manual lymphatic drainage"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付450點，執行人員須接受淋巴照護相關訓練，執行完成後需有適應症、執行過程及執行時間的紀錄。提升兒童加成項目。' 
     else null
 
 define "Rationale":
