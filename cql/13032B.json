@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "13030B",
+         "id" : "13032B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -245,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付903點\n1.每人以申報一次為原則，惟第一線除菌治療失敗，需進行第二、三線治療時，得再次檢測，並應於病歷詳述理由。\n2.須於生物安全第二等級(BSL-2)實驗室操作。\n3.不得同時申報13007C、13008C。",
+                  "value" : "健保給付3047點\n(1)僅用於第一線治療失敗，需進行第二線治療時，並應於病歷詳述理由。\n(2)五種抗生素之藥物敏感度檢測包含：Metronidazole、Levofloxacin、Clarithromycin、Tetracycline及Amoxicillin。\n(3)須於生物安全第二等級(BSL-2)實驗室操作。\n(4)執行頻率：每人以申報一次為原則。\n(5)不得同時申報13023C、13031B。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
