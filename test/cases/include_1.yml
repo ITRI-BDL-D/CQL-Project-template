@@ -5,11 +5,20 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#E87.6
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付31570點
+    
+    1.施行本項之醫院及醫師資格如下：
+    
+      (1)具放射線專科醫師且實際從事介入性放射線治療之主治醫師以上資格。
+    
+      (2)施行醫師應接受二年以上肝膽系統之血管攝影及血管系統之介入性放射線醫療訓練。
+    
+      (3)須報經保險人同意後實施，且醫院及主持醫師資格有變更時應重新報保險人核備。
+    
+    2.RTPS/RUPS組另計。
+    
+    3.本項治療屬於替代性或選擇性之第二線治療方式。
