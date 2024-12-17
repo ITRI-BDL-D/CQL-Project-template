@@ -1,11 +1,11 @@
-library "26074C" version '0.0.1'
+library "13030B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+valueset "胃幽門螺旋桿菌患者 Helicobacter pylori valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.28'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
@@ -17,17 +17,17 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "胃幽門螺旋桿菌患者 Helicobacter pylori":
+  exists ( Confirmed([Condition: "胃幽門螺旋桿菌患者 Helicobacter pylori valueset"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "胃幽門螺旋桿菌患者 Helicobacter pylori"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付903點\n1.每人以申報一次為原則，惟第一線除菌治療失敗，需進行第二、三線治療時，得再次檢測，並應於病歷詳述理由。\n2.須於生物安全第二等級(BSL-2)實驗室操作。\n3.不得同時申報13007C、13008C。' 
     else null
 
 define "Rationale":
