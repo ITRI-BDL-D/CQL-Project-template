@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "37048B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -46,6 +46,11 @@
             "accessLevel" : "Public",
             "annotation" : [ ]
          }, {
+            "name" : "TWMedicalServicePayment",
+            "id" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
             "name" : "CONDVERSTATUS",
             "id" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
             "accessLevel" : "Public",
@@ -54,8 +59,8 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "37048B 內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.27",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -63,6 +68,16 @@
       },
       "codes" : {
          "def" : [ {
+            "name" : "內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation code",
+            "id" : "37048B",
+            "display" : "內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "TWMedicalServicePayment",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -177,7 +192,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "37048B 內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +213,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "37048B 內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -211,12 +226,100 @@
                }
             }
          }, {
+            "name" : "RFA Procedure",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "ProcedureLookBack",
+               "libraryName" : "C3F",
+               "type" : "FunctionRef",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "dataType" : "{http://hl7.org/fhir}Procedure",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Procedure",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }, {
+                  "value" : 6,
+                  "unit" : "months",
+                  "type" : "Quantity",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "RFA Procedure checked",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "type" : "Greater",
+                  "annotation" : [ ],
+                  "signature" : [ {
+                     "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  }, {
+                     "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "type" : "NamedTypeSpecifier",
+                     "annotation" : [ ]
+                  } ],
+                  "operand" : [ {
+                     "type" : "Count",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "source" : {
+                        "name" : "RFA Procedure",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     }
+                  }, {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                     "value" : "0",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  } ]
+               },
+               "then" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "true",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}Boolean",
+                  "value" : "false",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               }
+            }
+         }, {
             "name" : "MeetsInclusionCriteria",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "37048B 內視鏡射頻消融術（RFA）Endoscopic Radiofrequency Ablation",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -244,10 +347,25 @@
                   "annotation" : [ ]
                },
                "then" : {
-                  "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
-                  "type" : "Literal",
-                  "annotation" : [ ]
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "RFA Procedure checked",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "六個月內再次執行RFA者，應同時符合以下三項條件，並經事前審查同意：\nA.須符合原始內視鏡射頻消融術治療之適應症。\nB.須檢附內視鏡影像及病理組織學切片報告，確認有腫瘤殘存或復發。\nC.須進行腫瘤重新臨床分期，且與第一次治療前分期比較，不能有惡化現象。",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  },
+                  "else" : {
+                     "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                     "value" : "健保給付17350點\n(1)內含一般材料費及單一使用拋棄式之guidewire及spray catheter、內視鏡透明套。\n(2)不得同時申報72050B、28016C、47074C、47043B、47077B、71209B。\n(3)執行本項之麻醉費用另計。",
+                     "type" : "Literal",
+                     "annotation" : [ ]
+                  }
                },
                "else" : {
                   "asType" : "{urn:hl7-org:elm-types:r1}String",

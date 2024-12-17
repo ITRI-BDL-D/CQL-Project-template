@@ -1,0 +1,24 @@
+name: include_but_need_claim
+data:
+  - resourceType: Patient
+    name: Jane Smith include_but_need_claim
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#K22.710
+    onsetDateTime: 2024-12-05T00:00:00.000Z
+  - resourceType: Procedure
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#37048B
+    performedDateTime: 2024-12-05T00:00:00.000Z
+  - resourceType: Procedure
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#37048B
+    performedDateTime: 2024-08-05T00:00:00.000Z
+results:
+  Recommendation: >-    
+    六個月內再次執行RFA者，應同時符合以下三項條件，並經事前審查同意：
+    
+    A.須符合原始內視鏡射頻消融術治療之適應症。
+    
+    B.須檢附內視鏡影像及病理組織學切片報告，確認有腫瘤殘存或復發。
+    
+    C.須進行腫瘤重新臨床分期，且與第一次治療前分期比較，不能有惡化現象。
