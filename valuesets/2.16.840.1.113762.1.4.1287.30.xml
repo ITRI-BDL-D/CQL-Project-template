@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.30" displayName="22041C 遊戲式聽力檢查 Conditioning play audiometry" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="H90.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, bilateral"/>
+            <ns0:Concept code="H90.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral, right ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral, left ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unspecified"/>
+            <ns0:Concept code="H90.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, bilateral"/>
+            <ns0:Concept code="H90.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.41" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral, right ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.42" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral, left ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Unspecified sensorineural hearing loss"/>
+            <ns0:Concept code="H90.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, bilateral"/>
+            <ns0:Concept code="H90.7" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.71" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral, right ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.72" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral, left ear, with unrestricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unspecified"/>
+            <ns0:Concept code="H90.A" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive and sensorineural hearing loss with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral, with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral, right ear with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Conductive hearing loss, unilateral, left ear with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral, with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral, right ear, with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sensorineural hearing loss, unilateral, left ear, with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A31" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral, right ear with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H90.A32" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Mixed conductive and sensorineural hearing loss, unilateral, left ear with restricted hearing on the contralateral side"/>
+            <ns0:Concept code="H91.20" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sudden idiopathic hearing loss, unspecified ear"/>
+            <ns0:Concept code="H91.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sudden idiopathic hearing loss, right ear"/>
+            <ns0:Concept code="H91.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sudden idiopathic hearing loss, left ear"/>
+            <ns0:Concept code="H91.23" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Sudden idiopathic hearing loss, bilateral"/>
+            <ns0:Concept code="H93.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Tinnitus, right ear"/>
+            <ns0:Concept code="H93.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Tinnitus, left ear"/>
+            <ns0:Concept code="H93.13" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Tinnitus, bilateral"/>
+            <ns0:Concept code="H93.19" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Tinnitus, unspecified ear"/>
+            <ns0:Concept code="H93.21" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Auditory recruitment"/>
+            <ns0:Concept code="H93.211" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Auditory recruitment, right ear"/>
+            <ns0:Concept code="H93.212" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Auditory recruitment, left ear"/>
+            <ns0:Concept code="H93.213" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Auditory recruitment, bilateral"/>
+            <ns0:Concept code="H93.219" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Auditory recruitment, unspecified ear"/>
+            <ns0:Concept code="H93.22" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diplacusis"/>
+            <ns0:Concept code="H93.221" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diplacusis, right ear"/>
+            <ns0:Concept code="H93.222" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diplacusis, left ear"/>
+            <ns0:Concept code="H93.223" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diplacusis, bilateral"/>
+            <ns0:Concept code="H93.229" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Diplacusis, unspecified ear"/>
+            <ns0:Concept code="H93.23" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hyperacusis"/>
+            <ns0:Concept code="H93.231" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hyperacusis, right ear"/>
+            <ns0:Concept code="H93.232" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hyperacusis, left ear"/>
+            <ns0:Concept code="H93.233" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hyperacusis, bilateral"/>
+            <ns0:Concept code="H93.239" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Hyperacusis, unspecified ear"/>
+            <ns0:Concept code="H93.24" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Temporary auditory threshold shift"/>
+            <ns0:Concept code="H93.241" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Temporary auditory threshold shift, right ear"/>
+            <ns0:Concept code="H93.242" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Temporary auditory threshold shift, left ear"/>
+            <ns0:Concept code="H93.243" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Temporary auditory threshold shift, bilateral"/>
+            <ns0:Concept code="H93.249" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Temporary auditory threshold shift, unspecified ear"/>
+            <ns0:Concept code="H93.25" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Central auditory processing disorder"/>
+            <ns0:Concept code="H93.29" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other abnormal auditory perceptions"/>
+            <ns0:Concept code="H93.291" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other abnormal auditory perceptions, right ear"/>
+            <ns0:Concept code="H93.292" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other abnormal auditory perceptions, left ear"/>
+            <ns0:Concept code="H93.293" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other abnormal auditory perceptions, bilateral"/>
+            <ns0:Concept code="H93.299" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other abnormal auditory perceptions, unspecified ear"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
