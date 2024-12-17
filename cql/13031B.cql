@@ -1,4 +1,4 @@
-library "13030B" version '0.0.1'
+library "13031B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -27,7 +27,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付903點\n1.每人以申報一次為原則，惟第一線除菌治療失敗，需進行第二、三線治療時，得再次檢測，並應於病歷詳述理由。\n2.須於生物安全第二等級(BSL-2)實驗室操作。\n3.不得同時申報13007C、13008C。' 
+  if "InPopulation" then '健保給付2278點\n(1)三種抗生素之藥物敏感度檢測包含：Metronidazole、Levofloxacin及Clarithromycin\n(2)須於生物安全第二等級(BSL-2)實驗室操作。\n(3)執行頻率：每人以申報一次為原則。\n(4)不得同時申報13023C、13032B。' 
     else null
 
 define "Rationale":
