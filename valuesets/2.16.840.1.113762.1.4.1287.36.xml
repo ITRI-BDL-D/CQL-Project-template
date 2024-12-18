@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns0:RetrieveValueSetResponse xmlns:ns0="urn:ihe:iti:svs:2008" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ns0:ValueSet ID="2.16.840.1.113762.1.4.1287.36" displayName="80033B	經腹腔之骨盆底重建術 CM" version="Latest">
+        <ns0:ConceptList>
+            <ns0:Concept code="N81.0" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Urethrocele"/>
+            <ns0:Concept code="N81.1" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cystocele"/>
+            <ns0:Concept code="N81.10" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cystocele, unspecified"/>
+            <ns0:Concept code="N81.11" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cystocele, midline"/>
+            <ns0:Concept code="N81.12" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cystocele, lateral"/>
+            <ns0:Concept code="N81.2" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Incomplete uterovaginal prolapse"/>
+            <ns0:Concept code="N81.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Complete uterovaginal prolapse"/>
+            <ns0:Concept code="N81.4" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Uterovaginal prolapse, unspecified"/>
+            <ns0:Concept code="N81.5" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Vaginal enterocele"/>
+            <ns0:Concept code="N81.6" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Rectocele"/>
+            <ns0:Concept code="N81.8" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other female genital prolapse"/>
+            <ns0:Concept code="N81.81" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Perineocele"/>
+            <ns0:Concept code="N81.82" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Incompetence or weakening of pubocervical tissue"/>
+            <ns0:Concept code="N81.83" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Incompetence or weakening of rectovaginal tissue"/>
+            <ns0:Concept code="N81.84" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Pelvic muscle wasting"/>
+            <ns0:Concept code="N81.85" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Cervical stump prolapse"/>
+            <ns0:Concept code="N81.89" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Other female genital prolapse"/>
+            <ns0:Concept code="N81.9" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Female genital prolapse, unspecified"/>
+            <ns0:Concept code="N99.3" codeSystem="2.16.840.1.113883.6.90" codeSystemName="ICD10CM" codeSystemVersion="2025" displayName="Prolapse of vaginal vault after hysterectomy"/>
+        </ns0:ConceptList>
+    </ns0:ValueSet>
+</ns0:RetrieveValueSetResponse>
