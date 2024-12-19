@@ -27,7 +27,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付671點\n1.基層診所之聽力檢查室須符合醫療機構設置標準附表（一）之聽力設施規範。\n2.每年以申報二次為原則，如需額外執行應於病歷敘明重複執行之原因。\n3.申報費用時須檢附遊戲式聽力檢查報告。/n4.不得同時申報22001C。' 
+  if "InPopulation" then '健保給付671點\n1.基層診所之聽力檢查室須符合醫療機構設置標準附表（一）之聽力設施規範。\n2.每年以申報二次為原則，如需額外執行應於病歷敘明重複執行之原因。\n3.申報費用時須檢附遊戲式聽力檢查報告。\n4.不得同時申報22001C。' 
     else null
 
 define "Rationale":
