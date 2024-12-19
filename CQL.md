@@ -22,6 +22,17 @@
 1. [80026B 經腹腔及陰道合併之骨盆底重建術(含子宮切除術，陰道懸吊術，陰道前後壁修補但不含尿失禁手術)](#80026B)
 1. [83102K 迷走神經刺激術（VNS）─植入](#83102K)
 1. [51022C 冷凍治療 － 複雜 Cryotherapy -complicated or including CO2 freezing and liquid nitrogen.](#51022C)
+1. [37048B 內視鏡射頻消融術（RFA） Endoscopic Radiofrequency Ablation](#37048B)
+1. [13030B 胃幽門螺旋桿菌特殊培養法 Special Cultivation method for Helicobacter pylori](#13030B)
+1. [13031B 胃幽門螺旋桿菌藥物敏感度檢測—三種抗生素藥物敏感度檢測 Susceptibility testing containing three antibiotics for Helicobacter pylori](#13031B)
+1. [13032B 難治型胃幽門螺旋桿菌藥物敏感度檢測—五種抗生素藥物敏感度檢測 Susceptibility testing containing five antibiotics for refractory Helicobacter pylori](#13032B)
+1. [72050B 內視鏡黏膜切除術](#72050B)
+1. [22041C 遊戲式聽力檢查 Conditioning play audiometry](#22041C)
+1. [33113B 經頸靜脈肝內門脈系統靜脈分流術Transjugular Intrahepatic Portosystemic Shunt](#33113B)
+1. [09139C 醣化白蛋白(GA)](#09139C)
+1. [47091B 淋巴水腫照護-徒手淋巴引流(須達四十分鐘) Care of lymphoedema - manual lymphatic drainage](#47091B)
+1. [12162B 組織壞死因子 TNF](#12162B)
+1. [80033B 經腹腔之骨盆底重建術](#80033B)
 
 
 ### 08111B
@@ -269,3 +280,170 @@ Cryotherapy - complicated or including CO2 freezing and liquid nitrogen
 (6)鼻頭腫疣（酒糟鼻）。  
 (7)結節性癢疹。  
 (8)汗孔角化症（porokerotosis）。
+
+### 37048B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-598-37048B)  
+17350點  
+內視鏡射頻消融術（RFA）  
+Endoscopic Radiofrequency Ablation  
+註：  
+1. 適應症(須有病理切片證實)：  
+(1)扁平性之食道癌前病變、食道鱗狀細胞高度分化不良病變。  
+(2)巴瑞特氏食道合併分化不良病變。  
+(3)長度大於三公分且有腸黏膜化生之巴瑞特氏食道。  
+2. 支付規範：  
+(1)同一病人以申報一次為限，六個月內若須再次執行RFA者，應同時符合以下三項條件，並經事前審查同意：  
+	A.須符合原始內視鏡射頻消融術治療之適應症。  
+	B.須檢附內視鏡影像及病理組織學切片報告，確認有腫瘤殘存或復發。  
+	C.須進行腫瘤重新臨床分期，且與第一次治療前分期比較，不能有惡化現象。  
+(2)內含一般材料費及單一使用拋棄式之guidewire及spray catheter、內視鏡透明套。  
+(3)不得同時申報72050B、28016C、47074C、47043B、47077B、71209B。  
+(4)執行本項之麻醉費用另計。
+
+### 13030B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-599-13030B)  
+903點  
+胃幽門螺旋桿菌特殊培養法  
+Special Cultivation method for Helicobacter pylori    
+註：  
+1. 適應症：  
+(1)消化性潰瘍（不含食道）。    
+(2)胃淋巴瘤。    
+(3)萎縮性胃炎。    
+(4)結節性胃炎。    
+(5)胃黏膜腸上皮化生。    
+(6)胃癌。    
+2. 每人以申報一次為原則，惟第一線除菌治療失敗，需進行第二、三線治療時，得再次檢測，並應於病歷詳述理由。    
+3. 限內科、兒科、家醫科專科醫師開立處方。    
+4. 須於生物安全第二等級(BSL-2)實驗室操作。    
+5. 不得同時申報13007C、13008C。
+
+### 13031B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-600-13031B)  
+2278點  
+胃幽門螺旋桿菌藥物敏感度檢測—三種抗生素藥物敏感度檢測    
+Susceptibility testing containing three antibiotics for Helicobacter pylori    
+註：    
+1. 適應症：    
+(1)消化性潰瘍（不含食道）。    
+(2)胃淋巴瘤。    
+(3)萎縮性胃炎。    
+(4)結節性胃炎。    
+(5)胃黏膜腸上皮化生。    
+(6)胃癌。    
+2. 支付規範：    
+(1)三種抗生素之藥物敏感度檢測包含：Metronidazole、Levofloxacin及Clarithromycin    
+(2)須於生物安全第二等級(BSL-2)實驗室操作。    
+(3)限內科、兒科、家醫科專科醫師開立處方。    
+(4)執行頻率：每人以申報一次為原則。    
+(5)不得同時申報13023C、13032B。
+
+### 13032B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-601-13032B)  
+3047點  
+難治型胃幽門螺旋桿菌藥物敏感度檢測—五種抗生素藥物敏感度檢測    
+Susceptibility testing containing five antibiotics for refractory Helicobacter pylori    
+註：    
+1. 適應症：    
+(1)消化性潰瘍（不含食道）。    
+(2)胃淋巴瘤。    
+(3)萎縮性胃炎。    
+(4)結節性胃炎。    
+(5)胃黏膜腸上皮化生。    
+(6)胃癌。    
+2. 支付規範：    
+(1)僅用於第一線治療失敗，需進行第二線治療時，並應於病歷詳述理由。    
+(2)五種抗生素之藥物敏感度檢測包含：Metronidazole、Levofloxacin、Clarithromycin、Tetracycline及Amoxicillin。    
+(3)須於生物安全第二等級(BSL-2)實驗室操作。    
+(4)限內科、兒科、家醫科專科醫師開立處方。    
+(5)執行頻率：每人以申報一次為原則。    
+(6)不得同時申報13023C、13031B。
+
+### 72050B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-602-72050B)  
+8199點  
+內視鏡黏膜切除術    
+註：    
+1. 適應症：    
+(1)超過二公分無莖型之胃腸道息肉或黏膜病灶。     
+(2)早期胃腸道癌症(包括食道、胃、十二指腸、大腸、直腸)。     
+(3)胃腸道黏膜下腫瘤，如類癌(carcinoid)。    
+2. 支付規範：不得同時申報之診療項目及編號：28016C、28017C、28030C、28031C、47074C、49014C、47043C、49026C、49023C、73008B、74207C。    
+3. 內含一般材料費及拋棄式息肉切除環與先端部固定環費用，得另加計百分之六十三。
+
+### 22041C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-603-22041C)  
+671點  
+遊戲式聽力檢查 Conditioning play audiometry    
+註：    
+1. 適應症：限聽力篩檢未通過，且符合下列任一適應症之二歲以上至未滿七歲兒童：    
+(1)傳音性及感音性耳聾(H90)。    
+(2)突發性自發性聽力喪失(H91.2)。    
+(3)聽障(H91.9)。    
+(4)耳鳴(H93.1)。    
+(5)其他異常聽覺(H93.2)。    
+2. 基層診所之聽力檢查室須符合醫療機構設置標準附表（一）之聽力設施規範。    
+3. 每年以申報二次為原則，如需額外執行應於病歷敘明重複執行之原因。    
+4. 申報費用時須檢附遊戲式聽力檢查報告。    
+5. 不得同時申報22001C。
+
+### 33113B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-604-33113B)  
+31570點  
+經頸靜脈肝內門脈系統靜脈分流術    
+Transjugular Intrahepatic Portosystemic Shunt    
+註：    
+1. 施行本項之醫院及醫師資格如下：    
+(1)具放射線專科醫師且實際從事介入性放射線治療之主治醫師以上資格。    
+(2)施行醫師應接受二年以上肝膽系統之血管攝影及血管系統之介入性放射線醫療訓練。    
+(3)須報經保險人同意後實施，且醫院及主持醫師資格有變更時應重新報保險人核備。    
+2. 施行本項之適應症如下，並應由醫院申報事前審查：    
+(1)經內視鏡或內科治療無法控制之急性或再發之胃、食道靜脈曲張出血。    
+(2)經積極內科治療無改善之肝硬化合併大量腹水導致併發腎衰竭或電解質不平衡等。    
+(3)Budd-chiar syndrome。    
+3. RTPS/RUPS組另計。    
+4. 本項治療屬於替代性或選擇性之第二線治療方式。
+
+### 09139C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-605-09139C)  
+200點  
+醣化白蛋白(GA)    
+註：    
+1. 適應症：    
+(1)糖尿病合併慢性腎病變。    
+(2)因血液疾病導致HbA1c無法反映血糖控制者。    
+(3)懷孕糖尿病人及妊娠糖尿病人。    
+(4)血糖數值顯示控制不良，但HbA1c數值仍於良好範圍者。    
+(5)禁忌症：血中白蛋白濃度<3g/dL。    
+2. 支付規範：    
+(1)不得同時申報編號09006C。    
+(2)一年限申報四次，若為懷孕糖尿病人、妊娠糖尿病人或當年度為糖尿病及初期慢性腎臟病照護整合方案新收案個案，一年限申報六次。
+
+### 47091B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-611-47091B)  
+450點  
+淋巴水腫照護-徒手淋巴引流(須達四十分鐘)    
+Care of lymphoedema - manual lymphatic drainage    
+註：    
+1. 適應症：癌症末期淋巴水腫病人    
+2. 執行人員：須接受淋巴照護相關訓練，執行完成後需有適應症、執行過程及執行時間的紀錄。    
+3. 提升兒童加成項目。
+
+### 12162B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-612-12162B)  
+405點  
+組織壞死因子 TNF    
+註：適應症    
+1. 類風濕性關節炎、僵直性關節炎、乾癬、乾癬性關節炎、發炎性腸炎、血管炎之特定表現鑑別診斷。    
+2. 使用抗腫瘤壞死因子生物製劑藥物者，依臨床狀況監控其疾病狀態及藥物反應。    
+3. 特定感染症如結核感染之特定表現及免疫缺損之監控。
+
+### 80033B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-613-80033B)  
+20164點  
+經腹腔之骨盆底重建術    
+註：    
+1.適應症：子宮脫垂(至GradeⅡ)或子宮切除後陰道脫垂，合併陰道旁缺損導致的膀胱膨出及小腸膨出。    
+2.手術：同時執行經腹腔做子宮懸吊術(或陰道懸吊)、陰道旁缺損修補與道格拉凹整型術。    
+3.不得同時申報80026B、80027B、80011B、80007B、80406B、80403B、80407B、80028B、80010B。
+
