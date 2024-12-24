@@ -1,0 +1,90 @@
+{
+  "resourceType": "ValueSet",
+  "id": "2.16.840.1.113762.1.4.1287.33",
+  "meta": {
+    "versionId": "5",
+    "lastUpdated": "2024-12-24T01:34:43.000-05:00",
+    "profile": [ "http://hl7.org/fhir/StructureDefinition/shareablevalueset", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm", "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm" ]
+  },
+  "extension": [ {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-author",
+    "valueContactDetail": {
+      "name": "Industrial Technology Research Institute Author"
+    }
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/resource-lastReviewDate",
+    "valueDate": "2024-12-23"
+  }, {
+    "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+    "valueDate": "2024-12-18"
+  } ],
+  "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.33",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113762.1.4.1287.33"
+  } ],
+  "version": "20241218",
+  "name": "N13026C抗酸菌培養限同時使用固態培養基及具自動化偵測功能之液態培養系統",
+  "title": "13026C 抗酸菌培養(限同時使用固態培養基及具自動化偵測功能之液態培養系統)",
+  "status": "active",
+  "date": "2024-12-18T01:02:58-05:00",
+  "publisher": "Industrial Technology Research Institute Steward",
+  "jurisdiction": [ {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+      "valueCode": "unknown"
+    } ]
+  } ],
+  "purpose": "(Clinical Focus: 抗酸菌培養(限同時使用固態培養基及具自動化偵測功能之液態培養系統)),(Data Element Scope: 13026C),(Inclusion Criteria: (1)懷疑分枝桿菌感染。),(Exclusion Criteria: No)",
+  "compose": {
+    "include": [ {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "A15"
+      } ]
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "A17"
+      } ]
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "A18"
+      } ]
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "A19"
+      } ]
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "descendent-of",
+        "value": "A31"
+      } ]
+    }, {
+      "system": "http://hl7.org/fhir/sid/icd-10-cm",
+      "version": "2025",
+      "filter": [ {
+        "property": "concept",
+        "op": "in",
+        "value": "J65,P37.0"
+      } ]
+    } ]
+  }
+}
