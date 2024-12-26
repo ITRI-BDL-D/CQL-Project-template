@@ -1,11 +1,11 @@
-library "26074C" version '0.0.1'
+library "30522C" version '0.0.1'
 
 using FHIR version '4.0.1'
 
 include "FHIRHelpers" version '4.0.1' called FHIRHelpers
 include CDSConnectCommonsForFHIRv401 version '2.1.0' called C3F
 
-valueset "甲狀腺癌復發 or 轉移之患者 valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7'
+valueset "30522C 幽門桿菌糞便抗原檢查 Helicobacter pylori stool antigen(HpSA)Test valueset": 'https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.38'
 
 codesystem "ICD-10-CM": 'http://hl7.org/fhir/sid/icd-10-cm'
 codesystem "CONDVERSTATUS": 'http://terminology.hl7.org/CodeSystem/condition-ver-status'
@@ -17,17 +17,17 @@ concept "Condition Confirmed": { "Condition Confirmed code" } display 'Confirmed
 
 context Patient
 
-define "甲狀腺癌復發 or 轉移之患者":
-  exists ( Confirmed([Condition: "甲狀腺癌復發 or 轉移之患者 valueset"]) )
+define "30522C 幽門桿菌糞便抗原檢查 Helicobacter pylori stool antigen(HpSA)Test":
+  exists ( Confirmed([Condition: "30522C 幽門桿菌糞便抗原檢查 Helicobacter pylori stool antigen(HpSA)Test valueset"]) )
 
 define "MeetsInclusionCriteria":
-  "甲狀腺癌復發 or 轉移之患者"
+  "30522C 幽門桿菌糞便抗原檢查 Helicobacter pylori stool antigen(HpSA)Test"
 
 define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付19475點，本項須個案申請事前審查。' 
+  if "InPopulation" then '健保給付376點\n(1)不得同時申報13007C、13018C、28016C、28030C及30512C。\n(2)限試劑抗原屬台灣本土菌株者申報。\n(3)本項檢查採包裹式給付，不論方法皆不得另行申請材料費用。' 
     else null
 
 define "Rationale":

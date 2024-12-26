@@ -5,11 +5,14 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#B96.81
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付376點
+    
+    (1)不得同時申報13007C、13018C、28016C、28030C及30512C。
+    
+    (2)限試劑抗原屬台灣本土菌株者申報。
+    
+    (3)本項檢查採包裹式給付，不論方法皆不得另行申請材料費用。
