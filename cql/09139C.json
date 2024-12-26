@@ -46,23 +46,74 @@
             "accessLevel" : "Public",
             "annotation" : [ ]
          }, {
+            "name" : "LOINC",
+            "id" : "http://loinc.org",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
+            "name" : "TWMedicalServicePayment",
+            "id" : "https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw",
+            "accessLevel" : "Public",
+            "annotation" : [ ]
+         }, {
             "name" : "CONDVERSTATUS",
             "id" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
             "accessLevel" : "Public",
             "annotation" : [ ]
          } ]
       },
-      "valueSets" : {
-         "def" : [ {
-            "name" : "09139C 醣化白蛋白(GA) valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.32",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "codeSystem" : [ ]
-         } ]
-      },
       "codes" : {
          "def" : [ {
+            "name" : "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease code",
+            "id" : "E08.22",
+            "display" : "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium code",
+            "id" : "O24.0",
+            "display" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "ICD-10-CM",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Albumin [Mass/volume] in Serum or Plasma code",
+            "id" : "1751-7",
+            "display" : "Albumin [Mass/volume] in Serum or Plasma",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "LOINC",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "醣化白蛋白(GA) code",
+            "id" : "09139C",
+            "display" : "醣化白蛋白(GA)",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "TWMedicalServicePayment",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "醣化血紅素 code",
+            "id" : "09006C",
+            "display" : "醣化血紅素",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : {
+               "name" : "TWMedicalServicePayment",
+               "annotation" : [ ]
+            }
+         }, {
             "name" : "Condition Confirmed code",
             "id" : "confirmed",
             "display" : "Confirmed",
@@ -186,6 +237,76 @@
                "annotation" : [ ],
                "signature" : [ ],
                "operand" : {
+                  "type" : "Union",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "name" : "Confirmed",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  }, {
+                     "name" : "Confirmed",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Condition",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "懷孕糖尿病人、妊娠糖尿病人",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : {
                   "name" : "Confirmed",
                   "type" : "FunctionRef",
                   "annotation" : [ ],
@@ -194,14 +315,18 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "in",
+                     "codeComparator" : "~",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "09139C 醣化白蛋白(GA) valueset",
-                        "preserve" : true,
-                        "type" : "ValueSetRef",
-                        "annotation" : [ ]
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -211,90 +336,103 @@
                }
             }
          }, {
-            "name" : "MeetsInclusionCriteria",
+            "name" : "血中白蛋白濃度 checked",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "09139C 醣化白蛋白(GA)",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "InPopulation",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "name" : "MeetsInclusionCriteria",
-               "type" : "ExpressionRef",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Recommendation",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "If",
+               "type" : "Greater",
                "annotation" : [ ],
-               "condition" : {
-                  "name" : "InPopulation",
-                  "type" : "ExpressionRef",
+               "signature" : [ {
+                  "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                  "type" : "NamedTypeSpecifier",
                   "annotation" : [ ]
-               },
-               "then" : {
-                  "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付200點\n(1)不得同時申報編號09006C。\n(2)一年限申報四次，若為懷孕糖尿病人、妊娠糖尿病人或當年度為糖尿病及初期慢性腎臟病照護整合方案新收案個案，一年限申報六次。",
-                  "type" : "Literal",
+               }, {
+                  "name" : "{urn:hl7-org:elm-types:r1}Quantity",
+                  "type" : "NamedTypeSpecifier",
                   "annotation" : [ ]
-               },
-               "else" : {
-                  "asType" : "{urn:hl7-org:elm-types:r1}String",
-                  "type" : "As",
+               } ],
+               "operand" : [ {
+                  "name" : "QuantityValue",
+                  "libraryName" : "C3F",
+                  "type" : "FunctionRef",
                   "annotation" : [ ],
                   "signature" : [ ],
-                  "operand" : {
-                     "type" : "Null",
+                  "operand" : [ {
+                     "name" : "MostRecent",
+                     "libraryName" : "C3F",
+                     "type" : "FunctionRef",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : [ {
+                        "dataType" : "{http://hl7.org/fhir}Observation",
+                        "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                        "codeProperty" : "code",
+                        "codeComparator" : "~",
+                        "type" : "Retrieve",
+                        "annotation" : [ ],
+                        "codes" : {
+                           "type" : "ToList",
+                           "annotation" : [ ],
+                           "signature" : [ ],
+                           "operand" : {
+                              "name" : "Albumin [Mass/volume] in Serum or Plasma code",
+                              "type" : "CodeRef",
+                              "annotation" : [ ]
+                           }
+                        },
+                        "include" : [ ],
+                        "codeFilter" : [ ],
+                        "dateFilter" : [ ],
+                        "otherFilter" : [ ]
+                     } ]
+                  } ]
+               }, {
+                  "value" : 3,
+                  "unit" : "g/dL",
+                  "type" : "Quantity",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "醣化血紅素 checked",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Exists",
+               "annotation" : [ ],
+               "signature" : [ {
+                  "type" : "ListTypeSpecifier",
+                  "annotation" : [ ],
+                  "elementType" : {
+                     "name" : "{http://hl7.org/fhir}Observation",
+                     "type" : "NamedTypeSpecifier",
                      "annotation" : [ ]
                   }
+               } ],
+               "operand" : {
+                  "dataType" : "{http://hl7.org/fhir}Observation",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "醣化血紅素 code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
                }
-            }
-         }, {
-            "name" : "Rationale",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Links",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Suggestions",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
-            }
-         }, {
-            "name" : "Errors",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "type" : "Null",
-               "annotation" : [ ]
             }
          }, {
             "name" : "ObservationLookBack",
@@ -583,6 +721,283 @@
                   "annotation" : [ ]
                }
             } ]
+         }, {
+            "name" : "過去一年已申報",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "ObservationLookBack",
+               "type" : "FunctionRef",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "dataType" : "{http://hl7.org/fhir}Observation",
+                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                  "codeProperty" : "code",
+                  "codeComparator" : "~",
+                  "type" : "Retrieve",
+                  "annotation" : [ ],
+                  "codes" : {
+                     "type" : "ToList",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "name" : "醣化白蛋白(GA) code",
+                        "type" : "CodeRef",
+                        "annotation" : [ ]
+                     }
+                  },
+                  "include" : [ ],
+                  "codeFilter" : [ ],
+                  "dateFilter" : [ ],
+                  "otherFilter" : [ ]
+               }, {
+                  "value" : 1,
+                  "unit" : "year",
+                  "type" : "Quantity",
+                  "annotation" : [ ]
+               } ]
+            }
+         }, {
+            "name" : "過去一年已申報次數",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Count",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "source" : {
+                  "name" : "ObservationLookBack",
+                  "type" : "FunctionRef",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : [ {
+                     "dataType" : "{http://hl7.org/fhir}Observation",
+                     "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
+                     "codeProperty" : "code",
+                     "codeComparator" : "~",
+                     "type" : "Retrieve",
+                     "annotation" : [ ],
+                     "codes" : {
+                        "type" : "ToList",
+                        "annotation" : [ ],
+                        "signature" : [ ],
+                        "operand" : {
+                           "name" : "醣化白蛋白(GA) code",
+                           "type" : "CodeRef",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "include" : [ ],
+                     "codeFilter" : [ ],
+                     "dateFilter" : [ ],
+                     "otherFilter" : [ ]
+                  }, {
+                     "value" : 1,
+                     "unit" : "year",
+                     "type" : "Quantity",
+                     "annotation" : [ ]
+                  } ]
+               }
+            }
+         }, {
+            "name" : "MeetsInclusionCriteria",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "name" : "09139C 醣化白蛋白(GA)",
+               "type" : "ExpressionRef",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "InPopulation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "And",
+               "annotation" : [ ],
+               "signature" : [ ],
+               "operand" : [ {
+                  "name" : "MeetsInclusionCriteria",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               }, {
+                  "type" : "Not",
+                  "annotation" : [ ],
+                  "signature" : [ ],
+                  "operand" : {
+                     "name" : "血中白蛋白濃度 checked",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  }
+               } ]
+            }
+         }, {
+            "name" : "Recommendation",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "If",
+               "annotation" : [ ],
+               "condition" : {
+                  "name" : "醣化血紅素 checked",
+                  "type" : "ExpressionRef",
+                  "annotation" : [ ]
+               },
+               "then" : {
+                  "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                  "value" : "不得同時申報編號09006C。",
+                  "type" : "Literal",
+                  "annotation" : [ ]
+               },
+               "else" : {
+                  "type" : "If",
+                  "annotation" : [ ],
+                  "condition" : {
+                     "name" : "InPopulation",
+                     "type" : "ExpressionRef",
+                     "annotation" : [ ]
+                  },
+                  "then" : {
+                     "type" : "If",
+                     "annotation" : [ ],
+                     "condition" : {
+                        "name" : "懷孕糖尿病人、妊娠糖尿病人",
+                        "type" : "ExpressionRef",
+                        "annotation" : [ ]
+                     },
+                     "then" : {
+                        "type" : "If",
+                        "annotation" : [ ],
+                        "condition" : {
+                           "type" : "Greater",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }, {
+                              "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           } ],
+                           "operand" : [ {
+                              "name" : "過去一年已申報次數",
+                              "type" : "ExpressionRef",
+                              "annotation" : [ ]
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "5",
+                              "type" : "Literal",
+                              "annotation" : [ ]
+                           } ]
+                        },
+                        "then" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "為懷孕糖尿病人、妊娠糖尿病人或當年度為糖尿病及初期慢性腎臟病照護整合方案新收案個案，今年已申報六次以上。",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        },
+                        "else" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "健保給付200點",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        }
+                     },
+                     "else" : {
+                        "type" : "If",
+                        "annotation" : [ ],
+                        "condition" : {
+                           "type" : "Greater",
+                           "annotation" : [ ],
+                           "signature" : [ {
+                              "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           }, {
+                              "name" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "type" : "NamedTypeSpecifier",
+                              "annotation" : [ ]
+                           } ],
+                           "operand" : [ {
+                              "name" : "過去一年已申報次數",
+                              "type" : "ExpressionRef",
+                              "annotation" : [ ]
+                           }, {
+                              "valueType" : "{urn:hl7-org:elm-types:r1}Integer",
+                              "value" : "3",
+                              "type" : "Literal",
+                              "annotation" : [ ]
+                           } ]
+                        },
+                        "then" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "今年已申報四次以上。",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        },
+                        "else" : {
+                           "valueType" : "{urn:hl7-org:elm-types:r1}String",
+                           "value" : "健保給付200點",
+                           "type" : "Literal",
+                           "annotation" : [ ]
+                        }
+                     }
+                  },
+                  "else" : {
+                     "asType" : "{urn:hl7-org:elm-types:r1}String",
+                     "type" : "As",
+                     "annotation" : [ ],
+                     "signature" : [ ],
+                     "operand" : {
+                        "type" : "Null",
+                        "annotation" : [ ]
+                     }
+                  }
+               }
+            }
+         }, {
+            "name" : "Rationale",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Links",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Suggestions",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
+         }, {
+            "name" : "Errors",
+            "context" : "Patient",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "expression" : {
+               "type" : "Null",
+               "annotation" : [ ]
+            }
          }, {
             "name" : "InProgress",
             "context" : "Patient",

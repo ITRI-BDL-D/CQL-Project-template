@@ -1,0 +1,34 @@
+name: include_gestational_diabetes_over_6_times
+data:
+  - resourceType: Patient
+    name: Jane Smith include_gestational_diabetes_over_6_times
+    gender: female
+    birthDate: 1990-02-16T00:00:00.000Z
+  - resourceType: Condition
+    code: ICD10CM#O24.0
+    onsetDateTime: 2018-07-05T00:00:00.000Z
+  - resourceType: Observation
+    code: LOINC#1751-7
+    valueQuantity: 1.1 g/dL
+    issued: 2024-08-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-06-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-07-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-08-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-09-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-10-05T00:00:00.000Z
+  - resourceType: Observation
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09139C
+    issued: 2024-11-05T00:00:00.000Z
+results:
+  Recommendation: >-    
+    為懷孕糖尿病人、妊娠糖尿病人或當年度為糖尿病及初期慢性腎臟病照護整合方案新收案個案，今年已申報六次以上。

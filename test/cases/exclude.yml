@@ -1,16 +1,15 @@
-name: include_1
+name: exclude
 data:
   - resourceType: Patient
-    name: Jane Smith include_1
+    name: Jane Smith exclude
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
     code: ICD10CM#E08.22
     onsetDateTime: 2018-07-05T00:00:00.000Z
   - resourceType: Observation
-    code: LOINC#1751-7
-    valueQuantity: 1.1 g/dL
-    issued: 2024-08-05T00:00:00.000Z
+    code: https://twcore.mohw.gov.tw/ig/twcore/CodeSystem/medical-service-payment-tw#09006C
+    issued: 2024-06-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付200點
+    不得同時申報編號09006C。
