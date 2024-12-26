@@ -62,6 +62,21 @@
             "annotation" : [ ]
          } ]
       },
+      "valueSets" : {
+         "def" : [ {
+            "name" : "糖尿病合併慢性腎病變 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.46",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         }, {
+            "name" : "懷孕糖尿病人及妊娠糖尿病人 valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.45",
+            "accessLevel" : "Public",
+            "annotation" : [ ],
+            "codeSystem" : [ ]
+         } ]
+      },
       "codes" : {
          "def" : [ {
             "name" : "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease code",
@@ -249,18 +264,14 @@
                         "dataType" : "{http://hl7.org/fhir}Condition",
                         "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                         "codeProperty" : "code",
-                        "codeComparator" : "~",
+                        "codeComparator" : "in",
                         "type" : "Retrieve",
                         "annotation" : [ ],
                         "codes" : {
-                           "type" : "ToList",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : {
-                              "name" : "Diabetes mellitus due to underlying condition with diabetic chronic kidney disease code",
-                              "type" : "CodeRef",
-                              "annotation" : [ ]
-                           }
+                           "name" : "糖尿病合併慢性腎病變 valueset",
+                           "preserve" : true,
+                           "type" : "ValueSetRef",
+                           "annotation" : [ ]
                         },
                         "include" : [ ],
                         "codeFilter" : [ ],
@@ -276,18 +287,14 @@
                         "dataType" : "{http://hl7.org/fhir}Condition",
                         "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                         "codeProperty" : "code",
-                        "codeComparator" : "~",
+                        "codeComparator" : "in",
                         "type" : "Retrieve",
                         "annotation" : [ ],
                         "codes" : {
-                           "type" : "ToList",
-                           "annotation" : [ ],
-                           "signature" : [ ],
-                           "operand" : {
-                              "name" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium code",
-                              "type" : "CodeRef",
-                              "annotation" : [ ]
-                           }
+                           "name" : "懷孕糖尿病人及妊娠糖尿病人 valueset",
+                           "preserve" : true,
+                           "type" : "ValueSetRef",
+                           "annotation" : [ ]
                         },
                         "include" : [ ],
                         "codeFilter" : [ ],
@@ -315,18 +322,14 @@
                      "dataType" : "{http://hl7.org/fhir}Condition",
                      "templateId" : "http://hl7.org/fhir/StructureDefinition/Condition",
                      "codeProperty" : "code",
-                     "codeComparator" : "~",
+                     "codeComparator" : "in",
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "type" : "ToList",
-                        "annotation" : [ ],
-                        "signature" : [ ],
-                        "operand" : {
-                           "name" : "Pre-existing type 1 diabetes mellitus, in pregnancy, childbirth and the puerperium code",
-                           "type" : "CodeRef",
-                           "annotation" : [ ]
-                        }
+                        "name" : "懷孕糖尿病人及妊娠糖尿病人 valueset",
+                        "preserve" : true,
+                        "type" : "ValueSetRef",
+                        "annotation" : [ ]
                      },
                      "include" : [ ],
                      "codeFilter" : [ ],
@@ -721,44 +724,6 @@
                   "annotation" : [ ]
                }
             } ]
-         }, {
-            "name" : "過去一年已申報",
-            "context" : "Patient",
-            "accessLevel" : "Public",
-            "annotation" : [ ],
-            "expression" : {
-               "name" : "ObservationLookBack",
-               "type" : "FunctionRef",
-               "annotation" : [ ],
-               "signature" : [ ],
-               "operand" : [ {
-                  "dataType" : "{http://hl7.org/fhir}Observation",
-                  "templateId" : "http://hl7.org/fhir/StructureDefinition/Observation",
-                  "codeProperty" : "code",
-                  "codeComparator" : "~",
-                  "type" : "Retrieve",
-                  "annotation" : [ ],
-                  "codes" : {
-                     "type" : "ToList",
-                     "annotation" : [ ],
-                     "signature" : [ ],
-                     "operand" : {
-                        "name" : "醣化白蛋白(GA) code",
-                        "type" : "CodeRef",
-                        "annotation" : [ ]
-                     }
-                  },
-                  "include" : [ ],
-                  "codeFilter" : [ ],
-                  "dateFilter" : [ ],
-                  "otherFilter" : [ ]
-               }, {
-                  "value" : 1,
-                  "unit" : "year",
-                  "type" : "Quantity",
-                  "annotation" : [ ]
-               } ]
-            }
          }, {
             "name" : "過去一年已申報次數",
             "context" : "Patient",
