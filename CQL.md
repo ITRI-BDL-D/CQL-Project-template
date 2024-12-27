@@ -33,6 +33,12 @@
 1. [47091B 淋巴水腫照護-徒手淋巴引流(須達四十分鐘) Care of lymphoedema - manual lymphatic drainage](#47091B)
 1. [12162B 組織壞死因子 TNF](#12162B)
 1. [80033B 經腹腔之骨盆底重建術](#80033B)
+1. [13026C 抗酸菌培養(限同時使用固態培養基及具自動化偵測功能之液態培養系統)](#13026C)
+1. [30522C 幽門桿菌糞便抗原檢查](#30522C)
+1. [30512C 碳-13尿素呼氣檢查幽門螺旋桿菌感染](#30512C)
+1. [33143B 急性缺血性腦中風機械取栓術](#33143B)
+1. [36014B 全身放射線治療(一療程)](#36014B)
+1. [12087B 人類白血球抗原 － HLA-ABC(多種抗原)](#12087B)
 
 
 ### 08111B
@@ -183,13 +189,25 @@ Canalith repositioning procedure
 濕氣吸入治療 Humidity inhalation  
 註：限人工氣道患者申報，使用呼吸器者不得申報。
 
-### 57007C
+### 59014B
 [project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-577-59014B)  
 30836點  
 潛水病（減壓病）或急性氣栓塞症 Decompression sickness and acute gas embolism (including post operative)之高壓氧治療  
 註：  
 1. 限治療第二型潛水減壓病（Decompression Sickness, DCSII）及空氣栓塞症（Arterial Gas Embolism, AGE）病患申報。
 2. 限住院病人申報。
+
+### 62072B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-585-62072B)  
+10861點  
+水刀清創  
+Hydrosurgery debridement  
+1. 適應症：二度燙傷以上及總燙傷面積百分之二十以上，接受自體皮膚移植手術當次得申報水刀清創。  
+2. 支付規範：  
+(1)同一醫院同一病患同一傷害，限申報一次。  
+(2)須事前審查。  
+(3)不得同時申報支付標準診療項目：48015B、48016B、48017B、48029B及48030B。  
+(4)一般材料費及單一使用拋棄式之微創噴射灌洗器，得另加計百分之三百零九。
 
 ### 63007B
 [project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-586-63007B)  
@@ -447,3 +465,82 @@ Care of lymphoedema - manual lymphatic drainage
 2.手術：同時執行經腹腔做子宮懸吊術(或陰道懸吊)、陰道旁缺損修補與道格拉凹整型術。    
 3.不得同時申報80026B、80027B、80011B、80007B、80406B、80403B、80407B、80028B、80010B。
 
+### 13026C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-610-13026C)  
+304點  
+抗酸菌培養(限同時使用固態培養基及具自動化偵測功能之液態培養系統)  
+註：  
+1. 適應症：  
+(1)懷疑分枝桿菌感染。  
+(2)分枝桿菌治療監控。  
+2. 相關規範：  
+(1)需在負壓實驗室操作，且具自動化偵測之液態培養基系統。  
+(2)需附抗酸菌培養報告。  
+(3)不得與13012C同時申報。  
+(4)限疾病管制署認可之結核病檢驗機構執行。
+
+### 30522C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-623-30522C)  
+376點  
+幽門桿菌糞便抗原檢查  
+Helicobacter pylori stool antigen(HpSA)Test  
+註：  
+1. 適應症  
+(1)出血、幼兒、孕婦、衰老等不適合做胃鏡檢查之消化性潰瘍患者治療前之幽門螺旋桿菌感染鑑定檢查。  
+(2)證實為潰瘍併幽門螺旋桿菌感染患者為除菌治療後之療效確認與追蹤，第一次於潰瘍治療(含PPI藥物)停藥後一個月施行一次。  
+2. 支付規範  
+(1)不得同時申報13007C、13018C、28016C、28030C及30512C。  
+(2)限試劑抗原屬台灣本土菌株者申報。  
+(3)本項檢查採包裹式給付，不論方法皆不得另行申請材料費用。
+
+### 30512C
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-624-30512C)  
+1160點  
+碳-13尿素呼氣檢查幽門螺旋桿菌感染  
+13C-urea breath test for Helicobacter pylori infection  
+註：適應症  
+1. 出血、幼兒、孕婦、衰老等不適合做胃鏡檢查之消化性潰瘍患者治療前之幽門螺旋桿菌感染鑑定檢查。  
+2. 證實為潰瘍併幽門螺旋桿菌感染患者為除菌治療後之療效確認與追蹤，第一次於潰瘍治療（含PPI藥物）停藥後一個月施行一次。  
+3. 不得同時申報13018C、28016C、28030C及13007C。  
+4. 本項檢查採包裹式給付，不論方法皆不得另行申請材料費用。
+
+### 33143B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-625-33143B)  
+45059點  
+急性缺血性腦中風機械取栓術  
+Fee for neurovascular mechanical endovascular thrombectomy in acute ischemic stroke  
+註：  
+1. 應症：急性腦血管缺血性中風病人符合顱內血管支架取栓裝置使用條件，並使用該裝置進行機械性血管內血栓移除術治療，且同時符合下列條件：   
+(1)發作後二十四小時內。  
+(2)影像診斷為顱內大動脈阻塞，包括內頸動脈、大腦中動脈的第一及第二段、大腦前動脈、基底動脈和脊椎動脈。  
+(3)美國國衛院腦中風評估表(NIH Stroke Scale)評分≧6及≦30。  
+2. 禁忌症：   
+(1)蜘蛛網膜下腔出血  
+(2)腦內出血  
+(3)硬腦膜下出血/顱內出血  
+3. 支付規範：  
+(1)限接受並通過下列任一學會之相關腦神經血管內介入治療專長訓練與認證之醫師施行：  
+A.中華民國放射線醫學會授權之中華民國神經放射線醫學會  
+B.台灣神經外科醫學會授權之台灣神經血管外科與介入治療醫學會  
+C.台灣神經學會授權之台灣腦中風學會  
+(2)不得同時申報69001B、69002B、69003B。  
+4. 前循環若於發作後八小時至二十四小時執行，申報時須於病歷檢附影像報告(CTP、MR或CTA collaterals)備查。
+
+### 36014B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-626-36014B)  
+60641點  
+全身放射線治療(一療程) Total body irradiation  
+註：  
+1. 限骨髓移植病人。  
+2. 申報費用須檢附報告。  
+3. 療程需包括36001B、36015B電腦治療規劃及36019B劑量計算；36004B、36005B放野照射片；37013B合金模塊之設計及製作。
+
+### 12087B
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-627-12087B)  
+800點  
+人類白血球抗原－ HLA-ABC (多種抗原) multiple antigen  
+  
+註：  
+1. 保險對象接受器官移植申報12087B及12176B時，除父母、兄弟姐妹等各給付一次外，另確定為捐贈者最高可給付共三次。  
+2. 12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。  
+3. 12086C屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方始可申報。
