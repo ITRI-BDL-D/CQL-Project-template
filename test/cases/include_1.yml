@@ -5,11 +5,8 @@ data:
     gender: female
     birthDate: 1990-02-16T00:00:00.000Z
   - resourceType: Condition
-    code: ICD10CM#C73
-    onsetDateTime: 2018-07-05T00:00:00.000Z
-  - resourceType: Condition
-    code: ICD10CM#D68.00
+    code: ICD10CM#T86.0
     onsetDateTime: 2018-07-05T00:00:00.000Z
 results:
   Recommendation: >-    
-    健保給付19475點，本項須個案申請事前審查。
+    健保給付60641點，申報費用須檢附報告。療程需包括36001B、36015B電腦治療規劃及36019B劑量計算；36004B、36005B放野照射片；37013B合金模塊之設計及製作。
