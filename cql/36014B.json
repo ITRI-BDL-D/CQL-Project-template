@@ -55,7 +55,7 @@
       "valueSets" : {
          "def" : [ {
             "name" : "Total body irradiation valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.43",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.41",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]

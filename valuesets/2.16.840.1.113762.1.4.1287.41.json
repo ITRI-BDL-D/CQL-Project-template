@@ -1,6 +1,6 @@
 {
     "resourceType": "ValueSet",
-    "id": "2.16.840.1.113762.1.4.1287.43",
+    "id": "2.16.840.1.113762.1.4.1287.41",
     "meta": {
         "versionId": "7",
         "lastUpdated": "2024-12-25T01:02:54.000-05:00",
@@ -16,23 +16,23 @@
             "valueDate": "2024-12-25"
         }
     ],
-    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.43",
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.41",
     "identifier": [
         {
             "system": "urn:ietf:rfc:3986",
-            "value": "urn:oid:2.16.840.1.113762.1.4.1287.43"
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.41"
         }
     ],
     "version": "20241225",
-    "name": "N12087B人類白血球抗原HLA_ABC多種抗原HLA_ABCMultipleAntigeCM",
-    "title": "12087B 人類白血球抗原  HLA_ABC(多種抗原)\nHLA_ABC multiple antige CM",
+    "name": "N36014B全身放射線治療一療程TotalBodyIrradiationCM",
+    "title": "36014B 全身放射線治療(一療程) Total body irradiation CM",
     "status": "active",
     "date": "2024-12-25T01:02:54-05:00",
     "publisher": "Industrial Technology Research Institute Steward",
     "expansion": {
-        "identifier": "urn:uuid:f5daaf38-aff6-44ec-a9e9-c69b306df845",
-        "timestamp": "2024-12-26T03:49:06-05:00",
-        "total": 102,
+        "identifier": "urn:uuid:1b18fda9-004c-4f50-b6cd-8239fa8a3246",
+        "timestamp": "2024-12-26T03:49:02-05:00",
+        "total": 97,
         "offset": 0,
         "parameter": [
             {
@@ -50,6 +50,36 @@
                 "version": "2025",
                 "code": "T86.0",
                 "display": "Complications of bone marrow transplant"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "T86.00",
+                "display": "Unspecified complication of bone marrow transplant"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "T86.01",
+                "display": "Bone marrow transplant rejection"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "T86.02",
+                "display": "Bone marrow transplant failure"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "T86.03",
+                "display": "Bone marrow transplant infection"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "T86.09",
+                "display": "Other complications of bone marrow transplant"
             },
             {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
@@ -594,68 +624,8 @@
             {
                 "system": "http://hl7.org/fhir/sid/icd-10-cm",
                 "version": "2025",
-                "code": "Z94.0",
-                "display": "Kidney transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.1",
-                "display": "Heart transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.2",
-                "display": "Lung transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.3",
-                "display": "Heart and lungs transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.4",
-                "display": "Liver transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.5",
-                "display": "Skin transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.6",
-                "display": "Bone transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.7",
-                "display": "Corneal transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.82",
-                "display": "Intestine transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.83",
-                "display": "Pancreas transplant status"
-            },
-            {
-                "system": "http://hl7.org/fhir/sid/icd-10-cm",
-                "version": "2025",
-                "code": "Z94.9",
-                "display": "Transplanted organ and tissue status, unspecified"
+                "code": "Z94.81",
+                "display": "Bone marrow transplant status"
             }
         ]
     }
