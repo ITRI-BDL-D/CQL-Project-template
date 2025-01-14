@@ -31,7 +31,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付5053點，保險對象接受器官移植申報12087B及12176B時，除父母、兄弟姐妹等各給付一次外，另確定為捐贈者最高可給付共三次。' 
+  if "InPopulation" then '健保給付3285點，保險對象接受器官移植申報12087B及12176B時，除父母、兄弟姐妹等各給付一次外，另確定為捐贈者最高可給付共三次。' 
     else null
 
 define "Rationale":
