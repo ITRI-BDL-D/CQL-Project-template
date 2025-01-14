@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "12088B",
+         "id" : "12177B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -296,7 +296,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付4383點，12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。",
+                  "value" : "健保給付2849點，12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },

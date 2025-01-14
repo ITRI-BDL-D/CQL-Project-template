@@ -1,4 +1,4 @@
-library "12088B" version '0.0.1'
+library "12177B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -31,7 +31,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付4383點，12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。' 
+  if "InPopulation" then '健保給付2849點，12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。' 
     else null
 
 define "Rationale":
