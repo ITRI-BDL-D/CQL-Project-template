@@ -1,4 +1,4 @@
-library "12087B" version '0.0.1'
+library "12088B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -31,7 +31,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付5053點，保險對象接受器官移植申報12087B及12176B時，除父母、兄弟姐妹等各給付一次外，另確定為捐贈者最高可給付共三次。' 
+  if "InPopulation" then '健保給付4383點，12088B及12177B需俟12087B及12176B檢查後配合相合者，如有需要另行檢查。' 
     else null
 
 define "Rationale":
