@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "62042B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -54,8 +54,8 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "Micro & general dermabrasion valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.50N",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -177,7 +177,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "Micro & general dermabrasion",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +198,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "Micro & general dermabrasion valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -216,7 +216,7 @@
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "Micro & general dermabrasion",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -245,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付1640點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
