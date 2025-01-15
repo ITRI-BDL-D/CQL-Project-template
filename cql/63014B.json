@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "26074C",
+         "id" : "63014B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -54,8 +54,8 @@
       },
       "valueSets" : {
          "def" : [ {
-            "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
-            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.7",
+            "name" : "Simple mastectomy and sentinel lymph node biopsy valueset",
+            "id" : "https://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.47N",
             "accessLevel" : "Public",
             "annotation" : [ ],
             "codeSystem" : [ ]
@@ -177,7 +177,7 @@
                }
             } ]
          }, {
-            "name" : "甲狀腺癌復發 or 轉移之患者",
+            "name" : "Simple mastectomy and sentinel lymph node biopsy",
             "context" : "Patient",
             "accessLevel" : "Public",
             "annotation" : [ ],
@@ -198,7 +198,7 @@
                      "type" : "Retrieve",
                      "annotation" : [ ],
                      "codes" : {
-                        "name" : "甲狀腺癌復發 or 轉移之患者 valueset",
+                        "name" : "Simple mastectomy and sentinel lymph node biopsy valueset",
                         "preserve" : true,
                         "type" : "ValueSetRef",
                         "annotation" : [ ]
@@ -216,7 +216,7 @@
             "accessLevel" : "Public",
             "annotation" : [ ],
             "expression" : {
-               "name" : "甲狀腺癌復發 or 轉移之患者",
+               "name" : "Simple mastectomy and sentinel lymph node biopsy",
                "type" : "ExpressionRef",
                "annotation" : [ ]
             }
@@ -245,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付19475點，本項須個案申請事前審查。",
+                  "value" : "健保給付23390點\n術中進行切片送病理冷凍切片檢查，以不得申報63005C、63006C、63010C為原則，倘因術前穿刺無法確認診斷者，須於病歷註明理由並檢附相關證明備查，始得申報。\n一般材料費，得另加計百分之三十三。",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
