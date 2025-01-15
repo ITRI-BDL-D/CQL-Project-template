@@ -1,0 +1,86 @@
+{
+    "resourceType": "ValueSet",
+    "id": "2.16.840.1.113762.1.4.1287.51N",
+    "meta": {
+        "versionId": "5",
+        "lastUpdated": "2025-01-02T20:18:20.000-05:00",
+        "profile": [
+            "http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/computable-valueset-cqfm",
+            "http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/publishable-valueset-cqfm"
+        ]
+    },
+    "extension": [
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/valueset-effectiveDate",
+            "valueDate": "2024-12-12"
+        }
+    ],
+    "url": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1287.51N",
+    "identifier": [
+        {
+            "system": "urn:ietf:rfc:3986",
+            "value": "urn:oid:2.16.840.1.113762.1.4.1287.51N"
+        }
+    ],
+    "version": "20241212",
+    "name": "Right ventricle to pulmonary artery catheterization (Leisterley procedure)",
+    "title": "Right ventricle to pulmonary artery catheterization (Leisterley procedure)",
+    "status": "active",
+    "date": "2024-12-26T08:38:32-05:00",
+    "publisher": "Industrial Technology Research Institute Steward",
+    "expansion": {
+        "identifier": "urn:uuid:a8cd36ea-70f0-4641-89fc-e0dc64143dbc",
+        "timestamp": "2025-01-14T18:54:18-05:00",
+        "total": 21,
+        "offset": 0,
+        "parameter": [
+            {
+                "name": "count",
+                "valueInteger": 1000
+            },
+            {
+                "name": "offset",
+                "valueInteger": 0
+            }
+        ],
+        "contains": [
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q20.3",
+                "display": "Discordant ventriculoarterial connection"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q21.0",
+                "display": "Ventricular septal defect"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q20.8",
+                "display": "Other congenital malformations of cardiac chambers and connections"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q21.3",
+                "display": "Tetralogy of Fallot"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q21.0",
+                "display": "Ventricular septal defect"
+            },
+            {
+                "system": "http://hl7.org/fhir/sid/icd-10-cm",
+                "version": "2025",
+                "code": "Q25.79",
+                "display": "Other congenital malformations of pulmonary artery"
+            }
+        ]
+    }
+}
