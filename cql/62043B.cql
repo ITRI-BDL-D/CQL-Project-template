@@ -1,4 +1,4 @@
-library "62042B" version '0.0.1'
+library "62043B" version '0.0.1'
 
 using FHIR version '4.0.1'
 
@@ -27,7 +27,7 @@ define "InPopulation":
   "MeetsInclusionCriteria"
 
 define "Recommendation":
-  if "InPopulation" then '健保給付1640點' 
+  if "InPopulation" then '健保給付2130點' 
     else null
 
 define "Rationale":

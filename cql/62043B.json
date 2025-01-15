@@ -7,7 +7,7 @@
          "type" : "CqlToElmInfo"
       } ],
       "identifier" : {
-         "id" : "62042B",
+         "id" : "62043B",
          "version" : "0.0.1"
       },
       "schemaIdentifier" : {
@@ -245,7 +245,7 @@
                },
                "then" : {
                   "valueType" : "{urn:hl7-org:elm-types:r1}String",
-                  "value" : "健保給付1640點",
+                  "value" : "健保給付2130點",
                   "type" : "Literal",
                   "annotation" : [ ]
                },
