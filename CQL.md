@@ -575,7 +575,7 @@ C.台灣神經學會授權之台灣腦中風學會
 3. 12086C屬西醫基層總額部門院所，除山地離島地區外，限由專任醫師開立處方始可申報。
 
 ### 12177B
-[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-627-12087B)  
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-658-12177B)  
 2849點  
 人類白血球抗原－ HLA-DR (單一抗原) single antigen  
   
