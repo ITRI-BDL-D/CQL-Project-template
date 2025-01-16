@@ -622,7 +622,7 @@ Micro & general dermabrasion(5-10cm)
 註：限皮膚類澱粉症及表皮母斑症病患申報。
 
 ### 62043B
-[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/62043B)  
+[project](https://github.com/ITRI-BDL-D/CQL-Project-template/tree/D100LS-663-62043B)  
 2130點  
 微晶 & 一般磨皮術(超過十公分)  
 Micro & general dermabrasion(>10cm)  
