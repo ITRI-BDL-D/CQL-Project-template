@@ -1,7 +1,7 @@
 ### CQL List
 [Link](CQL.md)
 
-### Typical Project Structure
+### Typical Project Structure (From [AHRQ-CDS/CQL-Testing-Framework](https://github.com/AHRQ-CDS/CQL-Testing-Framework))
 
 The following is a typical file structure for a CQL project.  This documentation will assume this structure, but other structures can be supported via configuration.
 
