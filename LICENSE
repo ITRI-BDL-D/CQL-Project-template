@@ -211,11 +211,5 @@ Third-Party Components:
 - Gradle Wrapper: Apache License, Version 2.0
 - CDS Authoring Tool output files (.cql/.json): 
   Terms of Use: https://cds.ahrq.gov/authoring/documentation/terms
-- VSAC ValueSets definition files: NLM UMLS Metathesaurus License 
+- VSAC ValueSets definition files: UMLS Metathesaurus License 
   Agreement for the 2024AB Release: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
-
-Some material in the UMLS Metathesaurus is from copyrighted sources of the respective 
-copyright holders. Users of the UMLS Metathesaurus are solely responsible for compliance 
-with any copyright, patent or trademark restrictions and are referred to the copyright, 
-patent or trademark notices appearing in the original sources, all of which are hereby 
-incorporated by reference.
