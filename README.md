@@ -3,24 +3,22 @@
 - AHRQ‑CDS/CQL‑Testing‑Framework (Apache License 2.0)：測試結構、test.js、cqlt.yaml 模板  
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY (Apache License 2.0)：build.gradle 設定範例  
 - CDS Authoring Tool (使用條款)：CDSConnectCommonsForFHIRv401.cql、FHIRHelpers.cql 及對應 ELM JSON  
-- Gradle Wrapper (Gradle軟體授權協議)  
+- Gradle Wrapper (Gradle軟體授權授權條款)  
 - VSAC/UMLS ValueSets (NLM UMLS License Agreement)  
 
 Modified from:  
-- https://github.com/AHRQ‑CDS/CQL‑Testing‑Framework  
-- https://github.com/AHRQ‑CDS/AHRQ‑CDS-Connect-PAIN-MANAGEMENT-SUMMARY  
+- https://github.com/AHRQ-CDS/CQL-Testing-Framework  
+- https://github.com/AHRQ-CDS/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY  
 - https://cds.ahrq.gov/authoring  
 - https://gradle.org/legal/gradle-software-license-agreement/  
 - https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf  
 
-請注意，核心 CQL 規則（如 26074C.cql）及專案建置設定為本模板原創內容；ValueSets 定義檔由我們使用 VSAC (Value Set Authority Center) 平台建立，並依據 UMLS Metathesaurus 許可協議使用。  
+請注意，核心 CQL 規則（如 26074C.cql）及專案建置設定為本模板原創內容；ValueSets 定義檔由我們使用 VSAC (Value Set Authority Center) 平台建立，並依據 UMLS Metathesaurus 許可授權條款使用。  
 Please note that the core CQL rules (e.g. 26074C.cql) and project build configurations are original content; the ValueSets definition files were created by us using the VSAC (Value Set Authority Center) platform and are used under the UMLS Metathesaurus license agreement.
 
 # CQL 專案模板 (CQL Project Template)
 
-本專案源於衛福部對健保給付規則標準化的需求。過去，各醫療機構和健康資訊系統廠商需自行實作健保給付規則判斷邏輯，導致實作效率低下且規則解讀不一致。為解決此問題，我們採用了國際標準的臨床品質語言(Clinical Quality Language, CQL)來建立統一的判斷標準。
-
-本專案提供一個標準化的CQL開發模板，透過臨床品質語言將健保給付規則結構化、標準化，使各醫療機構與系統廠商能一致性地實作判斷邏輯。專案整合了`cql-to-elm`轉換工具與`cql-testing-framework`測試框架，建立健保給付規則判斷的完整解決方案。
+本模板透過臨床品質語言將健保給付規則結構化、標準化，使各醫療機構與系統廠商能一致性地實作判斷邏輯。本模板整合了`cql-to-elm`轉換工具與`cql-testing-framework`測試框架，建立健保給付規則判斷的解決方案。
 
 ## ✨ 功能特色 (Features)
 
@@ -81,7 +79,7 @@ Please note that the core CQL rules (e.g. 26074C.cql) and project build configur
 
 ### 安裝依賴 (Installation)
 
-在專案根目錄執行以下指令，安裝測試框架等 Node.js 依賴：
+在專案根目錄執行以下命令，安裝測試框架等 Node.js 依賴：
 
 ```bash
 yarn install
@@ -107,7 +105,7 @@ yarn cql-to-elm
 # npm run cql-to-elm
 ```
 
-此指令會掃描 `cql/` 目錄下的 `.cql` 檔案，並在同目錄下產生對應的 `.json` 檔案。
+此命令會掃描 `cql/` 目錄下的 `.cql` 檔案，並在同目錄下產生對應的 `.json` 檔案。
 
 **注意:** 如果您是使用 [CDS Authoring Tool](https://cds.ahrq.gov/authoring/) 下載的套件，通常已包含 `.json` 檔案，則無需執行此步驟。
 
@@ -369,18 +367,19 @@ CQLT Config: /path/to/my/cql/project/test/cqlt.yaml
 | **AHRQ‑CDS/CQL‑Testing‑Framework** | Apache License 2.0 | `/test/test.js`<br>`/test/cqlt.yaml`<br>`/test/cases/*.yml`<br>`package.json` | 測試框架結構、設定檔及測試案例格式<br>包含 cql-to-elm 轉換功能和測試執行機制 |
 | **AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY** | Apache License 2.0 | `/build.gradle` | Gradle 建置設定範例 |
 | **CDS Authoring Tool** | [Terms of Use](https://cds.ahrq.gov/authoring/documentation/terms) | `/cql/CDSConnectCommonsForFHIRv401.cql`<br>`/cql/CDSConnectCommonsForFHIRv401.json`<br>`/cql/FHIRHelpers.cql`<br>`/cql/FHIRHelpers.json` | CQL 通用函式庫及其 ELM JSON |
-| **Gradle Wrapper** | Gradle軟體授權協議 | `/gradle/wrapper/`<br>`/gradlew`<br>`/gradlew.bat` | Gradle 建置工具包裝器 |
-| **VSAC/NLM UMLS ValueSets** | NLM UMLS License Agreement | `/valuesets/*.xml` | ValueSet 定義檔 |
+| **Gradle Wrapper** | Gradle軟體授權授權條款 | `/gradle/wrapper/`<br>`/gradlew`<br>`/gradlew.bat` | Gradle 建置工具包裝器 |
+
 
 ### 授權連結 (License Links)
 - AHRQ‑CDS/CQL‑Testing‑Framework：https://github.com/AHRQ‑CDS/CQL‑Testing‑Framework/blob/master/LICENSE
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY：https://github.com/AHRQ‑CDS/AHRQ‑CDS-Connect-PAIN-MANAGEMENT-SUMMARY/blob/master/LICENSE
 - Gradle Wrapper：https://gradle.com/legal/gradle-software-license-agreement/
 - VSAC/NLM UMLS ValueSets：https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
+  - Some material in the UMLS Metathesaurus is from copyrighted sources of the respective copyright holders. Users of the UMLS Metathesaurus are solely responsible for compliance with any copyright, patent or trademark restrictions and are referred to the copyright, patent or trademark notices appearing in the original sources, all of which are hereby incorporated by reference.
 - CDS Authoring Tool：https://cds.ahrq.gov/authoring/documentation/terms
 
 ### 原創內容說明 (Original Content)
-本專案中，以下內容為原創，由 © 2025 Ministry of Health and Welfare (MOHW) 擁有著作權：
+本模板中，以下內容為原創，由 © 2025 Ministry of Health and Welfare (MOHW) 擁有著作權：
 - `/cql/26074C.cql` 和 `/cql/26074C.json`：核心 CQL 規則及其 ELM JSON
 - 測試案例內容：`/test/cases/*.yml` 中的具體測試資料與預期結果
 - 專案文件：`README.md`, `CQL.md`, `HISTORY.md` 等
@@ -390,7 +389,7 @@ CQLT Config: /path/to/my/cql/project/test/cqlt.yaml
 © 2018-2023 Agency for Healthcare Research and Quality  
 © 2025 Ministry of Health and Welfare (MOHW)
 
-本專案依據 Apache License, Version 2.0 授權，詳見 [LICENSE](./LICENSE)。
+本模板依據 Apache License, Version 2.0 授權，詳見 [LICENSE](./LICENSE)。
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.  
 You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0
