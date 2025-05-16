@@ -3,14 +3,14 @@
 - AHRQ‑CDS/CQL‑Testing‑Framework (Apache License 2.0)：測試結構、test.js、cqlt.yaml 模板  
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY (Apache License 2.0)：build.gradle 設定範例  
 - CDS Authoring Tool (使用條款)：CDSConnectCommonsForFHIRv401.cql、FHIRHelpers.cql 及對應 ELM JSON  
-- Gradle Wrapper (Gradle軟體授權授權條款)  
+- Gradle Wrapper (Apache License 2.0)  
 - VSAC/UMLS ValueSets (NLM UMLS License Agreement)  
 
 Modified from:  
 - https://github.com/AHRQ-CDS/CQL-Testing-Framework  
 - https://github.com/AHRQ-CDS/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY  
 - https://cds.ahrq.gov/authoring  
-- https://gradle.org/legal/gradle-software-license-agreement/  
+- https://docs.gradle.org/current/userguide/gradle_wrapper.html  
 - https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf  
 
 請注意，核心 CQL 規則（如 26074C.cql）及專案建置設定為本模板原創內容；ValueSets 定義檔由我們使用 VSAC (Value Set Authority Center) 平台建立，並依據 UMLS Metathesaurus 許可授權條款使用。  
@@ -367,13 +367,13 @@ CQLT Config: /path/to/my/cql/project/test/cqlt.yaml
 | **AHRQ‑CDS/CQL‑Testing‑Framework** | Apache License 2.0 | `/test/test.js`<br>`/test/cqlt.yaml`<br>`/test/cases/*.yml`<br>`package.json` | 測試框架結構、設定檔及測試案例格式<br>包含 cql-to-elm 轉換功能和測試執行機制 |
 | **AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY** | Apache License 2.0 | `/build.gradle` | Gradle 建置設定範例 |
 | **CDS Authoring Tool** | [Terms of Use](https://cds.ahrq.gov/authoring/documentation/terms) | `/cql/CDSConnectCommonsForFHIRv401.cql`<br>`/cql/CDSConnectCommonsForFHIRv401.json`<br>`/cql/FHIRHelpers.cql`<br>`/cql/FHIRHelpers.json` | CQL 通用函式庫及其 ELM JSON |
-| **Gradle Wrapper** | Gradle軟體授權授權條款 | `/gradle/wrapper/`<br>`/gradlew`<br>`/gradlew.bat` | Gradle 建置工具包裝器 |
+| **Gradle Wrapper** | Apache License 2.0 | `/gradle/wrapper/`<br>`/gradlew`<br>`/gradlew.bat` | Gradle 建置工具包裝器 |
 
 
 ### 授權連結 (License Links)
 - AHRQ‑CDS/CQL‑Testing‑Framework：https://github.com/AHRQ‑CDS/CQL‑Testing‑Framework/blob/master/LICENSE
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY：https://github.com/AHRQ‑CDS/AHRQ‑CDS-Connect-PAIN-MANAGEMENT-SUMMARY/blob/master/LICENSE
-- Gradle Wrapper：https://gradle.com/legal/gradle-software-license-agreement/
+- Gradle Wrapper：https://github.com/gradle/gradle/blob/master/LICENSE
 - VSAC/NLM UMLS ValueSets：https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
   - Some material in the UMLS Metathesaurus is from copyrighted sources of the respective copyright holders. Users of the UMLS Metathesaurus are solely responsible for compliance with any copyright, patent or trademark restrictions and are referred to the copyright, patent or trademark notices appearing in the original sources, all of which are hereby incorporated by reference.
 - CDS Authoring Tool：https://cds.ahrq.gov/authoring/documentation/terms
