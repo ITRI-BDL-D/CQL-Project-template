@@ -10,15 +10,13 @@
   （我們曾於「臺灣醫療資訊標準大平台」啟動會議揭露過）
   - AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY：https://github.com/AHRQ-CDS/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY  
   （我們曾於「臺灣醫療資訊標準大平台」啟動會議揭露過）
-  - VSAC：https://vsac.nlm.nih.gov/  
-  （我們曾於「臺灣醫療資訊標準大平台」啟動會議揭露過）
   - CDS Authoring Tool：https://cds.ahrq.gov/authoring  
   （我們曾在「臺灣醫療資訊標準大平台」的「CQL 開發環境與工具」揭露過），連結：https://medstandard.mohw.gov.tw/courses/rule-library
 
 ## CQL 專案執行流程
 
 ### 1. 建立專案結構
-- 建立符合 cql-testing 套件於「Typical Project Structure」要求的專案結構，包含 cql/、valuesets/、test/cases/ 等必要資料夾
+- 建立符合 cql-testing 套件於「Typical Project Structure」要求的專案結構，包含 cql/、test/cases/ 等必要資料夾
 - 建立 package.json 和 build.gradle 等配置檔案，設定專案依賴及腳本
   - 此處參考cql-testing 官方文件「The package.json File」範例下載，並依專案需求修改
   - 此處參考 AHRQ CDS Connect 範例指南 (https://github.com/AHRQ-CDS/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY?tab=readme-ov-file#to-update-the-cql-andor-elm-json-files) 來將 `cql-to-elm` CLI 加入專案
@@ -87,14 +85,13 @@
 │       └── gradle-wrapper.properties              [COPY]
 ├── local tool/
 │   └── code cvt.ipynb                             [OURS]
-├── test/
-│   ├── cqlt.yaml                                  [MODIFY]
-│   ├── test.js                                    [COPY]
-│   └── cases/
-│       ├── include_1.yml                          [OURS]
-│       └── not_include_1.yml                      [OURS]
-└── valuesets/
-    └── 2.16.840.1.113762.1.4.1287.7.xml          [MODIFY]
+└── test/
+    ├── cqlt.yaml                                  [MODIFY]
+    ├── test.js                                    [COPY]
+    └── cases/
+        ├── include_1.yml                          [OURS]
+        └── not_include_1.yml                      [OURS]
+
 ```
 
 ### 根目錄檔案來源
@@ -153,14 +150,6 @@ test/ 資料夾包含用於 CQL 測試的設定與案例：
 
 ### 參考開源資源法律文件
 - CQL Testing Framework LICENSE：https://github.com/AHRQ-CDS/CQL-Testing-Framework/blob/master/LICENSE
-
-## 📁 valuesets
-valuesets 資料夾包含測試所需的 ValueSet 定義檔案。  
-
-- 2.16.840.1.113762.1.4.1287.7.xml [MODIFY]：ValueSet 是由我們於 VSAC (Value Set Authority Center) 建立並管理；首次執行測試時，依據 cqlt.yaml 中 VSAC 設定自動下載對應 ValueSet 定義至 .vscache，並匯出至 valuesets 資料夾。
-
-### 參考開源資源法律文件
-- UMLS Metathesaurus License: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
 
 ## package.json 來源
 - ./package.json [MODIFY]：參考 npm 套件 cql-testing 官方文件「The package.json File」範例下載，並依專案需求修改，定義了測試與 CQL-to-ELM 腳本及必要相依套件。
