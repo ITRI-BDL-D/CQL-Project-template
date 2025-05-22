@@ -3,18 +3,16 @@
 - AHRQ‑CDS/CQL‑Testing‑Framework (Apache License 2.0)：測試結構、test.js、cqlt.yaml 模板  
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY (Apache License 2.0)：build.gradle 設定範例  
 - CDS Authoring Tool (使用條款)：CDSConnectCommonsForFHIRv401.cql、FHIRHelpers.cql 及對應 ELM JSON  
-- Gradle Wrapper (Gradle軟體授權授權條款)  
-- VSAC/UMLS ValueSets (NLM UMLS License Agreement)  
+- Gradle Wrapper (Apache License 2.0)  
 
 Modified from:  
 - https://github.com/AHRQ-CDS/CQL-Testing-Framework  
 - https://github.com/AHRQ-CDS/AHRQ-CDS-Connect-PAIN-MANAGEMENT-SUMMARY  
 - https://cds.ahrq.gov/authoring  
-- https://gradle.org/legal/gradle-software-license-agreement/  
-- https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf  
+- https://docs.gradle.org/current/userguide/gradle_wrapper.html  
 
-請注意，核心 CQL 規則（如 26074C.cql）及專案建置設定為本模板原創內容；ValueSets 定義檔由我們使用 VSAC (Value Set Authority Center) 平台建立，並依據 UMLS Metathesaurus 許可授權條款使用。  
-Please note that the core CQL rules (e.g. 26074C.cql) and project build configurations are original content; the ValueSets definition files were created by us using the VSAC (Value Set Authority Center) platform and are used under the UMLS Metathesaurus license agreement.
+請注意，核心 CQL 規則（如 26074C.cql）及專案建置設定為本模板原創內容。  
+Please note that the core CQL rules (e.g. 26074C.cql) and project build configurations are original content.
 
 # CQL 專案模板 (CQL Project Template)
 
@@ -24,7 +22,7 @@ Please note that the core CQL rules (e.g. 26074C.cql) and project build configur
 
 *   **整合 CQL 轉換**: 內建 `cql-to-elm` 工具，可將 `.cql` 檔案轉換為 ELM JSON 格式。
 *   **整合 CQL 測試**: 整合 `cql-testing-framework`，方便撰寫與執行 CQL 邏輯的單元測試。
-*   **標準化專案結構**: 提供清晰的目錄結構，方便管理 CQL 規則、ValueSet 與測試案例。
+*   **標準化專案結構**: 提供清晰的目錄結構，方便管理 CQL 規則與測試案例。
 
 ## 📁 專案結構 (Project Structure)
 
@@ -36,8 +34,6 @@ Please note that the core CQL rules (e.g. 26074C.cql) and project build configur
 │   ├── *.json                # 編譯後的 ELM JSON 檔案
 │   ├── FHIRHelpers.cql       # FHIR 標準輔助函式庫
 │   └── ...                   # 其他依賴的 CQL 函式庫
-├── valuesets/                # 存放 ValueSet 檔案 (XML 或 JSON)
-│   └── *.xml                 # ValueSet 定義檔
 ├── test/                     # 存放測試相關檔案
 │   ├── cases/                # 存放 YAML 格式的測試案例
 │   │   └── *.yml
@@ -57,7 +53,6 @@ Please note that the core CQL rules (e.g. 26074C.cql) and project build configur
 ### 主要目錄說明
 
 *   **`cql/`**: 存放所有 CQL 邏輯檔案 (`.cql`) 及其對應的 ELM JSON 檔案 (`.json`)。包含您自行開發的 CQL 邏輯以及所需依賴的函式庫 (如 `FHIRHelpers.cql`)。
-*   **`valuesets/`**: 存放所有 ValueSet 檔案 (建議使用 `.xml` 或 `.json` 格式)。這些值集用於 CQL 邏輯中參照的術語集合。
 *   **`test/`**: 包含所有測試相關的檔案。
     *   **`test/cases/`**: 存放使用 YAML 格式 (`.yml`) 撰寫的測試案例。
     *   **`test/cqlt.yaml`**: `cql-testing-framework` 的主要設定檔，定義測試目標函式庫、檔案路徑等。
@@ -91,7 +86,6 @@ yarn install
 
 1.  將您的 `.cql` 檔案放置於 `cql/` 目錄下。
 2.  如果您的 CQL 規則有依賴其他的 CQL 函式庫，也請一併放入 `cql/` 目錄。
-3.  將您的 ValueSet 檔案 (例如 `.xml`) 放置於 `valuesets/` 目錄下。
 
 ### 轉換 CQL 至 ELM (Translating CQL to ELM)
 
@@ -144,6 +138,11 @@ yarn test
 ```
 
 測試框架會讀取 `test/cqlt.yaml` 設定，載入對應的 ELM 檔案，並執行 `test/cases/` 目錄下的所有測試案例。測試結果會顯示在終端機上。
+
+### 如何取得 ValueSet?
+使用者可以前往 CQL 中所示 ValueSet 的網址，依相關授權條款取得授權，並輸入 API Key 以取得 ValueSet。
+> [!WARNING] 
+> 謹提醒使用者取得並使用ValueSet，應符合相關授權條款之規定，並留意使用限制。
 
 ## 📚 CQL 測試框架參考 (CQL Testing Framework Reference)
 
@@ -373,9 +372,7 @@ CQLT Config: /path/to/my/cql/project/test/cqlt.yaml
 ### 授權連結 (License Links)
 - AHRQ‑CDS/CQL‑Testing‑Framework：https://github.com/AHRQ‑CDS/CQL‑Testing‑Framework/blob/master/LICENSE
 - AHRQ‑CDS/AHRQ‑CDS‑Connect‑PAIN‑MANAGEMENT‑SUMMARY：https://github.com/AHRQ‑CDS/AHRQ‑CDS-Connect-PAIN-MANAGEMENT-SUMMARY/blob/master/LICENSE
-- Gradle Wrapper：https://gradle.com/legal/gradle-software-license-agreement/
-- VSAC/NLM UMLS ValueSets：https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
-  - Some material in the UMLS Metathesaurus is from copyrighted sources of the respective copyright holders. Users of the UMLS Metathesaurus are solely responsible for compliance with any copyright, patent or trademark restrictions and are referred to the copyright, patent or trademark notices appearing in the original sources, all of which are hereby incorporated by reference.
+- Gradle Wrapper：https://github.com/gradle/gradle/blob/master/LICENSE
 - CDS Authoring Tool：https://cds.ahrq.gov/authoring/documentation/terms
 
 ### 原創內容說明 (Original Content)
@@ -398,4 +395,4 @@ Unless required by applicable law or agreed to in writing, software distributed 
 
 說明:
 - 部分內容基於 AHRQ‑CDS/CQL‑Testing‑Framework (Apache License 2.0)，版權 © 2018-2023 Agency for Healthcare Research and Quality
-- 本模板核心規則、ValueSets 及建置設定為原創，版權 © 2025 Ministry of Health and Welfare (MOHW)
+- 本模板核心規則及建置設定為原創，版權 © 2025 Ministry of Health and Welfare (MOHW)
