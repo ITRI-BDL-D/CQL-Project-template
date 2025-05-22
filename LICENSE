@@ -211,5 +211,3 @@ Third-Party Components:
 - Gradle Wrapper: Apache License, Version 2.0
 - CDS Authoring Tool output files (.cql/.json): 
   Terms of Use: https://cds.ahrq.gov/authoring/documentation/terms
-- VSAC ValueSets definition files: UMLS Metathesaurus License 
-  Agreement for the 2024AB Release: https://uts.nlm.nih.gov/uts/assets/LicenseAgreement.pdf
